@@ -1,0 +1,72 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #000000;
+  box-shadow: 0 0 220px 50px rgb(2, 151, 250);
+  border-bottom: 3px solid #00ffdd;
+  z-index: 1000;
+}
+header .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  margin: 0 50px;
+}
+
+header nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+ 
+}
+.header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* specific button styling */
+.lang-btn {
+  background-color: #00ffdd;
+  border: none;
+  color: #000000;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* optional small visual tweak */
+.lang-btn:hover {
+  opacity: 0.9;
+}
+
