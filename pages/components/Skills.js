@@ -1,0 +1,1 @@
+//Omat taidot ja osaamiset
