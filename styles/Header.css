@@ -5,24 +5,24 @@ header {
   right: 0;
   height: 70px;
   background-color: #000000;
-  box-shadow: 0 0 220px 50px rgb(2, 151, 250);
+  box-shadow: 0 0 190px 50px rgb(2, 151, 250);
   border-bottom: 3px solid #00ffdd;
   z-index: 1000;
 }
+
 header .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 20px;
+  height: 100%;
 }
+
 header nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex: 1;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -30,43 +30,95 @@ header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 20px;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
-  margin: 0 50px;
+  position: relative;
 }
 
 header nav ul li a {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 18px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
- 
+/* Cool underline animation */
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00ffdd;
+  transition: width 0.3s ease;
 }
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
 .header-actions {
   display: flex;
-  gap: 8px;
-  align-items: center;
+  gap: 12px;
+  margin-left: 40px;
 }
 
-/* specific button styling */
+/* Animated button styling */
 .lang-btn {
-  background-color: #00ffdd;
-  border: none;
-  color: #000000;
-  padding: 8px 12px;
+  background-color: transparent;
+  color: #00ffdd;
+  padding: 8px 16px;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 6px;
+  border: 2px solid #00ffdd;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  
 }
 
-/* optional small visual tweak */
+.lang-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #00ffdd;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
 .lang-btn:hover {
-  opacity: 0.9;
+  color: #000000;
 }
 
+.lang-btn:hover::before {
+  left: 0;
+}
+
+/* Glowing effect for links on hover */
+header nav ul li a:hover {
+  text-shadow: 0 0 8px rgba(0, 255, 221, 0.6);
+  color: #ffffff;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header nav ul {
+    gap: 20px;
+  }
+  
+  .header-actions {
+    margin-left: 20px;
+  }
+}

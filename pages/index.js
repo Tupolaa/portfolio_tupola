@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/header.js";
-
+import Profile from "../components/Profile.js";
 export default function Home() {
    const sectionStyle = { 
     maxWidth: 1200, 
@@ -12,12 +12,10 @@ export default function Home() {
     <>
       <Navbar />
       
-      <main style={{ paddingTop: 64 }}>
-      <section></section>
-        <section style={sectionStyle}>
-          <h1>Welcome to My Portfolio</h1>
-          <p>This is the homepage of my portfolio website.</p>
-        </section>
+      <main style={{ paddingTop: 100 }}>
+      <section>
+          <Profile />
+      </section>
       </main>
     </>
   );

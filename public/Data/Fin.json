@@ -1,0 +1,28 @@
+
+{
+    "fi": {
+        "Nav":{
+
+        "links": [{
+            "Name": "GitHub",
+            "github": "https://github.com/Tupolaa"
+        },
+          {
+            "Name": "LinkedIn",
+            "linkedin": "https://www.linkedin.com/in/teemutupola/"
+        }]
+          }
+        
+        },
+    "Profile": {
+        "name": "Teemu Tupola",
+        "title": "Backend Developer",
+        "description": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa.\n\n Hallitsen ohjelmoinnin perusteet ja olen innokas kehittämään luotettavia, toimivia ratkaisuja ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
+        "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
+    }
+    
+        
+    }
+
+
+    
