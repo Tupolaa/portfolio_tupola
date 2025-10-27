@@ -1,1 +1,2 @@
 Kieli napit header.js
+Päivitä tekstit FIN ja Eng

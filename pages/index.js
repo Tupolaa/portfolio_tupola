@@ -1,6 +1,11 @@
 import React from "react";
 import Navbar from "../components/header.js";
 import Profile from "../components/Profile.js";
+import Projects from "../components/Projects.js";
+
+
+
+
 export default function Home() {
    const sectionStyle = { 
     maxWidth: 1200, 
@@ -14,8 +19,10 @@ export default function Home() {
       
       <main style={{ paddingTop: 100 }}>
       <section>
-          <Profile />
+          <Profile/>
+          <Projects/>
       </section>
+      
       </main>
     </>
   );
