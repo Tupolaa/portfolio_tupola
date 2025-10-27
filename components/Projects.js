@@ -3,7 +3,7 @@ import React from 'react';
 import FinData from '../public/Data/Fin.json';
 
 const Projects = () => {
-  const { projects } = FinData.fi;
+  const { projects } = FinData.Projects;
 
   return (
     <section>
