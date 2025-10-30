@@ -22,21 +22,41 @@
     },
     "Projects": {
         "projects": [{
-                "title": "Tehtävälista-sovellus",
-                "description": "Yksinkertainen tehtävälista-sovellus, joka on rakennettu Reactilla ja käyttää paikallista tallennustilaa tehtävien säilyttämiseen.",
+                "title": "AI-based Invoice assistant",
+                "description": "Tekoäly pohjainen laskujen prosessointi työkalu. Tekoäly vastaa kysymyksiin laskuihin liittyen ja tekee JSON ja/tai PDF yhteenvedon laskusta.",
+                "video": "/Media/2025-10-19 18-59-17.mp4",
+                "image": "",
                 "links": [{
                             "Name": "Demo",
-                            "link": "https://tupola.github.io/tehtavalista/"
+                            "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0"
                         },
                         {
-                            "Name": "GitHub",
-                            "link": "https://github.com/Tupolaa/tehtavalista"
+                            "Name": "Repository",
+                            "link": "https://github.com/Tupolaa/BIP-AI-model"
                         }
-                    ]
+                    ],
+                "Tech": [
+               {
+                "icon": "/Media/Python.png",
+                "alt": "Python icon"
+               },
+               
+                {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                },
+                {
+                  "icon": "/Media/Astro.png",
+                  "alt": "Astro icon"
+                }
+          
+            ]
             },
             {
                 "title": "Portfolio-sivusto",
                 "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
+                "video": "/Media/2025-10-19 18-59-17.mp4",
+                "image": "",
                 "links": [{
                             "Name": "Demo",
                             "link": "https://github.com/Tupolaa/portfolio_tupola"
@@ -44,7 +64,175 @@
                           {
                             "Name": "Live Demo",
                             "link": "https://tupola.github.io/portfolio_tupola/"
-                          }]
+                          }],
+                "Tech": [
+               {
+                "icon": "/Media/JS.png",
+                "alt": "JS icon"
+               },
+                {
+                  "icon": "/Media/REACT.png",
+                  "alt": "REACT icon"
+                },
+                {
+                  "icon": "/Media/CSS.png",
+                  "alt": "CSS icon"
+                },
+                {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                }
+          
+            ]
+            },
+            
+            {
+                "title": "React native sovellus",
+                "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
+                "image": "/Media/js.png",
+                "links": [
+                          {
+                            "Name": "Repository",
+                            "link": "https://github.com/Tupolaa/Mobile_project"
+                          },
+                        {
+                            "Name": "Backend Repository",
+                            "link": "https://github.com/joni23008/Backend-Web-Development"
+                        }],
+               "Tech": [
+               {
+                "icon": "/Media/JS.png",
+                "alt": "JS icon"
+               },
+                {
+                  "icon": "/Media/REACT.png",
+                  "alt": "REACT icon"
+                },
+                {
+                  "icon": "/Media/CSS.png",
+                  "alt": "CSS icon"
+                },
+                {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                }
+          
+            ]
+            },
+            {
+                "title": "Ohjemistotestaus",
+                "description": "Kurssin lopputyö, jonka aikana hyödynsimme Robot Frameworkia ohjelmistotestauksessa. Teimme testejä nettisivulle ja opettelimme ohjelmistotestausta.",
+                "video": "/Media/2025-10-19 18-59-17.mp4",
+                "image": "",
+                "links": [{
+                            "Name": "Repository",
+                            "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti"
+                          }],
+                "Tech": [
+               {
+                "icon": "/Media/RF.png",
+                "alt": "Robot Framework icon"
+               },
+               {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                }
+          
+            ]
+            },{
+                "title": "LejosEV3",
+                "description": "Kouluprojekti, jossa ohjelmoimme LejosEV3 lego robotin seuraamaan väriviivaa ja väistämään esteitä.",
+                "video": "/Media/2025-10-19 18-59-17.mp4",
+                "image": "",
+                "links": [],
+                "Tech": [
+               {
+                "icon": "/Media/REST.png",
+                "alt": "REST API icon"
+               },
+                {
+                    "icon": "/Media/Java.png",
+                    "alt": "Java icon"
+                  },
+                  {
+                    "icon": "/Media/HTML.png",
+                    "alt": "HTML icon"
+                  },
+                  {
+                    "icon": "/Media/CSS.png",
+                    "alt": "CSS icon"
+                  }
+          
+            ]
+            },{
+                "title": "Automaatiorobotiikka",
+                "description": "Kouluprojekti, jossa käytimme UiPathia, Robot Frameworkia ja Pythonia automatisoimaan tiedon haku PDF-laskuilta.",
+                "links": [{
+                            "Name": "Repository",
+                            "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka"
+                          }],
+                "Tech": [
+              
+               {
+                  "icon": "/Media/Python.png",
+                  "alt": "Python icon"
+                },
+                {
+                "icon": "/Media/RF.png",
+                "alt": "Robot Framework icon"
+               },
+                {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                }
+          
+            ]
+            },{
+                "title": "Elokuvien arviointisivusto",
+                "description": "sivusto, jossa voit kirjoittaa ja lukea arvosteluita elokuvista.  Sivuston tehtiin koulutyönä ja kehitystä ollaan jatkettu mobiili sovelluksen muodossa React nativea hyödyntäen(koulutyö).",
+                "links": [{
+                            "Name": "Repository",
+                            "link": "https://github.com/joni23008/Backend-Web-Development"
+                          },
+                          {
+                            "Name": "Website",
+                            "link": "https://moviereview-472307.lm.r.appspot.com/"
+                          },
+                        {
+                            "Name": "themoviedb - API",
+                            "link": "https://www.themoviedb.org/"
+                        }],
+                "Tech": [
+               {
+                "icon": "/Media/JS.png",
+                "alt": "JS icon"
+               },
+                {
+                  "icon": "/Media/REACT.png",
+                  "alt": "REACT icon"
+                },
+                {
+                  "icon": "/Media/Mongo.png",
+                  "alt": "Mongo icon"
+                },
+                {
+                  "icon": "/Media/HBS.png",
+                  "alt": "HBS icon"
+                },
+                {
+                  "icon": "/Media/CSS.png",
+                  "alt": "CSS icon"
+                },
+                {
+                  "icon": "/Media/REST.png",
+                  "alt": "REST API icon"
+                },
+                {
+                  "icon": "/Media/GIT.png",
+                  "alt": "GIT icon"
+                }
+          
+            ]
             }
         ]
       }
