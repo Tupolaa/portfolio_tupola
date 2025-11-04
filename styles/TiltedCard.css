@@ -7,14 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: glowingBorder 3s infinite;
-  border-radius: 60px;
+  
 }
-.tilted-card-figure:hover .tilted-card-inner {
-  animation: glowingBorder 0s paused;
-  box-shadow: 0 0 100px 25px rgb(2, 151, 250);
-  border-radius: 60px;
-}
+
+
 @keyframes glowingBorder {
     0% {
         box-shadow: 0 0 25px #0ff,
@@ -79,7 +75,11 @@
   border-radius: 15px;
   will-change: transform;
   transform: translateZ(0);
+  animation: glowingBorder 3s infinite;
+  border-radius: 60px;
 }
+
+
 
 .tilted-card-overlay {
   position: absolute;

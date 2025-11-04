@@ -8,19 +8,20 @@ const Profile = () => {
 
   return (
     <div className='profile-container'>
-      <TiltedCard 
-      
-  imageSrc="/Media/OmaKuva.jpg"
-  containerHeight="710px"
-  containerWidth="510px"
-  imageHeight="710px"
-  imageWidth="510px"
-  rotateAmplitude={12}
-  scaleOnHover={1.2}
-  showMobileWarning={false}
-  showTooltip={false}
-  altText="Profile Image"
-/>
+      <TiltedCard
+          imageSrc="/Media/OmaKuva.jpg"
+          containerHeight="710px"
+          containerWidth="510px"
+          imageHeight="710px"
+          imageWidth="510px"
+          rotateAmplitude={12}
+          showMobileWarning={false}
+          showTooltip={false}
+          autoAnimate={true}
+          autoSpeed={1}
+          autoScale={1.58}
+          />
+
       
 
       <div className='profile-info'>
