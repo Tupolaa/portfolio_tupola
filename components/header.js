@@ -1,43 +1,49 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button'; 
-import FinData from '../public/Data/Fin.json'; 
+'use client';
+
 import Link from 'next/link';
+import React from 'react';
+import { useLanguage } from '../components/LangChanger.js';
 
+export default function Navbar() {
+  const { lang, setLang, content } = useLanguage();
+  const links = Array.isArray(content?.Nav?.links) ? content.Nav.links : [];
 
-const Navbar = () => {
-  const { links } = FinData.fi.Nav;
   return (
-   <header>
-   
+    <header>
       <nav className="container">
-      <ul >
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link href={link[link.Name.toLowerCase()]} target="_blank" rel="noopener noreferrer">
-                {link.Name}
-              </Link>
-            </li>
-          ))}
+        <ul>
+          {links.map((item, i) => {
+            const name = item?.Name ?? 'Link';
+            const href =
+              item?.link ??
+              (name && item?.[name.toLowerCase()]) ??
+              '#';
+
+            return (
+              <li key={`${name}-${i}`}>
+                <Link href={href} target="_blank" rel="noopener noreferrer">
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
-          <div className="lang-buttons">
-            <button
-             
-            >
-              FIN
-            </button>
-            <button
-             
-            >
-              ENG
-            </button>
-          </div>
-        </nav>
-        
-        {/* TODO kieli napit toimimaan kun sivu muuten valmis */}
-      
-      
+
+        <div className="lang-buttons">
+          <button
+            onClick={() => setLang('fi')}
+            className={lang === 'fi' ? 'active' : ''}
+          >
+            FIN
+          </button>
+          <button
+            onClick={() => setLang('en')}
+            className={lang === 'en' ? 'active' : ''}
+          >
+            ENG
+          </button>
+        </div>
+      </nav>
     </header>
   );
-};
-
-export default Navbar;
+}

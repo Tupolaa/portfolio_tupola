@@ -1,6 +1,7 @@
 // projektit joita olen tehnyt
 import React, { useState } from "react";
 import FinData from "../public/Data/Fin.json";
+import MediaCarousel from "./MediaCarousel.js";
 
 const Projects = () => {
   const { projects = [] } = FinData.Projects || {};
@@ -53,24 +54,16 @@ const Projects = () => {
             </button>
 
             <h2>{selectedProject.title}</h2>
-            {selectedProject.video && (
-              <video
-                src={selectedProject.video}
-                controls
-                autoPlay
-                loop
-                muted
-                className="modal-video"
-              />
-            )}
 
-            {selectedProject.image && (
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="modal-image"
-              />
-            )}
+<MediaCarousel
+  media={
+    selectedProject.media ??
+    [
+      ...(selectedProject.video ? [{ type: 'video', src: selectedProject.video }] : []),
+      ...(selectedProject.image ? [{ type: 'image', src: selectedProject.image, alt: selectedProject.title }] : []),
+    ]
+  }
+/>
 
             <p className="modal-description">
               {selectedProject.description}

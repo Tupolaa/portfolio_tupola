@@ -1,20 +1,14 @@
 
 {
-    "fi": {
-        "Nav":{
-
-        "links": [{
-            "Name": "GitHub",
-            "github": "https://github.com/Tupolaa"
-        },
-          {
-            "Name": "LinkedIn",
-            "linkedin": "https://www.linkedin.com/in/teemutupola/"
-        }]
-          }
-        
-        },
-    "Profile": {
+    
+        "Nav": {
+          "links": [
+            { "Name": "GitHub", "github": "https://github.com/Tupolaa" },
+            { "Name": "LinkedIn", "linkedin": "https://www.linkedin.com/in/teemutupola/" }
+  ]
+},
+          
+        "Profile": {
         "name": "Teemu Tupola",
         "title": "Backend Developer",
         "description": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa.\n\n Hallitsen ohjelmoinnin perusteet ja olen innokas kehittämään luotettavia, toimivia ratkaisuja ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
@@ -25,7 +19,23 @@
                 "title": "AI-based Invoice assistant",
                 "description": "Tekoäly pohjainen laskujen prosessointi työkalu. Tekoäly vastaa kysymyksiin laskuihin liittyen ja tekee JSON ja/tai PDF yhteenvedon laskusta.",
                 "video": "/Media/2025-10-19 18-59-17.mp4",
-                "image": "",
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [{
                             "Name": "Demo",
                             "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0"
@@ -55,8 +65,24 @@
             {
                 "title": "Portfolio-sivusto",
                 "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
-                "video": "/Media/2025-10-19 18-59-17.mp4",
-                "image": "",
+                
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [{
                             "Name": "Demo",
                             "link": "https://github.com/Tupolaa/portfolio_tupola"
@@ -89,7 +115,24 @@
             {
                 "title": "React native sovellus",
                 "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
-                "image": "/Media/js.png",
+                
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [
                           {
                             "Name": "Repository",
@@ -122,8 +165,23 @@
             {
                 "title": "Ohjemistotestaus",
                 "description": "Kurssin lopputyö, jonka aikana hyödynsimme Robot Frameworkia ohjelmistotestauksessa. Teimme testejä nettisivulle ja opettelimme ohjelmistotestausta.",
-                "video": "/Media/2025-10-19 18-59-17.mp4",
-                "image": "",
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [{
                             "Name": "Repository",
                             "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti"
@@ -142,8 +200,23 @@
             },{
                 "title": "LejosEV3",
                 "description": "Kouluprojekti, jossa ohjelmoimme LejosEV3 lego robotin seuraamaan väriviivaa ja väistämään esteitä.",
-                "video": "/Media/2025-10-19 18-59-17.mp4",
-                "image": "",
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [],
                 "Tech": [
                {
@@ -167,6 +240,23 @@
             },{
                 "title": "Automaatiorobotiikka",
                 "description": "Kouluprojekti, jossa käytimme UiPathia, Robot Frameworkia ja Pythonia automatisoimaan tiedon haku PDF-laskuilta.",
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [{
                             "Name": "Repository",
                             "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka"
@@ -190,6 +280,23 @@
             },{
                 "title": "Elokuvien arviointisivusto",
                 "description": "sivusto, jossa voit kirjoittaa ja lukea arvosteluita elokuvista.  Sivuston tehtiin koulutyönä ja kehitystä ollaan jatkettu mobiili sovelluksen muodossa React nativea hyödyntäen(koulutyö).",
+                "media": [
+                  {
+                    "type": "video",
+                    "src": "/Media/reactnative.mp4",
+                    "alt": "AI Invoice assistant demo video"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/Astro.png",
+                    "alt": "AI Invoice assistant image 1"
+                  },
+                  {
+                    "type": "image",
+                    "src": "/Media/AI-invoice-assistant-2.png",
+                    "alt": "AI Invoice assistant image 2"
+                  }
+                ],
                 "links": [{
                             "Name": "Repository",
                             "link": "https://github.com/joni23008/Backend-Web-Development"

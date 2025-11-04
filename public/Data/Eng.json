@@ -1,0 +1,346 @@
+{
+  
+     "Nav": {
+  "links": [
+    { "Name": "GitHub1", "github": "https://github.com/Tupolaa" },
+    { "Name": "LinkedIn1", "linkedin": "https://www.linkedin.com/in/teemutupola/" }
+  ]
+},
+  "Profile": {
+    "name": "Teemu Tupola",
+    "title": "Backend Developer",
+    "description": "I'm a young software developer from Hämeenlinna who never runs out of humor or questions! I am currently in my third year of studying Business Information Systems at HAMK.\n\nI have solid programming fundamentals and a passion for developing reliable, functional solutions in software development. My interests are especially focused on backend development, debugging, and fixing errors and bugs — areas where I get to fully use my problem-solving skills and curiosity.",
+    "quote": "\"I learn best by doing — with a small pinch of humor.\""
+  },
+  "Projects": {
+    "projects": [
+      {
+        "title": "AI-based Invoice Assistant",
+        "description": "An AI-powered invoice processing tool. The AI answers questions related to invoices and creates JSON and/or PDF summaries of them.",
+        "video": "/Media/2025-10-19 18-59-17.mp4",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "AI Invoice Assistant demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "AI Invoice Assistant image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "AI Invoice Assistant image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Demo",
+            "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0"
+          },
+          {
+            "Name": "Repository",
+            "link": "https://github.com/Tupolaa/BIP-AI-model"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/Python.png",
+            "alt": "Python icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          },
+          {
+            "icon": "/Media/Astro.png",
+            "alt": "Astro icon"
+          }
+        ]
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio website showcasing my skills and projects. Built with Next.js and styled with CSS.",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "Portfolio demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "Portfolio image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "Portfolio image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Demo",
+            "link": "https://github.com/Tupolaa/portfolio_tupola"
+          },
+          {
+            "Name": "Live Demo",
+            "link": "https://tupola.github.io/portfolio_tupola/"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/JS.png",
+            "alt": "JavaScript icon"
+          },
+          {
+            "icon": "/Media/REACT.png",
+            "alt": "React icon"
+          },
+          {
+            "icon": "/Media/CSS.png",
+            "alt": "CSS icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          }
+        ]
+      },
+      {
+        "title": "React Native Application",
+        "description": "A school project where we created a React Native application that fetches random recipes from TheMealDB API and displays them to the user.",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "React Native app demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "React Native app image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "React Native app image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Repository",
+            "link": "https://github.com/Tupolaa/Mobile_project"
+          },
+          {
+            "Name": "Backend Repository",
+            "link": "https://github.com/joni23008/Backend-Web-Development"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/JS.png",
+            "alt": "JavaScript icon"
+          },
+          {
+            "icon": "/Media/REACT.png",
+            "alt": "React icon"
+          },
+          {
+            "icon": "/Media/CSS.png",
+            "alt": "CSS icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          }
+        ]
+      },
+      {
+        "title": "Software Testing",
+        "description": "Final project for a course where we used Robot Framework for software testing. We performed tests on a website and learned practical software testing techniques.",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "Software Testing demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "Software Testing image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "Software Testing image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Repository",
+            "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/RF.png",
+            "alt": "Robot Framework icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          }
+        ]
+      },
+      {
+        "title": "LejosEV3",
+        "description": "A school project where we programmed a LejosEV3 LEGO robot to follow a color line and avoid obstacles.",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "LejosEV3 demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "LejosEV3 image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "LejosEV3 image 2"
+          }
+        ],
+        "links": [],
+        "Tech": [
+          {
+            "icon": "/Media/REST.png",
+            "alt": "REST API icon"
+          },
+          {
+            "icon": "/Media/Java.png",
+            "alt": "Java icon"
+          },
+          {
+            "icon": "/Media/HTML.png",
+            "alt": "HTML icon"
+          },
+          {
+            "icon": "/Media/CSS.png",
+            "alt": "CSS icon"
+          }
+        ]
+      },
+      {
+        "title": "Automation Robotics",
+        "description": "A school project where we used UiPath, Robot Framework, and Python to automate data extraction from PDF invoices.",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "Automation Robotics demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "Automation Robotics image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "Automation Robotics image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Repository",
+            "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/Python.png",
+            "alt": "Python icon"
+          },
+          {
+            "icon": "/Media/RF.png",
+            "alt": "Robot Framework icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          }
+        ]
+      },
+      {
+        "title": "Movie Review Website",
+        "description": "A website where you can write and read movie reviews. The site was created as a school project, and development continued into a mobile app using React Native (school project).",
+        "media": [
+          {
+            "type": "video",
+            "src": "/Media/reactnative.mp4",
+            "alt": "Movie Review demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "Movie Review image 1"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "Movie Review image 2"
+          }
+        ],
+        "links": [
+          {
+            "Name": "Repository",
+            "link": "https://github.com/joni23008/Backend-Web-Development"
+          },
+          {
+            "Name": "Website",
+            "link": "https://moviereview-472307.lm.r.appspot.com/"
+          },
+          {
+            "Name": "themoviedb - API",
+            "link": "https://www.themoviedb.org/"
+          }
+        ],
+        "Tech": [
+          {
+            "icon": "/Media/JS.png",
+            "alt": "JavaScript icon"
+          },
+          {
+            "icon": "/Media/REACT.png",
+            "alt": "React icon"
+          },
+          {
+            "icon": "/Media/Mongo.png",
+            "alt": "MongoDB icon"
+          },
+          {
+            "icon": "/Media/HBS.png",
+            "alt": "Handlebars icon"
+          },
+          {
+            "icon": "/Media/CSS.png",
+            "alt": "CSS icon"
+          },
+          {
+            "icon": "/Media/REST.png",
+            "alt": "REST API icon"
+          },
+          {
+            "icon": "/Media/GIT.png",
+            "alt": "GIT icon"
+          }
+        ]
+      }
+    ]
+  }
+}

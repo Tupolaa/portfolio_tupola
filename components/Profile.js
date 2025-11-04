@@ -1,9 +1,10 @@
 import React from 'react';
-import FinData from '../public/Data/Fin.json'; 
+import  { useLanguage } from '../components/LangChanger.js';
 
 const Profile = () => {
   // Correctly destructure from root level Profile
-  const profileData = FinData.Profile;
+   const { content } = useLanguage();
+    const profileData = content.Profile || {};
 
   return (
     <div className='profile-container'>
