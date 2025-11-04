@@ -17,11 +17,10 @@
       {
         "title": "AI-based Invoice Assistant",
         "description": "An AI-powered invoice processing tool. The AI answers questions related to invoices and creates JSON and/or PDF summaries of them.",
-        "video": "/Media/2025-10-19 18-59-17.mp4",
         "media": [
           {
             "type": "video",
-            "src": "/Media/reactnative.mp4",
+            "src": "https://youtu.be/Cb2bTOat2U0",
             "alt": "AI Invoice Assistant demo video"
           },
           {
@@ -115,7 +114,7 @@
         "media": [
           {
             "type": "video",
-            "src": "/Media/reactnative.mp4",
+            "src": "https://youtu.be/dO-wskIrzYQ",
             "alt": "React Native app demo video"
           },
           {

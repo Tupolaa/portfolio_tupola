@@ -18,11 +18,11 @@
         "projects": [{
                 "title": "AI-based Invoice assistant",
                 "description": "Tekoäly pohjainen laskujen prosessointi työkalu. Tekoäly vastaa kysymyksiin laskuihin liittyen ja tekee JSON ja/tai PDF yhteenvedon laskusta.",
-                "video": "/Media/2025-10-19 18-59-17.mp4",
+            
                 "media": [
                   {
                     "type": "video",
-                    "src": "/Media/reactnative.mp4",
+                    "src": "https://youtu.be/Cb2bTOat2U0",
                     "alt": "AI Invoice assistant demo video"
                   },
                   {
@@ -65,7 +65,6 @@
             {
                 "title": "Portfolio-sivusto",
                 "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
-                
                 "media": [
                   {
                     "type": "video",
@@ -115,11 +114,10 @@
             {
                 "title": "React native sovellus",
                 "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
-                
                 "media": [
                   {
                     "type": "video",
-                    "src": "/Media/reactnative.mp4",
+                    "src": "https://youtu.be/dO-wskIrzYQ",
                     "alt": "AI Invoice assistant demo video"
                   },
                   {
@@ -203,7 +201,7 @@
                 "media": [
                   {
                     "type": "video",
-                    "src": "/Media/reactnative.mp4",
+                    "src": "https://www.youtube.com/watch?v=gDR6V5OdnYg",
                     "alt": "AI Invoice assistant demo video"
                   },
                   {

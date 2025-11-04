@@ -1,6 +1,6 @@
 import React from 'react';
 import  { useLanguage } from '../components/LangChanger.js';
-
+import TiltedCard from '../components/TiltedCard.js';
 const Profile = () => {
   // Correctly destructure from root level Profile
    const { content } = useLanguage();
@@ -8,11 +8,20 @@ const Profile = () => {
 
   return (
     <div className='profile-container'>
-      <img 
-        className='profile-photo' 
-        src='/Media/OmaKuva.jpg' 
-        alt="Profile Image"
-      /> 
+      <TiltedCard 
+      
+  imageSrc="/Media/OmaKuva.jpg"
+  containerHeight="710px"
+  containerWidth="510px"
+  imageHeight="710px"
+  imageWidth="510px"
+  rotateAmplitude={12}
+  scaleOnHover={1.2}
+  showMobileWarning={false}
+  showTooltip={false}
+  altText="Profile Image"
+/>
+      
 
       <div className='profile-info'>
          <svg viewBox="0 0 1000 300">

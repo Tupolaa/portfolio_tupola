@@ -1,7 +1,21 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 function inferIsVideo(src = "") {
-  return /\.(mp4|webm|ogg)$/i.test(src);
+  // Add YouTube URL pattern check
+  const isYouTube = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)/.test(src);
+  const isVideoFile = /\.(mp4|webm|ogg)$/i.test(src);
+  return isYouTube || isVideoFile;
+}
+
+// Add function to get YouTube embed URL
+function getYouTubeEmbedUrl(url) {
+  if (!url) return "";
+  // Handle both youtube.com and youtu.be URLs
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return match && match[2].length === 11
+    ? `https://www.youtube.com/embed/${match[2]}?autoplay=1&mute=1`
+    : url;
 }
 
 export default function MediaCarousel({ media = [] }) {
@@ -33,6 +47,7 @@ export default function MediaCarousel({ media = [] }) {
 
   const item = media[index];
   const isVideo = item.type ? item.type === "video" : inferIsVideo(item.src);
+  const isYouTube = isVideo && /youtube|youtu\.be/.test(item.src);
 
   return (
     <div
@@ -64,17 +79,32 @@ export default function MediaCarousel({ media = [] }) {
         }}
       >
         {isVideo ? (
-          <video
-            key={item.src}
-            src={item.src}
-            controls
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="modal-video"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
+          isYouTube ? (
+            <iframe
+              key={item.src}
+              src={getYouTubeEmbedUrl(item.src)}
+              title={item.alt || "YouTube video"}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                width: "100%",
+                height: "100%",
+                border: "none",
+              }}
+            />
+          ) : (
+            <video
+              key={item.src}
+              src={item.src}
+              controls
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="modal-video"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          )
         ) : (
           <img
             key={item.src}

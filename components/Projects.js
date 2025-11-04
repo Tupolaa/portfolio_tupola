@@ -1,10 +1,13 @@
 // projektit joita olen tehnyt
 import React, { useState } from "react";
-import FinData from "../public/Data/Fin.json";
+import { useLanguage } from '../components/LangChanger.js';
 import MediaCarousel from "./MediaCarousel.js";
 
 const Projects = () => {
-  const { projects = [] } = FinData.Projects || {};
+  const { content } = useLanguage();
+  const projects = Array.isArray(content.Projects?.projects)
+    ? content.Projects.projects
+    : [];
   const [selectedProject, setSelectedProject] = useState(null);
 
   const closeModal = () => setSelectedProject(null);
