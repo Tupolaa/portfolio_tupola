@@ -18,9 +18,13 @@ export default function Home() {
       <Navbar />
       
       <main style={{ paddingTop: 100 }}>
-      <section style={sectionStyle}>
+      <section style={sectionStyle} id="Profile">
+          <section>
           <Profile/>
+          </section>
+          <section id="projects">
           <Projects/>
+          </section>
       </section>
       
       </main>

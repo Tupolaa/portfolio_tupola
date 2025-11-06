@@ -1,9 +1,12 @@
+
 {
-  
-     "Nav": {
-  "links": [
-    { "Name": "GitHub1", "github": "https://github.com/Tupolaa" },
-    { "Name": "LinkedIn1", "linkedin": "https://www.linkedin.com/in/teemutupola/" }
+    
+        "Nav": {
+          "links": [
+            { "Name": "Profile", "id": "Profile" },
+            { "Name": "Projects", "id": "projects" },
+            { "Name": "Skills", "id": "skills" },
+            { "Name": "Hobbies", "id": "skills" }
   ]
 },
   "Profile": {

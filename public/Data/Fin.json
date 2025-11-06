@@ -3,8 +3,10 @@
     
         "Nav": {
           "links": [
-            { "Name": "GitHub", "github": "https://github.com/Tupolaa" },
-            { "Name": "LinkedIn", "linkedin": "https://www.linkedin.com/in/teemutupola/" }
+            { "Name": "Profiili", "id": "Profile" },
+            { "Name": "Projektit", "id": "projects" },
+            { "Name": "Taidot", "id": "skills" },
+            { "Name": "Harrastukset", "id": "skills" }
   ]
 },
           

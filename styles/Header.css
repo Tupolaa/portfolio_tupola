@@ -5,87 +5,106 @@ header {
   right: 0;
   height: 70px;
   background-color: #000000;
-  
   border-bottom: 3px solid #00ffdd;
   z-index: 1000;
-}
-header:hover {
- box-shadow: 0 0 100px 20px rgb(2, 151, 250);
+
+  /* REMOVE overflow hidden — let shadows show */
+  overflow: visible;
 }
 
-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
+.navbar-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0 20px;
-  height: 100%;
+  align-items: center;
+  width: 100%;
+  background-color: #000000;
+  border-bottom: 2px solid #0fa2c7;
+  padding: 0.25rem 1rem;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+
+  /* REMOVE this line: overflow: hidden; */
+  overflow: visible;
 }
 
-header nav {
+nav {
   display: flex;
-  align-items: center;
+  gap: 1rem;
+  transition: all 0.1s ease;
+  width: 100%;
   justify-content: center;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
   align-items: center;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
+
+  /* REMOVE this too */
+  overflow: visible;
 }
 
-header nav ul li {
-  position: relative;
+/* fix: make button its own clipping area */
+.navButton {
+  position: relative; /* needed so ::before stays within button */
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.3rem 2rem;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+  cursor: pointer;
+  max-width: 100%;
+  box-shadow: 0 4px 0 #000000;
+  border: 1px solid #000000;
+
+  /* keep glow confined to button */
+  overflow: hidden;
+
+  box-sizing: border-box;
 }
 
-header nav ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 16px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* Cool underline animation */
-header nav ul li a::after {
+.navButton::before {
   content: '';
   position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #00ffdd;
-  transition: width 0.3s ease;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 0%,
+    rgb(5, 215, 243)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+
+  /* keep it below text */
+  z-index: 0;
+  pointer-events: none;
 }
 
-header nav ul li a:hover::after {
-  width: 100%;
+.navButton:hover {
+  transform: scale(1.05);
+   box-shadow: 0 0 25px 6px rgba(38, 12, 185, 0.8);
+   border: 2px solid #0eb4f16c;
+}
+
+.navButton:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(160%);
 }
 
 .lang-buttons {
   display: flex;
-  /* gap: 0.5rem; */
-  margin-left: 400px;
-  
+
+  /* allow button shadows to show naturally */
+  overflow: visible;
 }
-
-
 
 .lang-buttons button {
   text-transform: none;
   font-size: 1rem;
   color: #ffffff;
-  
-  
   background: none;
-  /* override nav button bg */
-  /* border: 0; */
   padding: 0.50rem 1rem;
   margin: 5% 0;
   border-radius: 0;
@@ -94,41 +113,11 @@ header nav ul li a:hover::after {
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
   box-shadow: none;
   width: 100%;
-  /* prevent nav button shadows from applying */
 }
-
-/* Hover effects for language buttons */
-.lang-buttons button:hover {
-  color: #000000;
-  transform: none;
-  box-shadow: none;
-  border-color: #ffffff;
-  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
-  /* background-color: #ffffff; */
-}
-
-/* Active effects for language buttons */
 .lang-buttons button.active {
   color: #000000;
   transform: none;
   box-shadow: none;
   border-color: #ffffff;
   background-color: #ffffff;
-}
-
-/* Glowing effect for links on hover */
-header nav ul li a:hover {
-  text-shadow: 0 0 8px rgba(0, 255, 221, 0.6);
-  color: #ffffff;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-  header nav ul {
-    gap: 20px;
-  }
-  
-  .header-actions {
-    margin-left: 20px;
-  }
 }

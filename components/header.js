@@ -7,28 +7,22 @@ import { useLanguage } from '../components/LangChanger.js';
 export default function Navbar() {
   const { lang, setLang, content } = useLanguage();
   const links = Array.isArray(content?.Nav?.links) ? content.Nav.links : [];
-
+  
+  const scrollTo = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+       // close menu after clicking (for mobile)
+    }
+  };
   return (
     <header>
-      <nav className="container">
-        <ul>
-          {links.map((item, i) => {
-            const name = item?.Name ?? 'Link';
-            const href =
-              item?.link ??
-              (name && item?.[name.toLowerCase()]) ??
-              '#';
-
-            return (
-              <li key={`${name}-${i}`}>
-                <Link href={href} target="_blank" rel="noopener noreferrer">
-                  {name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
+      <nav className="navbar-container">
+        {links.map((links) => (
+          <button  className="navButton" key={links.id} onClick={() => scrollTo(links.id)}>
+            {links.Name}
+          </button>
+        ))}
         <div className="lang-buttons">
           <button
             onClick={() => setLang('fi')}
