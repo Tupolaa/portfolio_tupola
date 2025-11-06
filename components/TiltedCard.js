@@ -18,10 +18,13 @@ export default function TiltedCard({
   overlayContent = null,
   displayOverlayContent = false,
 
-  // NEW: automated “hover” props
+  // Automated orbit options
   autoAnimate = true,
-  autoSpeed = 0.8, // radians per second
-  autoScale = 1.06 // scale to apply while auto-animating
+  autoSpeed = 0.8,
+  autoScale = 1.06,
+
+  // NEW: control pausing behavior
+  pauseWhenHidden = true
 }) {
   const ref = useRef(null);
 
@@ -36,13 +39,55 @@ export default function TiltedCard({
 
   const [lastY, setLastY] = useState(0);
 
-  // ===== Mouse interactions (kept working if autoAnimate=false) =====
+  // ---- FIX: track visibility and RAF id safely
+  const rafRef = useRef(0);
+  const startRef = useRef(0);
+  const isVisibleRef = useRef(true);               // IntersectionObserver result
+  const isPageVisibleRef = useRef(true);           // Page Visibility API
+
+  // Observe element visibility within viewport
+  useEffect(() => {
+    if (!pauseWhenHidden || !ref.current) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = !!entry?.isIntersecting;
+        // Soft-dim when off-screen
+        if (!isVisibleRef.current && autoAnimate) {
+          opacity.set(0);
+          scale.set(1); // avoid “stuck zoomed” when navigating away
+        } else if (autoAnimate) {
+          opacity.set(1);
+          scale.set(autoScale);
+        }
+      },
+      { root: null, threshold: 0.1 }
+    );
+    io.observe(ref.current);
+    return () => io.disconnect();
+  }, [pauseWhenHidden, autoAnimate, autoScale, opacity, scale]);
+
+  // Observe page/tab visibility
+  useEffect(() => {
+    if (!pauseWhenHidden) return;
+    const onVis = () => {
+      isPageVisibleRef.current = document.visibilityState === 'visible';
+      // When user returns, bump opacity/scale back
+      if (isPageVisibleRef.current && autoAnimate) {
+        opacity.set(1);
+        scale.set(autoScale);
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
+    onVis();
+    return () => document.removeEventListener('visibilitychange', onVis);
+  }, [pauseWhenHidden, autoAnimate, autoScale, opacity, scale]);
+
+  // ===== Mouse interactions stay the same =====
   function handleMouse(e) {
     if (!ref.current || autoAnimate) return;
     const rect = ref.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left - rect.width / 2;
     const offsetY = e.clientY - rect.top - rect.height / 2;
-
     const rotationX = (offsetY / (rect.height / 2)) * -rotateAmplitude;
     const rotationY = (offsetX / (rect.width / 2)) * rotateAmplitude;
 
@@ -72,40 +117,57 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
-  // ===== Automated orbiting tilt =====
+  // ===== Automated orbiting tilt (RAFs safely started/stopped) =====
   useEffect(() => {
-    if (!autoAnimate) return;
+    // Always cancel any previous loop before starting a new one
+    if (rafRef.current) cancelAnimationFrame(rafRef.current);
 
-    let raf = 0;
-    let start = performance.now();
+    if (!autoAnimate) {
+      // Reset to neutral when disabling auto mode
+      scale.set(1);
+      opacity.set(0);
+      rotateX.set(0);
+      rotateY.set(0);
+      return;
+    }
 
-    // set a gentle scale + show caption slightly (optional)
+    startRef.current = performance.now();
     scale.set(autoScale);
     opacity.set(1);
 
     const tick = (now) => {
-      const t = (now - start) / 1000; // seconds
-      // circular orbit
-      const rx = Math.sin(t * autoSpeed) * rotateAmplitude;   // up/down tilt
-      const ry = Math.cos(t * autoSpeed) * rotateAmplitude;   // left/right tilt
+      // Pause updates when off-screen or tab hidden
+      const shouldRun =
+        !pauseWhenHidden ||
+        (isVisibleRef.current && isPageVisibleRef.current);
 
-      rotateX.set(rx);
-      rotateY.set(ry);
+      if (shouldRun) {
+        const t = (now - startRef.current) / 1000;
+        const rx = Math.sin(t * autoSpeed) * rotateAmplitude;
+        const ry = Math.cos(t * autoSpeed) * rotateAmplitude;
 
-      // If you want the tooltip to “follow” center-ish:
-      if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
-        x.set(rect.width / 2);
-        y.set(rect.height / 2);
+        rotateX.set(rx);
+        rotateY.set(ry);
+
+        if (ref.current) {
+          const rect = ref.current.getBoundingClientRect();
+          x.set(rect.width / 2);
+          y.set(rect.height / 2);
+        }
       }
-
-      raf = requestAnimationFrame(tick);
+      rafRef.current = requestAnimationFrame(tick);
     };
 
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoAnimate, autoSpeed, rotateAmplitude]);
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      // Ensure nothing stays “tilted” across page switches
+      rotateX.set(0);
+      rotateY.set(0);
+      opacity.set(0);
+      scale.set(1);
+    };
+  }, [autoAnimate, autoSpeed, rotateAmplitude, autoScale, pauseWhenHidden]); // deps intentionally exclude motion values
 
   return (
     <figure
@@ -132,7 +194,6 @@ export default function TiltedCard({
           className="tilted-card-img"
           style={{ width: imageWidth, height: imageHeight }}
         />
-
         {displayOverlayContent && overlayContent && (
           <motion.div className="tilted-card-overlay">{overlayContent}</motion.div>
         )}

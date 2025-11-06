@@ -8,9 +8,9 @@ import Projects from "../components/Projects.js";
 
 export default function Home() {
    const sectionStyle = { 
-    maxWidth: 1200, 
+    maxWidth: 1400, 
     margin: "0 auto", 
-    padding: "20px"  /* Add padding */
+    padding: "20px"  
   };
 
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
       
       <main style={{ paddingTop: 100 }}>
-      <section>
+      <section style={sectionStyle}>
           <Profile/>
           <Projects/>
       </section>

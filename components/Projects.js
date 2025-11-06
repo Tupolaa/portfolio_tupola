@@ -1,5 +1,5 @@
 // projektit joita olen tehnyt
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLanguage } from '../components/LangChanger.js';
 import MediaCarousel from "./MediaCarousel.js";
 
@@ -11,10 +11,20 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const closeModal = () => setSelectedProject(null);
+  useEffect(() => {
+  if (selectedProject) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [selectedProject]);
   return (
     <section className="projects-section">
-      <h2>Projektit</h2>
+      <h2>{content.Projects?.header}</h2>
 
       <div className="projects-container">
         {projects.map((project) => (
@@ -67,7 +77,7 @@ const Projects = () => {
     ]
   }
 />
-
+            
             <p className="modal-description">
               {selectedProject.description}
             </p>
@@ -94,7 +104,7 @@ const Projects = () => {
                     key={i}
                     src={t.icon}
                     alt={t.alt || `Tech ${i + 1}`}
-                    className="skill-icon"
+                    className="skill-icon-modal"
                   />
                 ))}
               </div>

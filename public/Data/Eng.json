@@ -13,6 +13,7 @@
     "quote": "\"I learn best by doing — with a small pinch of humor.\""
   },
   "Projects": {
+    "header": "Projects",
     "projects": [
       {
         "title": "AI-based Invoice Assistant",

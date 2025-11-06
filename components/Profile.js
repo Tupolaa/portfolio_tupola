@@ -10,16 +10,16 @@ const Profile = () => {
     <div className='profile-container'>
       <TiltedCard
           imageSrc="/Media/OmaKuva.jpg"
-          containerHeight="710px"
-          containerWidth="510px"
-          imageHeight="710px"
-          imageWidth="510px"
-          rotateAmplitude={12}
+          containerHeight="600px"
+          containerWidth="410px"
+          imageHeight="500px"
+          imageWidth="310px"
+          rotateAmplitude={7}
           showMobileWarning={false}
           showTooltip={false}
           autoAnimate={true}
           autoSpeed={1}
-          autoScale={1.58}
+          autoScale={1.28}
           />
 
       

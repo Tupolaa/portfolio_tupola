@@ -126,7 +126,9 @@ svg text {
         stroke-width: 0;
     }
 }
-
+.profile-info{
+    margin-left: 100px;
+}
 
 
 .profile-info p {

@@ -15,20 +15,23 @@
         "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
     },
     "Projects": {
+      "header": "Projektit",
         "projects": [{
                 "title": "AI-based Invoice assistant",
-                "description": "Tekoäly pohjainen laskujen prosessointi työkalu. Tekoäly vastaa kysymyksiin laskuihin liittyen ja tekee JSON ja/tai PDF yhteenvedon laskusta.",
+                "description": "Osallistuin RUN-EU BIP Smart Everything -kurssiin Espanjan Burgosissa, jossa kehitettiin kansaisvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
             
                 "media": [
                   {
                     "type": "video",
                     "src": "https://youtu.be/Cb2bTOat2U0",
-                    "alt": "AI Invoice assistant demo video"
+                    "alt": "AI Invoice assistant demo video",
+                    "desc": "Esittely FIMSUM"
                   },
                   {
                     "type": "image",
                     "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
+                    "alt": "AI Invoice assistant image 1",
+                    "desc": "Esittely YEEEES"
                   },
                   {
                     "type": "image",
