@@ -53,7 +53,7 @@
 .project-box {
   padding: 20px;
   width: 300px;
-  height: 210px;
+  height: 220px;
   background-color: #333;
   border: 2px solid #0eb5f1;
   text-align: center;
@@ -214,8 +214,8 @@
 }
 
 .skill-icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.2s ease;
 }
 .skill-icon:hover {

@@ -3,6 +3,7 @@ import '../styles/Header.css'
 import "../styles/Profile.css"
 import "../styles/Projects.css"
 import "../styles/TiltedCard.css"
+import "../styles/Skills.css"
 import { LanguageProvider } from "../components/LangChanger.js";
 
 

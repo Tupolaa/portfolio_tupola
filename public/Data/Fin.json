@@ -1,353 +1,203 @@
-
 {
-    
-        "Nav": {
-          "links": [
-            { "Name": "Profiili", "id": "Profile" },
-            { "Name": "Projektit", "id": "projects" },
-            { "Name": "Taidot", "id": "skills" },
-            { "Name": "Harrastukset", "id": "skills" }
-  ]
-},
-          
-        "Profile": {
-        "name": "Teemu Tupola",
-        "title": "Backend Developer",
-        "description": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa.\n\n Hallitsen ohjelmoinnin perusteet ja olen innokas kehittämään luotettavia, toimivia ratkaisuja ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
-        "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
-    },
-    "Projects": {
-      "header": "Projektit",
-        "projects": [{
-                "title": "AI-based Invoice assistant",
-                "description": "Osallistuin RUN-EU BIP Smart Everything -kurssiin Espanjan Burgosissa, jossa kehitettiin kansaisvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
-            
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "https://youtu.be/Cb2bTOat2U0",
-                    "alt": "AI Invoice assistant demo video",
-                    "desc": "Esittely FIMSUM"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1",
-                    "desc": "Esittely YEEEES"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [{
-                            "Name": "Demo",
-                            "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0"
-                        },
-                        {
-                            "Name": "Repository",
-                            "link": "https://github.com/Tupolaa/BIP-AI-model"
-                        }
-                    ],
-                "Tech": [
-               {
-                "icon": "/Media/Python.png",
-                "alt": "Python icon"
-               },
-               
-                {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                },
-                {
-                  "icon": "/Media/Astro.png",
-                  "alt": "Astro icon"
-                }
-          
-            ]
-            },
-            {
-                "title": "Portfolio-sivusto",
-                "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "/Media/reactnative.mp4",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [{
-                            "Name": "Demo",
-                            "link": "https://github.com/Tupolaa/portfolio_tupola"
-                          },
-                          {
-                            "Name": "Live Demo",
-                            "link": "https://tupola.github.io/portfolio_tupola/"
-                          }],
-                "Tech": [
-               {
-                "icon": "/Media/JS.png",
-                "alt": "JS icon"
-               },
-                {
-                  "icon": "/Media/REACT.png",
-                  "alt": "REACT icon"
-                },
-                {
-                  "icon": "/Media/CSS.png",
-                  "alt": "CSS icon"
-                },
-                {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                }
-          
-            ]
-            },
-            
-            {
-                "title": "React native sovellus",
-                "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "https://youtu.be/dO-wskIrzYQ",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [
-                          {
-                            "Name": "Repository",
-                            "link": "https://github.com/Tupolaa/Mobile_project"
-                          },
-                        {
-                            "Name": "Backend Repository",
-                            "link": "https://github.com/joni23008/Backend-Web-Development"
-                        }],
-               "Tech": [
-               {
-                "icon": "/Media/JS.png",
-                "alt": "JS icon"
-               },
-                {
-                  "icon": "/Media/REACT.png",
-                  "alt": "REACT icon"
-                },
-                {
-                  "icon": "/Media/CSS.png",
-                  "alt": "CSS icon"
-                },
-                {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                }
-          
-            ]
-            },
-            {
-                "title": "Ohjemistotestaus",
-                "description": "Kurssin lopputyö, jonka aikana hyödynsimme Robot Frameworkia ohjelmistotestauksessa. Teimme testejä nettisivulle ja opettelimme ohjelmistotestausta.",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "/Media/reactnative.mp4",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [{
-                            "Name": "Repository",
-                            "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti"
-                          }],
-                "Tech": [
-               {
-                "icon": "/Media/RF.png",
-                "alt": "Robot Framework icon"
-               },
-               {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                }
-          
-            ]
-            },{
-                "title": "LejosEV3",
-                "description": "Kouluprojekti, jossa ohjelmoimme LejosEV3 lego robotin seuraamaan väriviivaa ja väistämään esteitä.",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "https://www.youtube.com/watch?v=gDR6V5OdnYg",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [],
-                "Tech": [
-               {
-                "icon": "/Media/REST.png",
-                "alt": "REST API icon"
-               },
-                {
-                    "icon": "/Media/Java.png",
-                    "alt": "Java icon"
-                  },
-                  {
-                    "icon": "/Media/HTML.png",
-                    "alt": "HTML icon"
-                  },
-                  {
-                    "icon": "/Media/CSS.png",
-                    "alt": "CSS icon"
-                  }
-          
-            ]
-            },{
-                "title": "Automaatiorobotiikka",
-                "description": "Kouluprojekti, jossa käytimme UiPathia, Robot Frameworkia ja Pythonia automatisoimaan tiedon haku PDF-laskuilta.",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "/Media/reactnative.mp4",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [{
-                            "Name": "Repository",
-                            "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka"
-                          }],
-                "Tech": [
-              
-               {
-                  "icon": "/Media/Python.png",
-                  "alt": "Python icon"
-                },
-                {
-                "icon": "/Media/RF.png",
-                "alt": "Robot Framework icon"
-               },
-                {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                }
-          
-            ]
-            },{
-                "title": "Elokuvien arviointisivusto",
-                "description": "sivusto, jossa voit kirjoittaa ja lukea arvosteluita elokuvista.  Sivuston tehtiin koulutyönä ja kehitystä ollaan jatkettu mobiili sovelluksen muodossa React nativea hyödyntäen(koulutyö).",
-                "media": [
-                  {
-                    "type": "video",
-                    "src": "/Media/reactnative.mp4",
-                    "alt": "AI Invoice assistant demo video"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/Astro.png",
-                    "alt": "AI Invoice assistant image 1"
-                  },
-                  {
-                    "type": "image",
-                    "src": "/Media/AI-invoice-assistant-2.png",
-                    "alt": "AI Invoice assistant image 2"
-                  }
-                ],
-                "links": [{
-                            "Name": "Repository",
-                            "link": "https://github.com/joni23008/Backend-Web-Development"
-                          },
-                          {
-                            "Name": "Website",
-                            "link": "https://moviereview-472307.lm.r.appspot.com/"
-                          },
-                        {
-                            "Name": "themoviedb - API",
-                            "link": "https://www.themoviedb.org/"
-                        }],
-                "Tech": [
-               {
-                "icon": "/Media/JS.png",
-                "alt": "JS icon"
-               },
-                {
-                  "icon": "/Media/REACT.png",
-                  "alt": "REACT icon"
-                },
-                {
-                  "icon": "/Media/Mongo.png",
-                  "alt": "Mongo icon"
-                },
-                {
-                  "icon": "/Media/HBS.png",
-                  "alt": "HBS icon"
-                },
-                {
-                  "icon": "/Media/CSS.png",
-                  "alt": "CSS icon"
-                },
-                {
-                  "icon": "/Media/REST.png",
-                  "alt": "REST API icon"
-                },
-                {
-                  "icon": "/Media/GIT.png",
-                  "alt": "GIT icon"
-                }
-          
-            ]
-            }
+  "Nav": {
+    "links": [
+      { "Name": "Profiili", "id": "Profile" },
+      { "Name": "Projektit", "id": "projects" },
+      { "Name": "Taidot", "id": "skills" },
+      { "Name": "Harrastukset", "id": "hobbies" }
+    ]
+  },
+
+  "Profile": {
+    "name": "Teemu Tupola",
+    "title": "Backend Developer",
+    "description": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa.\n\n Hallitsen ohjelmoinnin perusteet ja olen innokas kehittämään luotettavia, toimivia ratkaisuja ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
+    "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
+  },
+
+  "Projects": {
+    "header": "Projektit",
+    "projects": [
+      {
+        "title": "AI-based Invoice assistant",
+        "description": "Osallistuin RUN-EU BIP Smart Everything -kurssiin Espanjan Burgosissa, jossa kehitettiin kansaisvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
+        "media": [
+          {
+            "type": "video",
+            "src": "https://youtu.be/Cb2bTOat2U0",
+            "alt": "AI Invoice assistant demo video",
+            "desc": "Esittely FIMSUM"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Astro.png",
+            "alt": "AI Invoice assistant image 1",
+            "desc": "Esittely YEEEES"
+          },
+          {
+            "type": "image",
+            "src": "/Media/AI-invoice-assistant-2.png",
+            "alt": "AI Invoice assistant image 2"
+          }
+        ],
+        "links": [
+          { "Name": "Demo", "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0" },
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" }
+        ],
+        "Tech": [
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Astro.png", "alt": "Astro icon" }
+        ]
+      },
+
+      {
+        "title": "Henkilökohtainen portfolioni",
+        "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
+        "media": [
+          { "type": "image", "src": "/media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
+          { "type": "image", "src": "/media/portfolio1.png", "alt": "Screenshot of portfolio website in development" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/portfolio_tupola" }
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "React native sovellus",
+        "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
+        "media": [
+          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" },
+          { "Name": "Backend Repository", "link": "https://github.com/joni23008/Backend-Web-Development" }
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "Ohjelmistotestaus",
+        "description": "Kurssin lopputyö, jonka aikana hyödynsimme Robot Frameworkia ohjelmistotestauksessa. Teimme testejä nettisivulle ja opettelimme ohjelmistotestausta.",
+        "media": [
+          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Testing demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
+        ],
+        "Tech": [
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "LejosEV3",
+        "description": "Kouluprojekti, jossa ohjelmoimme LejosEV3 lego robotin seuraamaan väriviivaa ja väistämään esteitä.",
+        "media": [
+          { "type": "video", "src": "https://www.youtube.com/watch?v=gDR6V5OdnYg", "alt": "LejosEV3 demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+        ],
+        "links": [],
+        "Tech": [
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
+        ]
+      },
+
+      {
+        "title": "Automaatiorobotiikka",
+        "description": "Kouluprojekti, jossa käytimme UiPathia, Robot Frameworkia ja Pythonia automatisoimaan tiedon haku PDF-laskuilta.",
+        "media": [
+          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Automation demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
+        ],
+        "Tech": [
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "Elokuvien arviointisivusto",
+        "description": "Sivusto, jossa voit kirjoittaa ja lukea arvosteluita elokuvista. Sivuston tehtiin koulutyönä ja kehitystä ollaan jatkettu mobiilisovelluksena React Nativea hyödyntäen.",
+        "media": [
+          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Movie review demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
+          { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },
+          { "Name": "themoviedb - API", "link": "https://www.themoviedb.org/" }
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/Mongo.png", "alt": "Mongo icon" },
+          { "icon": "/Media/HBS.png", "alt": "HBS icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       }
-    }
-  
+    ]
+  },
 
-
-    
+  "Skills": {
+    "header": "Taidot",
+    "items": [
+      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "5", "desc": "Testing description for Python", "slot": "Programming" },
+      { "name": "Scrum perusteet", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "level": "5", "desc": "Testing description for Scrum perusteet", "slot": "Management" },
+      { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "5", "desc": "Testing description for Jira", "slot": "Management" },
+      { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "5", "desc": "Testing description for Confluence", "slot": "Management" },
+      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon", "level": "5", "desc": "Testing description for Robot Framework", "slot": "Programming" },
+      { "name": "Java OOP", "icon": "/Media/Java.png", "alt": "Java icon", "level": "5", "desc": "Testing description for Java OOP", "slot": "Programming" },
+      { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "Testing description for MySQL", "slot": "Database" },
+      { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "Testing description for WordPress", "slot": "Programming" },
+      { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "5", "desc": "Testing description for REST API", "slot": "Programming" },
+      { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "5", "desc": "Testing description for GIT", "slot": "Programming" },
+      { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "5", "desc": "Testing description for JavaScript", "slot": "Programming" },
+      { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon", "level": "5", "desc": "Testing description for HTML", "slot": "Programming" },
+      { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "level": "5", "desc": "Testing description for CSS", "slot": "Programming" },
+      { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "level": "5", "desc": "Testing description for React + React Native", "slot": "Programming" },
+      { "name": "Handlebars", "icon": "/Media/HBS.png", "alt": "HBS icon", "level": "5", "desc": "Testing description for Handlebars", "slot": "Programming" },
+      { "name": "MongoDB", "icon": "/Media/Mongo.png", "alt": "Mongo icon", "level": "5", "desc": "Testing description for MongoDB", "slot": "Database" },
+      { "name": "Astro", "icon": "/Media/Astro.png", "alt": "Astro icon", "level": "5", "desc": "Testing description for Astro", "slot": "Programming" },
+      { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "level": "5", "desc": "Testing description for Node.js", "slot": "Programming" },
+      { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "5", "desc": "Testing description for Express.js", "slot": "Programming" },
+      { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "5", "desc": "Testing description for PHP", "slot": "Programming" },
+      { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "5", "desc": "Testing description for UiPath", "slot": "Programming" },
+      { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Testing description for Android Studio", "slot": "Programming" },
+      { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Testing description for Google Cloud", "slot": "Cloud" },
+      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "5", "desc": "Testing description for Hugging Face", "slot": "Programming" },
+      { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "5", "desc": "Testing description for Postman", "slot": "Programming" },
+      { "name": "Windows käyttöjärjestelmän perusteet", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Testing description for Windows perusteet", "slot": "Soft Skills" },
+      { "name": "Koneoppiminen (KNN, K-Means, SVM, Linear regression)", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "5", "desc": "Testing description for Koneoppiminen", "slot": "Programming" },
+      { "name": "Datan analysointi Pythonilla", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "5", "desc": "Testing description for Datan analysointi", "slot": "Programming" }
+    ]
+  }
+}

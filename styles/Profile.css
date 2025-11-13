@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
     gap: 100px;
-    max-width: 1700px;
+    max-width: 105%;
     margin: 0 auto;
     padding: 20px;
 }

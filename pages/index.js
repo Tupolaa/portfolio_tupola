@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/header.js";
 import Profile from "../components/Profile.js";
 import Projects from "../components/Projects.js";
-
+import Skills from "../components/Skills.js";
 
 
 
@@ -24,6 +24,9 @@ export default function Home() {
           </section>
           <section id="projects">
           <Projects/>
+          </section>
+          <section id="skills">
+          <Skills/>
           </section>
       </section>
       

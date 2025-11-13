@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import React from 'react';
 import { useLanguage } from '../components/LangChanger.js';
 
@@ -12,7 +11,7 @@ export default function Navbar() {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-       // close menu after clicking (for mobile)
+       
     }
   };
   return (
