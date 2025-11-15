@@ -4,36 +4,41 @@ import Profile from "../components/Profile.js";
 import Projects from "../components/Projects.js";
 import Skills from "../components/Skills.js";
 import Info from "../components/info.js";
+import Footer from "../components/Footer.js";
 
 
 
 export default function Home() {
-   const sectionStyle = { 
-    maxWidth: 1400, 
-    margin: "0 auto", 
-    padding: "20px"  
+  const sectionStyle = {
+    maxWidth: 1400,
+    margin: "0 auto",
+    padding: "20px",
   };
 
   return (
     <>
       <Navbar />
-      
+
       <main style={{ paddingTop: 100 }}>
-      <section style={sectionStyle} id="Profile">
+        {/* Main content wrapper */}
+        <section style={sectionStyle} id="Profile">
           <section>
-          <Profile/>
+            <Profile />
           </section>
+
           <section id="projects">
-          <Projects/>
+            <Projects />
           </section>
+
           <section id="skills">
-          <Skills/>
+            <Skills />
           </section>
+
           <section id="Info">
-          <Info/>
+            <Info />
           </section>
-      </section>
-      
+        </section>
+        <Footer />
       </main>
     </>
   );

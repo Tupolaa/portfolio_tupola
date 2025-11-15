@@ -5,6 +5,7 @@ import "../styles/Projects.css"
 import "../styles/TiltedCard.css"
 import "../styles/Skills.css"
 import "../styles/info.css"
+import "../styles/Footer.css"
 import { LanguageProvider } from "../components/LangChanger.js";
 
 

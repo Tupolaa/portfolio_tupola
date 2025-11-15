@@ -411,6 +411,21 @@
       "icon": "/Media/data.png"
     }
   ]
-
-}
+},
+"footer": {
+        "Links": [
+            {
+                "href": "https://github.com/Tupolaa",
+                "label": "Github",
+                "img": "/Media/GIT.png",
+                "alt": "GitHub"
+            },
+            {
+                "href": "https://www.linkedin.com/in/teemutupola/",
+                "label": "LinkedIn",
+                "img": "/Media/Linkkari.png",
+                "alt": "LinkedIn"
+            }
+        ]
+    }
 }
