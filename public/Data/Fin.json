@@ -173,8 +173,8 @@
   { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "8", "desc": "Express.js on tuttu muutamasta projektista ja ollut aktiivisessa käytössä viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
   { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "2", "desc": "Olen käyttänyt hiukan PHP:tä ja siitä on jonkun aikaa.", "slot": "Ohjelmointi" },
   { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Käytimme UIPathia automaatiotestaus projektissa", "slot": "Kehittäjän työkalut" },
-  { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Android studio oli käytössä react native projektissa.", "slot": "Kehittäjän työkalut" },
-  { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Julkaisin Node.js Backend sivuston Google Cloudiin.", "slot": "Pilvipalvelut" },
+  { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Android studio oli käytössä react native projektissa.", "slot": "Kehittäjän työkalut" },
+  { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Julkaisin Node.js Backend sivuston Google Cloudiin.", "slot": "Pilvipalvelut" },
   { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Haimme AI-kurssila Llama laajankielimallin hugging face -alustalta.", "slot": "Kehittäjän työkalut" },
   { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Postman on ollut usein käytössä API rajapintojen testauksessa.", "slot": "Kehittäjän työkalut" },
   { "name": "Windows käyttöjärjestelmän perusteet", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Osaan CMD ja PS peruskäytön.", "slot": "Kehittäjän työkalut" },
@@ -193,7 +193,7 @@
   { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Opettelen juuri JUnitin käyttöä uuden projektin merkeissä", "slot": "Ohjelmointi" },
   { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
-  { "name": "Expo", "icon": "/Media/Expo.png", "alt": "Expo icon", "level": "6", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" }
+  { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" }
 ]
   },
   "info": {

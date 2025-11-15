@@ -171,8 +171,8 @@
       { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "8", "desc": "Used actively in a backend project.", "slot": "Programming" },
       { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "2", "desc": "Some basic usage in the past.", "slot": "Programming" },
       { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Used in an automation testing project.", "slot": "Developer Tools" },
-      { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Used in React Native project.", "slot": "Developer Tools" },
-      { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
+      { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Used in React Native project.", "slot": "Developer Tools" },
+      { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
       { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Used to fetch the Llama language model during AI course.", "slot": "Developer Tools" },
       { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Used frequently for API testing.", "slot": "Developer Tools" },
       { "name": "Windows basics", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Basic CMD and PowerShell usage.", "slot": "Developer Tools" },
@@ -191,7 +191,7 @@
       { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Currently learning JUnit in a project.", "slot": "Developer Tools" },
       { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
-      { "name": "Expo", "icon": "/Media/Expo.png", "alt": "Expo icon", "level": "6", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
+      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
     ]
   },
 
