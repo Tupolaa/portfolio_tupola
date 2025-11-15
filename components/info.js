@@ -64,7 +64,7 @@ const toImageArray = (pic) => {
     content: [
       profileData.Abilities?.Info,
     ].filter(Boolean),
-    //image: profileData.Abilities?.Pic || null,
+    image: profileData.Abilities?.Pic || null,
     // ei kuvaa ollenkaan????
   },
   {
@@ -73,6 +73,13 @@ const toImageArray = (pic) => {
     content: [profileData.Goals?.Info].filter(Boolean),
     image: profileData.Goals?.Pic || null,
     //"rise up" kuva nuoli ylös että suunta ylös
+  },
+  {
+    type: "text",
+    title: profileData.LifeCareer?.Header || "Free Time",
+    content: [profileData.LifeCareer?.Info].filter(Boolean),
+    image: profileData.LifeCareer?.Pic || null,
+    //metsuri kuva
   },
   {
     type: "text",

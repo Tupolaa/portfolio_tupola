@@ -102,7 +102,7 @@ export default function MediaCarousel({ media = [] }) {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: "100%", // full width of info-section
+        maxWidth: "100%", // full width inside info-section
         margin: "16px 0",
         borderRadius: 12,
         overflow: "hidden",
@@ -112,10 +112,7 @@ export default function MediaCarousel({ media = [] }) {
       {/* viewport */}
       <div className="mc-viewport" style={viewportStyle}>
         {isHobbies ? (
-          <div
-            className="mc-hobbies-wrapper"
-            style={{ width: "100%" }}
-          >
+          <div className="mc-hobbies-wrapper" style={{ width: "100%" }}>
             {item.title && (
               <h3
                 style={{
@@ -191,7 +188,7 @@ export default function MediaCarousel({ media = [] }) {
                           height: "auto",
                           borderRadius: 12,
                           objectFit: "cover",
-                          border: "2px solid rgba(0, 58, 250, 0.7)",
+                          border: "1px solid rgba(0, 58, 250, 0.16)",
                         }}
                       />
                     )}
@@ -258,14 +255,15 @@ export default function MediaCarousel({ media = [] }) {
                 src={item.image}
                 alt={item.imageAlt || item.title || "Image"}
                 style={{
-                  marginTop: 16,
+                  marginTop: 24,
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",
-                  width: 180,
+                  width: "100%",      // fill the slide width
+                  maxWidth: "700px",  // ← control how BIG it can go
                   height: "auto",
                   objectFit: "cover",
-                  borderRadius: "30%",
+                  borderRadius: "20%",
                   border: "3px solid #00ffdd",
                 }}
               />
