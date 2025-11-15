@@ -221,18 +221,22 @@
   "Harrastukset": [
     
     {
+      "title": "Koodaus",
       "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien kielien ja teknologioiden oppimisesta sekä erilaisten projektien tekemisestä.",
       "icon": "/Media/AI_Koodaus.png"
     },
     {
+      "title": "Frisbeegolf",
       "Frisbeegolf": "Aloitin frisbeegolfin kesällä 2024, ja jäin nopeasti lajiin koukkuun. Käyn heittämässä pääosin kesäisin, joko yksin tai kavereiden kanssa.",
       "icon": "/Media/AI_Friba.png"
     },
     {
+      "title": "Lenkkeily",
       "Lenkkeily": "Lenkkeily on minulle tapa tyhjentää päätä, saada raitista ilmaa ja viettää aikaa ystävien kanssa jo usean vuoden ajan. Se toimii hyvänä vastapainona koneella työskentelylle ja auttaa pitämään arjen tasapainossa.",
       "icon": "/Media/AI_Lenkki.png"
     },
     {
+      "title": "Pelaaminen",
       "Pelaaminen": "Olen pelannut erilaisia tietokonepelejä noin yhdeksän vuoden ajan. Pelaan pääasiassa FPS-pelejä sekä F1 2025 -peliä.",
       "icon": "/Media/AI_Pelaa.png"
     }

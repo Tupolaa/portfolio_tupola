@@ -220,18 +220,22 @@
     "Hobbytitle": "Hobbies",
     "Harrastukset": [
       {
+        "title": "Programming",
         "Koodaus": "Programming is both a hobby and a passion for me. I enjoy learning new languages and technologies and building meaningful projects.",
         "icon": "/Media/AI_Koodaus.png"
       },
       {
+        "title": "Disc Golf",
         "Frisbeegolf": "I started disc golf in summer 2024 and quickly got hooked. I mostly play during the summer, either alone or with friends.",
         "icon": "/Media/AI_Friba.png"
       },
       {
+        "title": "Running",
         "Lenkkeily": "Running helps me clear my head, get fresh air, and spend time with friends. It balances the screen-focused work and keeps life in good rhythm.",
         "icon": "/Media/AI_Lenkki.png"
       },
       {
+        "title": "Gaming",
         "Pelaaminen": "I have played computer games for about nine years, mainly FPS games and F1 2025.",
         "icon": "/Media/AI_Pelaa.png"
       }

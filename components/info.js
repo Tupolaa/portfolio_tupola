@@ -1,4 +1,4 @@
-// Info.jsx
+// Info.js
 import React from "react";
 import { useLanguage } from "./LangChanger.js";
 import MediaCarousel from "./MediaCarousel.js";
@@ -7,45 +7,33 @@ const Info = () => {
   const { content } = useLanguage();
   const profileData = content.info || {};
 
-  // Harrastukset: array of objects like { "Koodaus": "desc..." }
   const hobbiesArray = Array.isArray(profileData.Harrastukset)
     ? profileData.Harrastukset
     : [];
-const toImageArray = (pic) => {
-  if (!pic) return [];
-  return Array.isArray(pic) ? pic.filter(Boolean) : [pic];
-};
-  // Normalize hobbies into { name, text, image } objects
+
+  
   const hobbies = hobbiesArray
   .map((hobby) => {
     if (!hobby) return null;
 
-    // Separate icon from the rest
-    const { icon, ...rest } = hobby;
+    const { title, icon, ...rest } = hobby;
+    if (!title) return null;
 
-    const entries = Object.entries(rest);
-    if (!entries.length) return null;
+    // Find first non-empty hobby description key
+    const [key, value] = Object.entries(rest)[0] || [];
 
-    const [name, value] = entries[0];
-
-    // value can be a plain string or an object
+    let text = "";
     if (typeof value === "string") {
-      return {
-        name,
-        text: value,
-        image: icon || null, // ← use top-level icon
-      };
+      text = value;
+    } else if (value && typeof value === "object") {
+      text = value.text || "";
     }
 
-    if (value && typeof value === "object") {
-      return {
-        name,
-        text: value.text || "",
-        image: icon || value.image || null, // prefer icon, fallback to nested image
-      };
-    }
-
-    return null;
+    return {
+      name: title,        // <-- use the provided title
+      text,
+      image: icon || null,
+    };
   })
   .filter(Boolean);
 
@@ -65,28 +53,28 @@ const toImageArray = (pic) => {
       profileData.Abilities?.Info,
     ].filter(Boolean),
     image: profileData.Abilities?.Pic || null,
-    // ei kuvaa ollenkaan????
+   
   },
   {
     type: "text",
     title: profileData.Goals?.Header || "Goals",
     content: [profileData.Goals?.Info].filter(Boolean),
     image: profileData.Goals?.Pic || null,
-    //"rise up" kuva nuoli ylös että suunta ylös
+   
   },
   {
     type: "text",
     title: profileData.LifeCareer?.Header || "Free Time",
     content: [profileData.LifeCareer?.Info].filter(Boolean),
     image: profileData.LifeCareer?.Pic || null,
-    //metsuri kuva
+   
   },
   {
     type: "text",
     title: profileData.Freetime?.Header || "Free Time",
     content: [profileData.Freetime?.Info].filter(Boolean),
     image: profileData.Freetime?.Pic || null,
-    //metsuri kuva
+ 
   },
 
 ].filter((slide) => {
