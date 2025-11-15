@@ -1,1 +1,0 @@
-//Pieni esittely itsestä

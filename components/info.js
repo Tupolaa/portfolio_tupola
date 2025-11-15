@@ -11,7 +11,10 @@ const Info = () => {
   const hobbiesArray = Array.isArray(profileData.Harrastukset)
     ? profileData.Harrastukset
     : [];
-
+const toImageArray = (pic) => {
+  if (!pic) return [];
+  return Array.isArray(pic) ? pic.filter(Boolean) : [pic];
+};
   // Normalize hobbies into { name, text, image } objects
   const hobbies = hobbiesArray
   .map((hobby) => {
@@ -47,28 +50,38 @@ const Info = () => {
   .filter(Boolean);
 
   // Build slides for the carousel: Hobbies / Life / Info
+ 
   const slides = [
   {
     type: "hobbies",
-    title: profileData.info?.Hobbytitle || "Hobbies",
+    title: profileData.Hobbytitle || "Hobbies",
     hobbies,
+    //Friba, Lenkkeily, koodaus, Pelaaminen kuvat
   },
   {
     type: "text",
-    title: profileData.Infobox2?.Header || "Life & Career",
+    title: profileData.Abilities?.Header || "Life & Career",
     content: [
-      profileData.Infobox2?.Info,
-      profileData.Infobox3?.Info,
+      profileData.Abilities?.Info,
     ].filter(Boolean),
-    image: profileData.Infobox2?.Pic || null,
-    image: profileData.Infobox3?.Pic || null,
+    //image: profileData.Abilities?.Pic || null,
+    // ei kuvaa ollenkaan????
   },
   {
     type: "text",
-    title: "Tavoitteet",
-    content: [profileData.Infobox4?.Info].filter(Boolean),
-    image: profileData.Infobox4?.Pic || null,
+    title: profileData.Goals?.Header || "Goals",
+    content: [profileData.Goals?.Info].filter(Boolean),
+    image: profileData.Goals?.Pic || null,
+    //"rise up" kuva nuoli ylös että suunta ylös
   },
+  {
+    type: "text",
+    title: profileData.Freetime?.Header || "Free Time",
+    content: [profileData.Freetime?.Info].filter(Boolean),
+    image: profileData.Freetime?.Pic || null,
+    //metsuri kuva
+  },
+
 ].filter((slide) => {
   if (slide.type === "hobbies") return slide.hobbies && slide.hobbies.length;
   return slide.content && slide.content.length > 0;
@@ -78,7 +91,7 @@ const Info = () => {
     <section id="profile" className="info-section">
       <h2>{profileData.header}</h2>
 
-      {/* 3 sivua: Harrastukset / Elämä & ura / Tavoitteet */}
+      
       <MediaCarousel media={slides} />
 
       

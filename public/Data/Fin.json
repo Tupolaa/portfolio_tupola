@@ -4,7 +4,7 @@
       { "Name": "Profiili", "id": "Profile" },
       { "Name": "Projektit", "id": "projects" },
       { "Name": "Taidot", "id": "skills" },
-      { "Name": "Harrastukset", "id": "hobbies" }
+      { "Name": "Kuka on teemu?", "id": "Info" }
     ]
   },
 
@@ -202,27 +202,33 @@
     ]
   },
   "info": {
-  "header": "Kuka on Teemu Tupola?",
-  "Life": { 
+  "header": "Kuka on Teemu?",
+  "LifeCareer": { 
     "Header": "Elämä & ura",
     "Info": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMKissa. Hallitsen ohjelmoinnin perusteet ja nautin luotettavien, toimivien ratkaisujen kehittämisestä ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen – niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
     "Pic": "/Media/Omakuva.jpg"
   },
-  "Infobox3": { 
+  "Abilities": { 
     "Header": "Vahvuudet",
     "Info": "Vahvuuksiani ovat ongelmanratkaisukyky, tiimityöskentelytaidot sekä halu oppia jatkuvasti uutta. Uskon, että nämä ominaisuudet tekevät minusta arvokkaan lisän mihin tahansa ohjelmistokehitystiimiin. Olen tottunut työskentelemään erilaisissa projekteissa ja tilanteissa, mikä on kehittänyt sopeutumiskykyäni ja joustavuutta työympäristössä.",
-    "Pic": "/Media/Omakuva.jpg"
+    "Pic":[ "/Media/Omakuva.jpg", "/Media/Omakuva.jpg"]
   },
-  "Infobox4": { 
+  "Goals": { 
     "Header": "Tavoitteet",
     "Info": "Tavoitteenani on kehittyä jatkuvasti ohjelmistokehittäjänä ja olla mukana merkityksellisissä projekteissa, jotka tuottavat todellista arvoa käyttäjille. Olen varma, että intohimoni ohjelmointia kohtaan sekä haluni oppia uutta tekevät minusta motivoituneen ja sitoutuneen ammattilaisen.",
     "Pic": "/Media/Omakuva.jpg"
+  },
+  "Freetime": { 
+    "Header": "Vapaa-aika",
+    "Info": "Vapaa-aikani kuluu monipuolisesti harrastusten parissa, jotka auttavat minua rentoutumaan ja lataamaan akkuja. Nautin erityisesti ulkoilusta, liikunnasta ja uusien asioiden oppimisesta.",
+    "Pic": "/Media/Omakuva.jpg"
+   
   },
   "Hobbytitle": "Harrastukset",
   "Harrastukset": [
     
     {
-      "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien ohjelmointikielten ja teknologioiden oppimisesta sekä erilaisten projektien kehittämisestä.",
+      "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien kielien ja teknologioiden oppimisesta sekä erilaisten projektien tekemisestä.",
       "icon": "/Media/data.png"
     },
     {

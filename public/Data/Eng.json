@@ -6,7 +6,7 @@
             { "Name": "Profile", "id": "Profile" },
             { "Name": "Projects", "id": "projects" },
             { "Name": "Skills", "id": "skills" },
-            { "Name": "Hobbies", "id": "skills" }
+            { "Name": "Who is Teemu?", "id": "Info" }
   ]
 },
   "Profile": {

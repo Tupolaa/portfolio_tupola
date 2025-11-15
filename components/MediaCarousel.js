@@ -148,7 +148,7 @@ export default function MediaCarousel({ media = [] }) {
                     className="mc-hobby-card"
                     style={{
                       borderRadius: 16,
-                      border: "1px solid rgba(4, 87, 87, 1)",
+                      border: "1px solid rgba(11, 240, 240, 1)",
                       padding: "16px",
                       background:
                         "radial-gradient(circle at top, #1e1e1e, #0b0b0b)",
@@ -191,7 +191,7 @@ export default function MediaCarousel({ media = [] }) {
                           height: "auto",
                           borderRadius: 12,
                           objectFit: "cover",
-                          border: "2px solid rgba(89, 0, 255, 0.7)",
+                          border: "2px solid rgba(0, 58, 250, 0.7)",
                         }}
                       />
                     )}
