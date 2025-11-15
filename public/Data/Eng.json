@@ -378,5 +378,39 @@
       { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "5", "desc": "Testing description for Machine Learning", "slot": "Programming" },
       { "name": "Data analysis", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "5", "desc": "Testing description for Data analysis with Python", "slot": "Programming" }
     ]
+},
+  "info": {
+  "header": "Who is Teemu Tupola?",
+  "Infobox2":{ 
+    "Info": "I am an aspiring young software developer from Hämeenlinna, always full of humor and questions! I’m currently in my third year studying Business Information Technology at HAMK. I have a strong foundation in programming and enjoy building reliable, functional solutions in software development. My interests focus especially on backend development, fixing errors and bugs, and debugging — areas where I get to use my problem-solving skills and curiosity in the best possible way.",
+    "Pic" : "/Media/Omakuva.jpg"
+  },
+  "Infobox3":{ 
+    "Info": "I am an aspiring young software developer from Hämeenlinna, always full of humor and questions! I’m currently in my third year studying Business Information Technology at HAMK. I have a strong foundation in programming and enjoy building reliable, functional solutions in software development. My interests focus especially on backend development, fixing errors and bugs, and debugging — areas where I get to use my problem-solving skills and curiosity in the best possible way.",
+    "Pic" : "/Media/Omakuva.jpg"
+  },
+  "Infobox4":{ 
+    "Info": "My goal is to continuously grow as a software developer and take part in meaningful projects that bring real value to users. I’m confident that my passion for programming and willingness to learn make me a motivated and committed professional.",
+    "Pic" : "/Media/Omakuva.jpg"
+  },
+  "Harrastukset": [
+    {
+      "Programming": "Coding is both a hobby and a passion for me. I enjoy learning new programming languages and technologies, as well as developing different kinds of projects.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Disc Golf": "Disc golf is a relaxing and fun hobby that combines being outdoors with precision. It’s a great way to spend time with friends.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Jogging": "Jogging is an excellent way to maintain both physical and mental well-being. It helps clear the mind and improves endurance.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Gaming": "Video games are an entertaining hobby that develop problem-solving abilities and strategic thinking.",
+      "icon": "/Media/data.png"
+    }
+  ]
+
 }
 }

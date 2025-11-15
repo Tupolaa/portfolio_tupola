@@ -245,13 +245,30 @@
 
 /* small-screen adjustments */
 @media (max-width: 600px) {
+  .skills-section {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
   .skills-filter {
-    justify-content: flex-start;
-    padding-left: 12px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .skills-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center; 
+    gap: 8px 10px;           
+    padding: 10px 0;
+    max-width: 260px;         
+    margin: 0 auto;         
+    overflow-x: visible;    
   }
 
   .filter-btn {
-    padding: 8px 12px;
+    padding: 6px 10px;
     font-size: 0.9rem;
+    white-space: nowrap;
   }
 }

@@ -7,38 +7,49 @@ header {
   background-color: #000000;
   border-bottom: 3px solid #00ffdd;
   z-index: 1000;
-  overflow: visible;
 }
 
+/* main nav wrapper */
 .navbar-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: #000000;
   border-bottom: 2px solid #0fa2c7;
-  padding: 0.25rem 1rem;
+  padding: 0 1rem;
   position: relative;
   transition: all 0.1s ease-in-out;
-  overflow: visible;
 }
 
+/* generic nav element (same as .navbar-container, but kept if you use <nav> elsewhere) */
 nav {
-  display: flex;
-  gap: 1rem;
   transition: all 0.1s ease;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-  /* REMOVE this too */
-  overflow: visible;
 }
 
-/* fix: make button its own clipping area */
+/* left side – currently just holds hamburger */
+.navbar-left {
+  flex: 0 0 auto;
+}
+
+/* flex container for nav buttons + lang buttons */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* nav hover glow */
+nav:hover {
+  box-shadow: 0 0 200px #043df8;
+}
+
+/* main nav buttons */
 .navButton {
-  position: relative; /* needed so ::before stays within button */
+  position: relative;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 1rem;
@@ -50,10 +61,7 @@ nav {
   max-width: 100%;
   box-shadow: 0 4px 0 #000000;
   border: 1px solid #000000;
-
-  /* keep glow confined to button */
   overflow: hidden;
-
   box-sizing: border-box;
 }
 
@@ -73,16 +81,13 @@ nav {
   transform: rotate(-45deg);
   transition: all 0.5s ease;
   opacity: 0;
-
-  /* keep it below text */
   z-index: 0;
   pointer-events: none;
 }
 
 .navButton:hover {
-  
-   box-shadow: 0 0 25px 6px rgba(38, 12, 185, 0.8);
-   border: 1.5px solid #0eb4f16c;
+  box-shadow: 0 0 25px 6px rgba(38, 12, 185, 0.8);
+  border: 1.5px solid #0eb4f16c;
 }
 
 .navButton:hover::before {
@@ -90,11 +95,10 @@ nav {
   transform: rotate(-45deg) translateY(160%);
 }
 
+/* language buttons */
 .lang-buttons {
   display: flex;
-
-  /* allow button shadows to show naturally */
-  overflow: visible;
+  gap: 0;
 }
 
 .lang-buttons button {
@@ -102,19 +106,102 @@ nav {
   font-size: 1rem;
   color: #ffffff;
   background: none;
-  padding: 0.50rem 1rem;
-  margin: 5% 0;
+  padding: 0.5rem 1rem;
+  margin: 0;
   border-radius: 0;
   border: 2px solid #ffffff;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
   box-shadow: none;
-  width: 100%;
 }
+
 .lang-buttons button.active {
   color: #000000;
   transform: none;
   box-shadow: none;
   border-color: #ffffff;
   background-color: #ffffff;
+}
+
+/* ============ HAMBURGER ============ */
+
+.hamburger {
+  display: none; /* shown only on mobile */
+  width: 28px;
+  height: 22px;
+  padding: 0;
+  margin-right: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  border-radius: 999px;
+  background: #ffffff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* animate to X when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ============ MOBILE LAYOUT ============ */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* nav-links becomes dropdown */
+  .nav-links {
+    position: absolute;
+    top: 70px; /* just under header */
+    left: 0;
+    right: 0;
+    background: #000000;
+    border-bottom: 2px solid #0fa2c7;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0 1rem;
+    display: none; /* hidden by default */
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .navButton {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    margin: 0.25rem 0;
+  }
+
+  .lang-buttons {
+    margin-top: 0.5rem;
+  }
+
+  .lang-buttons button {
+    width: auto;
+  }
 }

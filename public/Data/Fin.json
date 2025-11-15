@@ -171,7 +171,7 @@
     "header": "Taidot",
     "subheader": "1–3 = Vähän kokemusta, 4–5 = Perusosaaminen, 6–8 = Vahva osaaminen, 9–10 = Erittäin vahva osaaminen.",
     "items": [
-      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "5", "desc": "Testing description for Python", "slot": "Programming" },
+      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "7", "desc": "Testing description for Python", "slot": "Programming" },
       { "name": "Scrum perusteet", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "level": "9", "desc": "Testing description for Scrum perusteet", "slot": "Management" },
       { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "8", "desc": "Testing description for Jira", "slot": "Management" },
       { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "9", "desc": "Testing description for Confluence", "slot": "Management" },
@@ -200,5 +200,43 @@
       { "name": "Koneoppiminen", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "Testing description for Koneoppiminen", "slot": "Programming" },
       { "name": "Datan analysointi Pythonilla", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "3", "desc": "Testing description for Datan analysointi", "slot": "Programming" }
     ]
-  }
+  },
+  "info": {
+  "header": "Kuka on Teemu Tupola?",
+  "Life": { 
+    "Header": "Elämä & ura",
+    "Info": "Olen nuori ohjelmistokehittäjän alku Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMKissa. Hallitsen ohjelmoinnin perusteet ja nautin luotettavien, toimivien ratkaisujen kehittämisestä ohjelmistokehityksen parissa. Kiinnostukseni kohdistuvat erityisesti backend-kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen – niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani parhaalla mahdollisella tavalla.",
+    "Pic": "/Media/Omakuva.jpg"
+  },
+  "Infobox3": { 
+    "Header": "Vahvuudet",
+    "Info": "Vahvuuksiani ovat ongelmanratkaisukyky, tiimityöskentelytaidot sekä halu oppia jatkuvasti uutta. Uskon, että nämä ominaisuudet tekevät minusta arvokkaan lisän mihin tahansa ohjelmistokehitystiimiin. Olen tottunut työskentelemään erilaisissa projekteissa ja tilanteissa, mikä on kehittänyt sopeutumiskykyäni ja joustavuutta työympäristössä.",
+    "Pic": "/Media/Omakuva.jpg"
+  },
+  "Infobox4": { 
+    "Header": "Tavoitteet",
+    "Info": "Tavoitteenani on kehittyä jatkuvasti ohjelmistokehittäjänä ja olla mukana merkityksellisissä projekteissa, jotka tuottavat todellista arvoa käyttäjille. Olen varma, että intohimoni ohjelmointia kohtaan sekä haluni oppia uutta tekevät minusta motivoituneen ja sitoutuneen ammattilaisen.",
+    "Pic": "/Media/Omakuva.jpg"
+  },
+  "Hobbytitle": "Harrastukset",
+  "Harrastukset": [
+    
+    {
+      "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien ohjelmointikielten ja teknologioiden oppimisesta sekä erilaisten projektien kehittämisestä.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Frisbeegolf": "Frisbeegolf on rentouttava ja hauska harrastus, joka yhdistää ulkoilun ja tarkkuuden. Se on erinomainen tapa viettää aikaa ystävien kanssa.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Lenkkeily": "Lenkkeily on erinomainen tapa ylläpitää sekä fyysistä että henkistä hyvinvointia. Se auttaa selkeyttämään ajatuksia ja parantaa kestävyyttä.",
+      "icon": "/Media/data.png"
+    },
+    {
+      "Pelaaminen": "Videopelit ovat viihdyttävä harrastus, joka kehittää ongelmanratkaisutaitoja ja strategista ajattelua.",
+      "icon": "/Media/data.png"
+    }
+  ]
+}
 }

@@ -1,3 +1,3 @@
 Kieli napit header.js - DONE
-Päivitä tekstit FIN ja Eng
+Päivitä tekstit ja tiedot FIN ja ENG ajan tasalle
 Media caruselli modaliin?  - DONE

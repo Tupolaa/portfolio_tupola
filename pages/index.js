@@ -3,6 +3,7 @@ import Navbar from "../components/header.js";
 import Profile from "../components/Profile.js";
 import Projects from "../components/Projects.js";
 import Skills from "../components/Skills.js";
+import Info from "../components/info.js";
 
 
 
@@ -27,6 +28,9 @@ export default function Home() {
           </section>
           <section id="skills">
           <Skills/>
+          </section>
+          <section id="Info">
+          <Info/>
           </section>
       </section>
       

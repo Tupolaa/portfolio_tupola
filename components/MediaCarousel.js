@@ -1,17 +1,16 @@
+// MediaCarousel.js
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 function inferIsVideo(src = "") {
-  // Add YouTube URL pattern check
   const isYouTube = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)/.test(src);
   const isVideoFile = /\.(mp4|webm|ogg)$/i.test(src);
   return isYouTube || isVideoFile;
 }
 
-// Add function to get YouTube embed URL
 function getYouTubeEmbedUrl(url) {
   if (!url) return "";
-  // Handle both youtube.com and youtu.be URLs
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const regExp =
+    /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
   const match = url.match(regExp);
   return match && match[2].length === 11
     ? `https://www.youtube.com/embed/${match[2]}?autoplay=1&mute=1`
@@ -23,18 +22,41 @@ export default function MediaCarousel({ media = [] }) {
   const count = media.length;
   const startX = useRef(null);
 
-  if (!count) return null;
-  const go = (delta) => setIndex((i) => (i + delta + count) % count);
+  const go = useCallback(
+    (delta) => {
+      if (!count) return;
+      setIndex((i) => (i + delta + count) % count);
+    },
+    [count]
+  );
 
   // Keyboard nav
-  const onKey = useCallback((e) => {
-    if (e.key === "ArrowRight") go(1);
-    if (e.key === "ArrowLeft") go(-1);
-  }, [count]);
+  const onKey = useCallback(
+    (e) => {
+      if (e.key === "ArrowRight") go(1);
+      if (e.key === "ArrowLeft") go(-1);
+    },
+    [go]
+  );
+
   useEffect(() => {
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, [onKey]);
+
+  // early return after hooks
+  if (!count) return null;
+
+  const safeIndex = ((index % count) + count) % count;
+  const item = media[safeIndex];
+
+  const isText = item.type === "text";
+  const isHobbies = item.type === "hobbies";
+  const isVideo =
+    !isText &&
+    !isHobbies &&
+    (item.type ? item.type === "video" : inferIsVideo(item.src));
+  const isYouTube = isVideo && /youtube|youtu\.be/.test(item.src);
 
   // Touch swipe
   const onTouchStart = (e) => (startX.current = e.touches[0].clientX);
@@ -45,9 +67,30 @@ export default function MediaCarousel({ media = [] }) {
     if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
   };
 
-  const item = media[index];
-  const isVideo = item.type ? item.type === "video" : inferIsVideo(item.src);
-  const isYouTube = isVideo && /youtube|youtu\.be/.test(item.src);
+  // 🔹 Dynamic viewport style: auto height for text/hobbies, 16:9 for media
+  const viewportStyle =
+    isText || isHobbies
+      ? {
+          position: "relative",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          background: "#111",
+          padding: "24px",
+          boxSizing: "border-box",
+        }
+      : {
+          position: "relative",
+          width: "100%",
+          aspectRatio: "16 / 9",
+          display: "grid",
+          placeItems: "center",
+          background: "#111",
+          padding: 0,
+          boxSizing: "border-box",
+        };
 
   return (
     <div
@@ -55,30 +98,180 @@ export default function MediaCarousel({ media = [] }) {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       role="region"
-      aria-label="Project media carousel"
+      aria-label="Profile carousel"
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: 900,
-        margin: "16px auto",
+        maxWidth: "100%", // full width of info-section
+        margin: "16px 0",
         borderRadius: 12,
         overflow: "hidden",
         background: "#0b0b0b",
       }}
     >
       {/* viewport */}
-      <div
-        className="mc-viewport"
-        style={{
-          position: "relative",
-          width: "100%",
-          aspectRatio: "16 / 9",
-          display: "grid",
-          placeItems: "center",
-          background: "#111",
-        }}
-      >
-        {isVideo ? (
+      <div className="mc-viewport" style={viewportStyle}>
+        {isHobbies ? (
+          <div
+            className="mc-hobbies-wrapper"
+            style={{ width: "100%" }}
+          >
+            {item.title && (
+              <h3
+                style={{
+                  fontSize: "1.5rem",
+                  marginBottom: "16px",
+                  color: "#00ffdd",
+                  textAlign: "center",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.08em",
+                }}
+              >
+                {item.title}
+              </h3>
+            )}
+
+            <div
+              className="mc-hobbies-grid"
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit, minmax(200px, 1fr))",
+                gap: "20px",
+                width: "100%",
+              }}
+            >
+              {Array.isArray(item.hobbies) &&
+                item.hobbies.map((hobby, i) => (
+                  <div
+                    key={i}
+                    className="mc-hobby-card"
+                    style={{
+                      borderRadius: 16,
+                      border: "1px solid rgba(4, 87, 87, 1)",
+                      padding: "16px",
+                      background:
+                        "radial-gradient(circle at top, #1e1e1e, #0b0b0b)",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      textAlign: "center",
+                      gap: 12,
+                    }}
+                  >
+                    <h4
+                      style={{
+                        fontSize: "1.1rem",
+                        margin: 0,
+                        color: "#00ffdd",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.05em",
+                      }}
+                    >
+                      {hobby.name}
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "0.98rem",
+                        lineHeight: 1.6,
+                        margin: 0,
+                        color: "#f5f5f5",
+                      }}
+                    >
+                      {hobby.text}
+                    </p>
+                    {hobby.image && (
+                      <img
+                        src={hobby.image}
+                        alt={hobby.name}
+                        style={{
+                          marginTop: 8,
+                          width: "100%",
+                          maxWidth: 160,
+                          height: "auto",
+                          borderRadius: 12,
+                          objectFit: "cover",
+                          border: "2px solid rgba(89, 0, 255, 0.7)",
+                        }}
+                      />
+                    )}
+                  </div>
+                ))}
+            </div>
+          </div>
+        ) : isText ? (
+          <div
+            className="mc-text-slide"
+            style={{
+              maxWidth: 1000,
+              textAlign: "left",
+              color: "#f5f5f5",
+              margin: "0 auto",
+            }}
+          >
+            {item.title && (
+              <h3
+                style={{
+                  fontSize: "1.5rem",
+                  marginBottom: "12px",
+                  color: "#00ffdd",
+                  textAlign: "center",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.08em",
+                }}
+              >
+                {item.title}
+              </h3>
+            )}
+
+            {Array.isArray(item.content)
+              ? item.content
+                  .filter(Boolean)
+                  .map((p, i) => (
+                    <p
+                      key={i}
+                      style={{
+                        fontSize: "1.05rem",
+                        lineHeight: 1.6,
+                        marginBottom: "1px",
+                        textAlign: "center",
+                      }}
+                    >
+                      {p}
+                    </p>
+                  ))
+              : item.content && (
+                  <p
+                    style={{
+                      fontSize: "1.05rem",
+                      lineHeight: 1.6,
+                      marginBottom: 0,
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.content}
+                  </p>
+                )}
+
+            {item.image && (
+              <img
+                src={item.image}
+                alt={item.imageAlt || item.title || "Image"}
+                style={{
+                  marginTop: 16,
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  width: 180,
+                  height: "auto",
+                  objectFit: "cover",
+                  borderRadius: "30%",
+                  border: "3px solid #00ffdd",
+                }}
+              />
+            )}
+          </div>
+        ) : isVideo ? (
           isYouTube ? (
             <iframe
               key={item.src}
@@ -120,7 +313,7 @@ export default function MediaCarousel({ media = [] }) {
       {/* arrows */}
       <button
         type="button"
-        aria-label="Previous media"
+        aria-label="Previous"
         onClick={() => go(-1)}
         className="mc-arrow mc-left"
         style={arrowStyle("left")}
@@ -129,7 +322,7 @@ export default function MediaCarousel({ media = [] }) {
       </button>
       <button
         type="button"
-        aria-label="Next media"
+        aria-label="Next"
         onClick={() => go(1)}
         className="mc-arrow mc-right"
         style={arrowStyle("right")}
@@ -160,7 +353,8 @@ export default function MediaCarousel({ media = [] }) {
               height: 10,
               borderRadius: "50%",
               border: 0,
-              background: i === index ? "white" : "rgba(255,255,255,0.5)",
+              background:
+                i === safeIndex ? "white" : "rgba(255,255,255,0.5)",
               cursor: "pointer",
             }}
           />
