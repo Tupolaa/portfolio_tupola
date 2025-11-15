@@ -27,17 +27,6 @@
             "src": "https://youtu.be/Cb2bTOat2U0",
             "alt": "AI Invoice assistant demo video",
             "desc": "Esittely FIMSUM"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "AI Invoice assistant image 1",
-            "desc": "Esittely YEEEES"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "AI Invoice assistant image 2"
           }
         ],
         "links": [
