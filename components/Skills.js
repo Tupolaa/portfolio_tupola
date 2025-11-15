@@ -1,4 +1,3 @@
-// Omat taidot ja osaamiset
 import { useState } from "react";
 import { useLanguage } from "./LangChanger.js";
 
@@ -40,6 +39,29 @@ const Skills = () => {
           splitSlots(s.slot).includes(normalize(selected))
         );
 
+  const renderLevel = (level) => {
+    const lvl = Math.max(1, Math.min(10, Number(level) || 1));
+    const pct = Math.round((lvl / 10) * 100);
+    return (
+      <div
+        className="skill-level"
+        aria-label={`Level ${lvl} of 10`}
+        title={`Level ${lvl} / 10`}
+      >
+        <div className="level-label">{lvl}</div>
+        <div
+          className="level-track"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="10"
+          aria-valuenow={lvl}
+        >
+          <div className="level-fill" style={{ width: `${pct}%` }} />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section className="skills-section">
       <h2>{content?.Skills?.header ?? "Skills"}</h2>
@@ -76,12 +98,13 @@ const Skills = () => {
             )}
             <div className="skill-meta">
               <div className="skill-name">{s.name}</div>
-              {s.level && <div className="skill-level">{s.level}</div>}
+              {s.level && renderLevel(s.level)}
               {s.desc && <div className="skill-desc">{s.desc}</div>}
             </div>
           </div>
         ))}
       </div>
+      <p>{content?.Skills?.subheader}</p>
     </section>
   );
 };

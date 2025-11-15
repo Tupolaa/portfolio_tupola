@@ -375,8 +375,8 @@
       { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "5", "desc": "Testing description for Hugging Face", "slot": "Programming" },
       { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "5", "desc": "Testing description for Postman", "slot": "Programming" },
       { "name": "Windows OS basics", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Testing description for Windows OS basics", "slot": "Soft Skills" },
-      { "name": "Machine Learning (KNN, K-Means, SVM, Linear regression)", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "5", "desc": "Testing description for Machine Learning", "slot": "Programming" },
-      { "name": "Data analysis with Python", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "5", "desc": "Testing description for Data analysis with Python", "slot": "Programming" }
+      { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "5", "desc": "Testing description for Machine Learning", "slot": "Programming" },
+      { "name": "Data analysis", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "5", "desc": "Testing description for Data analysis with Python", "slot": "Programming" }
     ]
 }
 }
