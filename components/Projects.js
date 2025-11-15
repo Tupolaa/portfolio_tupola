@@ -14,12 +14,15 @@ const Projects = () => {
   useEffect(() => {
   if (selectedProject) {
     document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");   // ⬅️ add class when modal open
   } else {
     document.body.style.overflow = "";
+    document.body.classList.remove("modal-open"); // ⬅️ remove when closed
   }
 
   return () => {
     document.body.style.overflow = "";
+    document.body.classList.remove("modal-open");
   };
 }, [selectedProject]);
   return (

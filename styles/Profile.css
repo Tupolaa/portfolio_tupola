@@ -15,6 +15,9 @@
 .profile-photo-wrapper {
   flex: 0 0 auto;
 }
+body.modal-open header {
+  display: none;
+}
 
 /* original photo style if ever used directly */
 .profile-photo {
