@@ -1,3 +1,8 @@
 Kieli napit header.js - DONE
-Päivitä tekstit ja tiedot FIN ja ENG ajan tasalle
+Päivitä tekstit ja tiedot FIN ja ENG ajan tasalle - DONE
 Media caruselli modaliin?  - DONE
+
+
+
+BUGIT
+- Info kohdan caruselli puhelimella liikkuu omia aikojaan kun koittaa mennä alaspäin
