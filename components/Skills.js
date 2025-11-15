@@ -1,15 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "./LangChanger.js";
 
-const categories = [
-  "All",
-  "Management",
-  "Programming",
-  "Soft Skills",
-  "Database",
-  "Cloud",
-  "Languages",
-];
+
 
 const normalize = (s) => (s || "").toString().trim().toLowerCase();
 
@@ -61,6 +53,12 @@ const Skills = () => {
       </div>
     );
   };
+  const rawCats = content?.Skills?.categoryHeader;
+  const categories = Array.isArray(rawCats)
+    ? rawCats
+    : typeof rawCats === "string"
+    ? rawCats.split(",").map((c) => c.trim()).filter(Boolean)
+    : ["All"];
 
   return (
     <section className="skills-section">

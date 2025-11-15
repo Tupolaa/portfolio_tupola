@@ -53,13 +53,15 @@
 
       {
         "title": "Henkilökohtainen portfolioni",
-        "description": "Henkilökohtainen portfolio-sivusto, joka esittelee taitojani ja projektejani. Rakennettu Next.js:llä ja tyylitelty CSS:llä.",
+"description": "Kolmas ja uusin versio henkilökohtaisesta portfoliostani. Portfolioiden eri versiot kuvaavat hyvin omaa kehitystäni ja sitä, miten olen oppinut uusia teknologioita ja parantanut toteutustapoja. Sivusto esittelee osaamistani, projektejani ja opintojeni aikana kertyneitä taitoja. Rakennettu Next.js:llä ja tyylitelty responsiiviseksi ja selkeäksi kokonaisuudeksi.",
         "media": [
           { "type": "image", "src": "/media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
-          { "type": "image", "src": "/media/portfolio1.png", "alt": "Screenshot of portfolio website in development" }
+          { "type": "image", "src": "/media/dev.jpg", "alt": "Screenshot of portfolio website in development" }
         ],
         "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/portfolio_tupola" }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/portfolio_tupola"},
+          { "Name": "Alkuperäinen portfolio", "link": "https://teemutupola.netlify.app/" },
+          { "Name": "Toinen portfolioni", "link": "https://tupolaportfolio.netlify.app/" }
         ],
         "Tech": [
           { "icon": "/Media/JS.png", "alt": "JS icon" },
@@ -71,11 +73,9 @@
 
       {
         "title": "React native sovellus",
-        "description": "Kouluprojekti, jossa teimme React native sovelluksen. Sovellus hakee satunnaisia reseptejä TheMealDB API:sta ja näyttää ne käyttäjälle.",
-        "media": [
-          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+"description": "Kouluprojekti, jossa toteutimme React Native -mobiilisovelluksen jatko-osana elokuva-arvostelusivustolle. Sovellus hyödyntää backend-projektissa toteutettuja REST API -rajapintoja elokuvien hakemiseen ja esittämiseen selkeässä mobiilikäyttöliittymässä. Käyttäjä voi selata elokuvia, tarkastella yksityiskohtaisia tietoja sekä lukea muiden käyttäjien tekemiä arvosteluja.",        "media": [
+          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
+          
         ],
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" },
@@ -91,12 +91,8 @@
 
       {
         "title": "Ohjelmistotestaus",
-        "description": "Kurssin lopputyö, jonka aikana hyödynsimme Robot Frameworkia ohjelmistotestauksessa. Teimme testejä nettisivulle ja opettelimme ohjelmistotestausta.",
-        "media": [
-          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Testing demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
-        ],
+"description": "Kurssin lopputyö, jossa harjoittelimme ohjelmistotestauksen suunnittelua ja toteutusta Robot Frameworkin avulla. Projektin aikana loimme automaattisia testejä verkkosivulle, keskittyen käyttöliittymän toiminnallisuuden ja keskeisten käyttäjäpolkujen varmistamiseen. Työhön sisältyi testitapausten määrittely, testiskenaarioiden rakentaminen, avainsanapohjaisen testiautomaation hyödyntäminen sekä testien suorittaminen ja tulosten analysointi.",     
+         
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
@@ -108,11 +104,9 @@
 
       {
         "title": "LejosEV3",
-        "description": "Kouluprojekti, jossa ohjelmoimme LejosEV3 lego robotin seuraamaan väriviivaa ja väistämään esteitä.",
-        "media": [
-          { "type": "video", "src": "https://www.youtube.com/watch?v=gDR6V5OdnYg", "alt": "LejosEV3 demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
+"description": "Kouluprojekti, jossa ohjelmoimme Lejos EV3 -legorobotin seuraamaan lattiaan merkittyä väriviivaa sekä havaitsemaan ja väistämään edessä olevia esteitä sensoreiden avulla. Projektiin sisältyi robottiohjelmoinnin lisäksi myös etäohjattavuuden toteuttaminen. Rakensimme REST API -rajapinnan, jonka kautta robottia voitiin ohjata ja lähettää komentoja verkkoselaimen kautta, jolloin robotin toimintoja pystyi käyttämään myös ilman fyysistä kosketusta laitteeseen.", 
+       "media": [
+          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
         ],
         "links": [],
         "Tech": [
@@ -125,12 +119,8 @@
 
       {
         "title": "Automaatiorobotiikka",
-        "description": "Kouluprojekti, jossa käytimme UiPathia, Robot Frameworkia ja Pythonia automatisoimaan tiedon haku PDF-laskuilta.",
-        "media": [
-          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Automation demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
-        ],
+"description": "Kouluprojekti, jossa toteutimme laskujen käsittelyprosessin ohjelmistorobotiikan avulla. Ratkaisussa hyödynnettiin UiPathia, Robot Frameworkia ja Pythonia automatisoimaan PDF-laskujen lukeminen, tietojen poiminta, tallennus ja tarkistus. UiPath luki kaikki PDF-laskut, parsii niistä otsikko- ja rivitiedot ja tallensi ne CSV-tiedostoihin. Robot Framework siirsi tiedot tietokantaan SQL-kyselyiden avulla ja päivitti laskujen käsittelytilan. Pythonia ja Robot Frameworkia käytettiin myös eri validointeihin, kuten viitenumeron, IBAN-tunnuksen ja laskusummien tarkistamiseen.", 
+        
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
@@ -143,7 +133,7 @@
 
       {
         "title": "Elokuvien arviointisivusto",
-        "description": "Sivusto, jossa voit kirjoittaa ja lukea arvosteluita elokuvista. Sivuston tehtiin koulutyönä ja kehitystä ollaan jatkettu mobiilisovelluksena React Nativea hyödyntäen.",
+        "description": "Reactilla toteutettu elokuvasivusto, joka toteutettiin Backend-kurssin lopputyönä keväällä 2025. Sivuston REST API hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
         "media": [
           { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Movie review demo video" },
           { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
@@ -151,7 +141,7 @@
         ],
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
-          { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },
+          { "Name": "Nettisivu", "link": "https://moviereview-472307.lm.r.appspot.com/" },
           { "Name": "themoviedb - API", "link": "https://www.themoviedb.org/" }
         ],
         "Tech": [
@@ -169,37 +159,53 @@
 
   "Skills": {
     "header": "Taidot",
-    "subheader": "1–3 = Vähän kokemusta, 4–5 = Perusosaaminen, 6–8 = Vahva osaaminen, 9–10 = Erittäin vahva osaaminen.",
+    "subheader": "1–3 = Vähän kokemusta, 4–5 = Perusosaaminen, 6–8 = Vahva osaaminen, 9–10 = Erittäin vahva osaaminen. *Taitoa clikkaamalla näet lisää tietoa kyseisestä taidosta.*",
+    "categoryHeader": "All, Projektinhallinta, Ohjelmointi, Vuorovaikutustaidot, Tietokannat, pilvipalvelut, kehittäjän työkalut",
     "items": [
-      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "7", "desc": "Testing description for Python", "slot": "Programming" },
-      { "name": "Scrum perusteet", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "level": "9", "desc": "Testing description for Scrum perusteet", "slot": "Management" },
-      { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "8", "desc": "Testing description for Jira", "slot": "Management" },
-      { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "9", "desc": "Testing description for Confluence", "slot": "Management" },
-      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon", "level": "4", "desc": "Testing description for Robot Framework", "slot": "Programming" },
-      { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon", "level": "7", "desc": "Testing description for Java OOP", "slot": "Programming" },
-      { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "Testing description for MySQL", "slot": "Database" },
-      { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "Testing description for WordPress", "slot": "Programming" },
-      { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "9", "desc": "Testing description for REST API", "slot": "Programming" },
-      { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "9", "desc": "Testing description for GIT", "slot": "Programming" },
-      { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "9", "desc": "Testing description for JavaScript", "slot": "Programming" },
-      { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon", "level": "8", "desc": "Testing description for HTML", "slot": "Programming" },
-      { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "level": "7", "desc": "Testing description for CSS", "slot": "Programming" },
-      { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "level": "9", "desc": "Testing description for React + React Native", "slot": "Programming" },
-      { "name": "Handlebars", "icon": "/Media/HBS.png", "alt": "HBS icon", "level": "5", "desc": "Testing description for Handlebars", "slot": "Programming" },
-      { "name": "MongoDB", "icon": "/Media/Mongo.png", "alt": "Mongo icon", "level": "8", "desc": "Testing description for MongoDB", "slot": "Database" },
-      { "name": "Astro", "icon": "/Media/Astro.png", "alt": "Astro icon", "level": "3", "desc": "Testing description for Astro", "slot": "Programming" },
-      { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "level": "8", "desc": "Testing description for Node.js", "slot": "Programming" },
-      { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "8", "desc": "Testing description for Express.js", "slot": "Programming" },
-      { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "2", "desc": "Testing description for PHP", "slot": "Programming" },
-      { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Testing description for UiPath", "slot": "Programming" },
-      { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Testing description for Android Studio", "slot": "Programming" },
-      { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Testing description for Google Cloud", "slot": "Cloud" },
-      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Testing description for Hugging Face", "slot": "Programming" },
-      { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Testing description for Postman", "slot": "Programming" },
-      { "name": "Windows käyttöjärjestelmän perusteet", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "8", "desc": "Testing description for Windows perusteet", "slot": "Soft Skills" },
-      { "name": "Koneoppiminen", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "Testing description for Koneoppiminen", "slot": "Programming" },
-      { "name": "Datan analysointi Pythonilla", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "3", "desc": "Testing description for Datan analysointi", "slot": "Programming" }
-    ]
+  { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "7", "desc": "Olen käyttänyt Pythonia muutamissa eri projekteissa ja on minulla hyvin hallussa.", "slot": "Ohjelmointi" },
+  { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum on ollut käytössä viimeisen parin vuoden aikana jokaisella projektissa.", "slot": "Projektinhallinta" },
+  { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "8", "desc": "Jira on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan", "slot": "Projektinhallinta" },
+  { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "9", "desc": "Confluence on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan.", "slot": "Projektinhallinta" },
+  { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon", "level": "4", "desc": "Robot frameworkkia olen käyttänyt front-end testaukseen muutaman kerran.", "slot": "Ohjelmointi" },
+  { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon", "level": "7", "desc": "Olen käyttänyt javaa useissa projekteissa ja osaan käyttää sitä kattavasti.", "slot": "Ohjelmointi" },
+  { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "MySQL käyttö on tuttua, mutta sen käyttö on vähäistä.", "slot": "Tietokannat" },
+  { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "Osaan wordpressin peruskäytön ja hallinnan.", "slot": "Kehittäjän työkalut" },
+  { "name": "Koneoppiminen", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "Koulu projekti, jossa opiskelimme KNN, K-means, SVM ja Linear regressio algorytmejä. Olen edelleen kiinnostunut ja haluaisin oppia näistä lisää!", "slot": "Ohjelmointi" },
+  { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "9", "desc": "Osaan luoda ja käyttää REST API -rajapintoja tehokkaasti.", "slot": "Ohjelmointi" },
+  { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "9", "desc": "Github ja versionhallinta on ollut olennainen osa projekteja jo usean vuoden.", "slot": "Kehittäjän työkalut" },
+  { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "9", "desc": "Viimeisen vuoden aikana olen käyttänyt JavaScriptiä useissa projekteissa ja hallitsen sen erittäin hyvin.", "slot": "Ohjelmointi" },
+  { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon", "level": "9", "desc": "HTML koodi on ollut osa useissa web-projekteissa.", "slot": "Ohjelmointi" },
+  { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "level": "8", "desc": "CSS koodi on ollut keskeisessä osassa useissa web-projekteissa.", "slot": "Ohjelmointi" },
+  { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "level": "9", "desc": "Kuten JavaScript, React ja React Native ovat olleet keskeisiä työkaluja useissa projekteissa viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
+  { "name": "Handlebars", "icon": "/Media/HBS.png", "alt": "HBS icon", "level": "5", "desc": "HBS on ollut käytössä yhdessä projektissa.", "slot": "Ohjelmointi" },
+  { "name": "MongoDB", "icon": "/Media/Mongo.png", "alt": "Mongo icon", "level": "8", "desc": "MongoDB ollut merkittävä osa 2 eri projektia joissa olin tietokannan pääkäyttäjä/luoja ja opin siinä samalla sen toimivuutta", "slot": "Tietokannat" },
+  { "name": "Astro", "icon": "/Media/Astro.png", "alt": "Astro icon", "level": "2", "desc": "Olin mukana projektissa, jossa käytimme Astroa, mutta en osaa sitä täysin.", "slot": "Ohjelmointi" },
+  { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "level": "8", "desc": "Node.js on tuttu muutamasta projektista ja ollut aktiivisessa käytössä viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
+  { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "8", "desc": "Express.js on tuttu muutamasta projektista ja ollut aktiivisessa käytössä viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
+  { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "2", "desc": "Olen käyttänyt hiukan PHP:tä ja siitä on jonkun aikaa.", "slot": "Ohjelmointi" },
+  { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Käytimme UIPathia automaatiotestaus projektissa", "slot": "Kehittäjän työkalut" },
+  { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Android studio oli käytössä react native projektissa.", "slot": "Kehittäjän työkalut" },
+  { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Julkaisin Node.js Backend sivuston Google Cloudiin.", "slot": "Pilvipalvelut" },
+  { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Haimme AI-kurssila Llama laajankielimallin hugging face -alustalta.", "slot": "Kehittäjän työkalut" },
+  { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Postman on ollut usein käytössä API rajapintojen testauksessa.", "slot": "Kehittäjän työkalut" },
+  { "name": "Windows käyttöjärjestelmän perusteet", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Osaan CMD ja PS peruskäytön.", "slot": "Kehittäjän työkalut" },
+  { "name": "Datan analysointi Pythonilla", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "3", "desc": "Muutama kurssin suorittanut aiheesta.", "slot": "Ohjelmointi" },
+  { "name": "Suomi", "icon": "/Media/FIN.png", "alt": "Finnish icon", "level": "10", "desc": "Äidinkieli", "slot": "Vuorovaikutustaidot" },
+  { "name": "Englanti", "icon": "/Media/UK.png", "alt": "English icon", "level": "9", "desc": "Sujuva suullinen ja kirjallinen taito.", "slot": "Vuorovaikutustaidot" },
+  { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja tällä hetkellä työskentelen sen kanssa", "slot": "Kehittäjän työkalut" },
+  { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "level": "4", "desc": "Spring boot Framework on itselle uusi juttu. Opettelen ja työskentelen sen parissa tällä hetkellä.", "slot": "Ohjelmointi" },
+  { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon", "level": "5", "desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
+  { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon", "level": "5", "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },
+  { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "level": "6", "desc": "Olen käyttänyt Next.js:ää tämän portfolion rakentamiseen.", "slot": "Ohjelmointi" },
+  { "name": "Tiimityöskentely", "icon": "/Media/Teamwork.png", "alt": "Teamwork icon", "desc": "Olen tottunut työskentelemään tiimeissä erilaisissa projekteissa ja tilanteissa.", "slot": "Vuorovaikutustaidot" },
+  { "name": "Ongelmanratkaisu", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Olen kehittänyt ongelmanratkaisutaitojani erilaisten projektien ja haasteiden kautta.", "slot": "Vuorovaikutustaidot" },
+  { "name": "Luovuus", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "Pidän itseäni luovana henkilönä, joka nauttii uusien ideoiden ja ratkaisujen kehittämisestä.", "slot": "Vuorovaikutustaidot" },
+  { "name": "Aktiivinen oppiminen", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Olen sitoutunut jatkuvaan oppimiseen ja itseni kehittämiseen ohjelmistokehityksen alalla.", "slot": "Vuorovaikutustaidot" },
+  { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Opettelen juuri JUnitin käyttöä uuden projektin merkeissä", "slot": "Ohjelmointi" },
+  { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
+  { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
+  { "name": "Expo", "icon": "/Media/Expo.png", "alt": "Expo icon", "level": "6", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" }
+]
   },
   "info": {
   "header": "Kuka on Teemu?",

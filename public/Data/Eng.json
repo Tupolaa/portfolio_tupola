@@ -1,431 +1,268 @@
-
 {
-    
-        "Nav": {
-          "links": [
-            { "Name": "Profile", "id": "Profile" },
-            { "Name": "Projects", "id": "projects" },
-            { "Name": "Skills", "id": "skills" },
-            { "Name": "Who is Teemu?", "id": "Info" }
-  ]
-},
+  "Nav": {
+    "links": [
+      { "Name": "Profile", "id": "Profile" },
+      { "Name": "Projects", "id": "projects" },
+      { "Name": "Skills", "id": "skills" },
+      { "Name": "Who is Teemu?", "id": "Info" }
+    ]
+  },
+
   "Profile": {
     "name": "Teemu Tupola",
     "title": "Backend Developer",
-    "description": "I'm a young software developer from Hämeenlinna who never runs out of humor or questions! I am currently in my third year of studying Business Information Systems at HAMK.\n\nI have solid programming fundamentals and a passion for developing reliable, functional solutions in software development. My interests are especially focused on backend development, debugging, and fixing errors and bugs — areas where I get to fully use my problem-solving skills and curiosity.",
-    "quote": "\"I learn best by doing — with a small pinch of humor.\""
+    "description": "I am a young software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK.\n\nI know the fundamentals of programming and I am eager to develop reliable and functional software solutions. I am especially interested in backend development, bug-fixing, and debugging, because they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "quote": "\"I learn best by doing – with a little touch of humor.\""
   },
+
   "Projects": {
     "header": "Projects",
     "projects": [
       {
         "title": "AI-based Invoice Assistant",
-        "description": "An AI-powered invoice processing tool. The AI answers questions related to invoices and creates JSON and/or PDF summaries of them.",
+        "description": "I participated in the RUN-EU BIP Smart Everything course in Burgos, Spain, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
         "media": [
           {
             "type": "video",
             "src": "https://youtu.be/Cb2bTOat2U0",
-            "alt": "AI Invoice Assistant demo video"
+            "alt": "AI Invoice assistant demo video",
+            "desc": "Demo FIMSUM"
           },
           {
             "type": "image",
             "src": "/Media/Astro.png",
-            "alt": "AI Invoice Assistant image 1"
+            "alt": "AI Invoice assistant image 1",
+            "desc": "Demo YEEEES"
           },
           {
             "type": "image",
             "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "AI Invoice Assistant image 2"
+            "alt": "AI Invoice assistant image 2"
           }
         ],
         "links": [
-          {
-            "Name": "Demo",
-            "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0"
-          },
-          {
-            "Name": "Repository",
-            "link": "https://github.com/Tupolaa/BIP-AI-model"
-          }
+          { "Name": "Demo", "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0" },
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/Python.png",
-            "alt": "Python icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          },
-          {
-            "icon": "/Media/Astro.png",
-            "alt": "Astro icon"
-          }
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Astro.png", "alt": "Astro icon" }
         ]
       },
+
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website showcasing my skills and projects. Built with Next.js and styled with CSS.",
+        "title": "Personal Portfolio",
+        "description": "The third and newest version of my personal portfolio. The different versions demonstrate my development over time, how I have learned new technologies and improved my implementation methods. The website showcases my skills, projects, and knowledge gained during my studies. Built with Next.js and styled to be responsive and clean.",
         "media": [
-          {
-            "type": "video",
-            "src": "/Media/reactnative.mp4",
-            "alt": "Portfolio demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "Portfolio image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "Portfolio image 2"
-          }
+          { "type": "image", "src": "/media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
+          { "type": "image", "src": "/media/dev.jpg", "alt": "Screenshot of portfolio website in development" }
         ],
         "links": [
-          {
-            "Name": "Demo",
-            "link": "https://github.com/Tupolaa/portfolio_tupola"
-          },
-          {
-            "Name": "Live Demo",
-            "link": "https://tupola.github.io/portfolio_tupola/"
-          }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/portfolio_tupola"},
+          { "Name": "Original portfolio", "link": "https://teemutupola.netlify.app/" },
+          { "Name": "Second portfolio", "link": "https://tupolaportfolio.netlify.app/" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/JS.png",
-            "alt": "JavaScript icon"
-          },
-          {
-            "icon": "/Media/REACT.png",
-            "alt": "React icon"
-          },
-          {
-            "icon": "/Media/CSS.png",
-            "alt": "CSS icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          }
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       },
+
       {
         "title": "React Native Application",
-        "description": "A school project where we created a React Native application that fetches random recipes from TheMealDB API and displays them to the user.",
+        "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed information, and read reviews written by others.",
         "media": [
-          {
-            "type": "video",
-            "src": "https://youtu.be/dO-wskIrzYQ",
-            "alt": "React Native app demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "React Native app image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "React Native app image 2"
-          }
+          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
         ],
         "links": [
-          {
-            "Name": "Repository",
-            "link": "https://github.com/Tupolaa/Mobile_project"
-          },
-          {
-            "Name": "Backend Repository",
-            "link": "https://github.com/joni23008/Backend-Web-Development"
-          }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" },
+          { "Name": "Backend Repository", "link": "https://github.com/joni23008/Backend-Web-Development" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/JS.png",
-            "alt": "JavaScript icon"
-          },
-          {
-            "icon": "/Media/REACT.png",
-            "alt": "React icon"
-          },
-          {
-            "icon": "/Media/CSS.png",
-            "alt": "CSS icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          }
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       },
+
       {
         "title": "Software Testing",
-        "description": "Final project for a course where we used Robot Framework for software testing. We performed tests on a website and learned practical software testing techniques.",
-        "media": [
-          {
-            "type": "video",
-            "src": "/Media/reactnative.mp4",
-            "alt": "Software Testing demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "Software Testing image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "Software Testing image 2"
-          }
-        ],
+        "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included test case creation, writing test scenarios, using keyword-based automation, running tests, and analyzing results.",
         "links": [
-          {
-            "Name": "Repository",
-            "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti"
-          }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/RF.png",
-            "alt": "Robot Framework icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          }
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       },
+
       {
         "title": "LejosEV3",
-        "description": "A school project where we programmed a LejosEV3 LEGO robot to follow a color line and avoid obstacles.",
+        "description": "A school project where we programmed a Lejos EV3 Lego robot to follow a color-marked path on the floor and detect and avoid obstacles using sensors. In addition to robot programming, we implemented remote control functionality by creating a REST API that allowed the robot to be controlled through a web browser, enabling usage without physical interaction.",
         "media": [
-          {
-            "type": "video",
-            "src": "/Media/reactnative.mp4",
-            "alt": "LejosEV3 demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "LejosEV3 image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "LejosEV3 image 2"
-          }
+          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
         ],
         "links": [],
         "Tech": [
-          {
-            "icon": "/Media/REST.png",
-            "alt": "REST API icon"
-          },
-          {
-            "icon": "/Media/Java.png",
-            "alt": "Java icon"
-          },
-          {
-            "icon": "/Media/HTML.png",
-            "alt": "HTML icon"
-          },
-          {
-            "icon": "/Media/CSS.png",
-            "alt": "CSS icon"
-          }
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
         ]
       },
+
       {
         "title": "Automation Robotics",
-        "description": "A school project where we used UiPath, Robot Framework, and Python to automate data extraction from PDF invoices.",
-        "media": [
-          {
-            "type": "video",
-            "src": "/Media/reactnative.mp4",
-            "alt": "Automation Robotics demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "Automation Robotics image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "Automation Robotics image 2"
-          }
-        ],
+        "description": "A school project where we implemented an automated invoice processing workflow using UiPath, Robot Framework and Python. UiPath read all PDF invoices, parsed header and row data, and saved them to CSV files. Robot Framework transferred the data into a database using SQL queries and updated processing status values. Python and Robot Framework were also used to validate invoice reference numbers, IBAN codes and sum correctness.",
         "links": [
-          {
-            "Name": "Repository",
-            "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka"
-          }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/Python.png",
-            "alt": "Python icon"
-          },
-          {
-            "icon": "/Media/RF.png",
-            "alt": "Robot Framework icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          }
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       },
+
       {
         "title": "Movie Review Website",
-        "description": "A website where you can write and read movie reviews. The site was created as a school project, and development continued into a mobile app using React Native (school project).",
+        "description": "A React-based movie browsing and review website developed as a final project in the Backend course in spring 2025. The REST API fetches movie data from TheMovieDB API and stores it to a MongoDB database, from where it is displayed in the UI. Users can freely browse movies and, after logging in, also write reviews. The project was later continued in a Mobile Programming course by developing a React Native mobile application with the same functionality and mobile-optimized user interface.",
         "media": [
-          {
-            "type": "video",
-            "src": "/Media/reactnative.mp4",
-            "alt": "Movie Review demo video"
-          },
-          {
-            "type": "image",
-            "src": "/Media/Astro.png",
-            "alt": "Movie Review image 1"
-          },
-          {
-            "type": "image",
-            "src": "/Media/AI-invoice-assistant-2.png",
-            "alt": "Movie Review image 2"
-          }
+          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Movie review demo video" },
+          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
+          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
         ],
         "links": [
-          {
-            "Name": "Repository",
-            "link": "https://github.com/joni23008/Backend-Web-Development"
-          },
-          {
-            "Name": "Website",
-            "link": "https://moviereview-472307.lm.r.appspot.com/"
-          },
-          {
-            "Name": "themoviedb - API",
-            "link": "https://www.themoviedb.org/"
-          }
+          { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
+          { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },
+          { "Name": "themoviedb - API", "link": "https://www.themoviedb.org/" }
         ],
         "Tech": [
-          {
-            "icon": "/Media/JS.png",
-            "alt": "JavaScript icon"
-          },
-          {
-            "icon": "/Media/REACT.png",
-            "alt": "React icon"
-          },
-          {
-            "icon": "/Media/Mongo.png",
-            "alt": "MongoDB icon"
-          },
-          {
-            "icon": "/Media/HBS.png",
-            "alt": "Handlebars icon"
-          },
-          {
-            "icon": "/Media/CSS.png",
-            "alt": "CSS icon"
-          },
-          {
-            "icon": "/Media/REST.png",
-            "alt": "REST API icon"
-          },
-          {
-            "icon": "/Media/GIT.png",
-            "alt": "GIT icon"
-          }
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/Mongo.png", "alt": "Mongo icon" },
+          { "icon": "/Media/HBS.png", "alt": "HBS icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
         ]
       }
     ]
   },
+
   "Skills": {
     "header": "Skills",
+    "subheader": "1–3 = Limited experience, 4–5 = Basic knowledge, 6–8 = Strong skills, 9–10 = Very strong skills. *Click a skill to see more information.*",
+    "categoryHeader": "All, Project Management, Programming, Communication Skills, Databases, Cloud Services, Developer Tools",
     "items": [
-      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "5", "desc": "Testing description for Python", "slot": "Programming" },
-      { "name": "Scrum basics", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "level": "5", "desc": "Testing description for Scrum basics", "slot": "Management" },
-      { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "5", "desc": "Testing description for Jira", "slot": "Management" },
-      { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "5", "desc": "Testing description for Confluence", "slot": "Management" },
-      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon", "level": "5", "desc": "Testing description for Robot Framework", "slot": "Programming" },
-      { "name": "Java OOP", "icon": "/Media/Java.png", "alt": "Java icon", "level": "5", "desc": "Testing description for Java OOP", "slot": "Programming" },
-      { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "Testing description for MySQL", "slot": "Database" },
-      { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "Testing description for WordPress", "slot": "Programming" },
-      { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "5", "desc": "Testing description for REST API", "slot": "Programming" },
-      { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "5", "desc": "Testing description for GIT", "slot": "Programming" },
-      { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "5", "desc": "Testing description for JavaScript", "slot": "Programming" },
-      { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon", "level": "5", "desc": "Testing description for HTML", "slot": "Programming" },
-      { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "level": "5", "desc": "Testing description for CSS", "slot": "Programming" },
-      { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "level": "5", "desc": "Testing description for React + React Native", "slot": "Programming" },
-      { "name": "Handlebars", "icon": "/Media/HBS.png", "alt": "HBS icon", "level": "5", "desc": "Testing description for Handlebars", "slot": "Programming" },
-      { "name": "MongoDB", "icon": "/Media/Mongo.png", "alt": "Mongo icon", "level": "5", "desc": "Testing description for MongoDB", "slot": "Database" },
-      { "name": "Astro", "icon": "/Media/Astro.png", "alt": "Astro icon", "level": "5", "desc": "Testing description for Astro", "slot": "Programming" },
-      { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "level": "5", "desc": "Testing description for Node.js", "slot": "Programming" },
-      { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "5", "desc": "Testing description for Express.js", "slot": "Programming" },
-      { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "5", "desc": "Testing description for PHP", "slot": "Programming" },
-      { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "5", "desc": "Testing description for UiPath", "slot": "Programming" },
-      { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Testing description for Android Studio", "slot": "Programming" },
-      { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Testing description for Google Cloud", "slot": "Cloud" },
-      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "5", "desc": "Testing description for Hugging Face", "slot": "Programming" },
-      { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "5", "desc": "Testing description for Postman", "slot": "Programming" },
-      { "name": "Windows OS basics", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Testing description for Windows OS basics", "slot": "Soft Skills" },
-      { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "5", "desc": "Testing description for Machine Learning", "slot": "Programming" },
-      { "name": "Data analysis", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "5", "desc": "Testing description for Data analysis with Python", "slot": "Programming" }
+      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "level": "7", "desc": "I have used Python in several projects and I know it well.", "slot": "Programming" },
+      { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum has been used in every project for the past couple of years.", "slot": "Project Management" },
+      { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon", "level": "8", "desc": "Jira has been a key tool in project management and task tracking.", "slot": "Project Management" },
+      { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "level": "9", "desc": "Confluence has been a key tool in documentation and project collaboration.", "slot": "Project Management" },
+      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon", "level": "4", "desc": "I have used Robot Framework a few times for front-end testing.", "slot": "Developer Tools" },
+      { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon", "level": "7", "desc": "I have used Java in multiple projects.", "slot": "Programming" },
+      { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "Familiar with MySQL, but have used it less frequently.", "slot": "Databases" },
+      { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "I know the basics of WordPress usage and management.", "slot": "Developer Tools" },
+      { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "A school project where we studied algorithms like KNN, K-means, SVM, and Linear Regression. Still highly interested!", "slot": "Programming" },
+      { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "9", "desc": "I can build and utilize REST APIs effectively.", "slot": "Developer Tools" },
+      { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "9", "desc": "Version control has been an important part of my projects for years.", "slot": "Developer Tools" },
+      { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "9", "desc": "Used actively in several projects, strong knowledge.", "slot": "Programming" },
+      { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon", "level": "9", "desc": "Used in several web projects.", "slot": "Programming" },
+      { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "level": "8", "desc": "Used in several web projects.", "slot": "Programming" },
+      { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "level": "9", "desc": "Key technology in multiple projects during the last year.", "slot": "Programming" },
+      { "name": "Handlebars", "icon": "/Media/HBS.png", "alt": "HBS icon", "level": "5", "desc": "Used in one project.", "slot": "Programming" },
+      { "name": "MongoDB", "icon": "/Media/Mongo.png", "alt": "Mongo icon", "level": "8", "desc": "Used in two larger projects where I was responsible for database setup and structure.", "slot": "Databases" },
+      { "name": "Astro", "icon": "/Media/Astro.png", "alt": "Astro icon", "level": "2", "desc": "Used in one project, basic knowledge.", "slot": "Programming" },
+      { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "level": "8", "desc": "Used actively in a backend project.", "slot": "Programming" },
+      { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "level": "8", "desc": "Used actively in a backend project.", "slot": "Programming" },
+      { "name": "PHP", "icon": "/Media/php.png", "alt": "PHP icon", "level": "2", "desc": "Some basic usage in the past.", "slot": "Programming" },
+      { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Used in an automation testing project.", "slot": "Developer Tools" },
+      { "name": "Android Studio", "icon": "/Media/Androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Used in React Native project.", "slot": "Developer Tools" },
+      { "name": "Google Cloud", "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
+      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Used to fetch the Llama language model during AI course.", "slot": "Developer Tools" },
+      { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Used frequently for API testing.", "slot": "Developer Tools" },
+      { "name": "Windows basics", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Basic CMD and PowerShell usage.", "slot": "Developer Tools" },
+      { "name": "Data analysis with Python", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "3", "desc": "Completed a few courses on the topic.", "slot": "Programming" },
+      { "name": "Finnish", "icon": "/Media/FIN.png", "alt": "Finnish icon", "level": "10", "desc": "Native language", "slot": "Communication Skills" },
+      { "name": "English", "icon": "/Media/UK.png", "alt": "English icon", "level": "9", "desc": "Fluent spoken and written skills.", "slot": "Communication Skills" },
+      { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "Currently learning and using TDD.", "slot": "Developer Tools" },
+      { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "level": "4", "desc": "A new framework for me, currently learning and practicing.", "slot": "Programming" },
+      { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon", "level": "5", "desc": "Used Netlify to deploy my older portfolios.", "slot": "Cloud Services" },
+      { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon", "level": "5", "desc": "Used Vercel to deploy this portfolio.", "slot": "Cloud Services" },
+      { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "level": "6", "desc": "Used to create this portfolio website.", "slot": "Programming" },
+      { "name": "Teamwork", "icon": "/Media/Teamwork.png", "alt": "Teamwork icon", "desc": "Comfortable working and collaborating in teams.", "slot": "Communication Skills" },
+      { "name": "Problem-solving", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Improved through different projects and challenges.", "slot": "Communication Skills" },
+      { "name": "Creativity", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "I enjoy brainstorming and creating new ideas.", "slot": "Communication Skills" },
+      { "name": "Active learning", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Committed to continuous learning in software development.", "slot": "Communication Skills" },
+      { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Currently learning JUnit in a project.", "slot": "Developer Tools" },
+      { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
+      { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
+      { "name": "Expo", "icon": "/Media/Expo.png", "alt": "Expo icon", "level": "6", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
     ]
-},
+  },
+
   "info": {
-  "header": "Who is Teemu Tupola?",
-  "Infobox2":{ 
-    "Info": "I am an aspiring young software developer from Hämeenlinna, always full of humor and questions! I’m currently in my third year studying Business Information Technology at HAMK. I have a strong foundation in programming and enjoy building reliable, functional solutions in software development. My interests focus especially on backend development, fixing errors and bugs, and debugging — areas where I get to use my problem-solving skills and curiosity in the best possible way.",
-    "Pic" : "/Media/Omakuva.jpg"
-  },
-  "Infobox3":{ 
-    "Info": "I am an aspiring young software developer from Hämeenlinna, always full of humor and questions! I’m currently in my third year studying Business Information Technology at HAMK. I have a strong foundation in programming and enjoy building reliable, functional solutions in software development. My interests focus especially on backend development, fixing errors and bugs, and debugging — areas where I get to use my problem-solving skills and curiosity in the best possible way.",
-    "Pic" : "/Media/Omakuva.jpg"
-  },
-  "Infobox4":{ 
-    "Info": "My goal is to continuously grow as a software developer and take part in meaningful projects that bring real value to users. I’m confident that my passion for programming and willingness to learn make me a motivated and committed professional.",
-    "Pic" : "/Media/Omakuva.jpg"
-  },
-  "Harrastukset": [
-    {
-      "Programming": "Coding is both a hobby and a passion for me. I enjoy learning new programming languages and technologies, as well as developing different kinds of projects.",
-      "icon": "/Media/data.png"
+    "header": "Who is Teemu?",
+    "LifeCareer": { 
+      "Header": "Life & Career",
+      "Info": "I am a 22-year-old developer from Hämeenlinna, Finland, and my interest in technology has followed me since middle school. I have always wanted to understand how things work, and that curiosity eventually led me into software development. I graduated as an ICT technician from vocational school, spent a year in the army working with reconnaissance drones, and since then I have been building my path toward a career in software development. Traveling is also an important part of my life. Seeing new places and cultures has taught me openness and strengthened my motivation to take on new challenges. I believe these experiences have made me easy-going, approachable, and a collaborative team player who learns well with others. I am currently finishing my degree, and I am excited to see where my developer journey will lead next. My goal is to become a developer who builds clear and functional solutions while keeping a healthy dose of humor along the way.",
+      "Pic": "/Media/Lontoo.jpg"
     },
-    {
-      "Disc Golf": "Disc golf is a relaxing and fun hobby that combines being outdoors with precision. It’s a great way to spend time with friends.",
-      "icon": "/Media/data.png"
+    "Abilities": { 
+      "Header": "Strengths",
+      "Info": "My strengths include problem-solving, teamwork, and a strong desire to continuously learn. I perform best in a team where I can share ideas, learn from others, and build solutions collaboratively. I have worked in various types of projects and situations, which has improved my adaptability and flexibility in work environments.",
+      "Pic": "/Media//ryhma.jpg"
     },
-    {
-      "Jogging": "Jogging is an excellent way to maintain both physical and mental well-being. It helps clear the mind and improves endurance.",
-      "icon": "/Media/data.png"
+    "Goals": { 
+      "Header": "Goals",
+      "Info": "My goal is to grow as a software developer and learn something new in every project. I want to strengthen my backend and web development skills and gain a deeper understanding of software architecture, databases, and cloud environments. I aim to think more holistically, recognize real client needs, and build solutions that help both users and developers. I see my career as a long-term learning journey towards becoming a senior developer. I want to take responsibility, be a valuable teammate, improve my communication skills, and face new challenges with confidence. I am motivated by building something meaningful, functional and impactful.",
+      "Pic": "/Media/RiseUp.png"
     },
-    {
-      "Gaming": "Video games are an entertaining hobby that develop problem-solving abilities and strategic thinking.",
-      "icon": "/Media/data.png"
-    }
-  ]
-},
-"footer": {
-        "Links": [
-            {
-                "href": "https://github.com/Tupolaa",
-                "label": "Github",
-                "img": "/Media/GIT.png",
-                "alt": "GitHub"
-            },
-            {
-                "href": "https://www.linkedin.com/in/teemutupola/",
-                "label": "LinkedIn",
-                "img": "/Media/Linkkari.png",
-                "alt": "LinkedIn"
-            }
-        ]
-    }
+    "Freetime": { 
+      "Header": "Free Time",
+      "Info": "In my free time, I enjoy doing much more than just sitting at a computer. Working outdoors in fields and forests and using a chainsaw have surprisingly become meaningful hobbies for me — they allow hands-on work and a peaceful connection with nature. I also love spending time with friends, whether it's being outside, gaming, or simply chatting.",
+      "Pic": "/Media/traktori.jpg"
+    },
+    "Hobbytitle": "Hobbies",
+    "Harrastukset": [
+      {
+        "Koodaus": "Programming is both a hobby and a passion for me. I enjoy learning new languages and technologies and building meaningful projects.",
+        "icon": "/Media/AI_Koodaus.png"
+      },
+      {
+        "Frisbeegolf": "I started disc golf in summer 2024 and quickly got hooked. I mostly play during the summer, either alone or with friends.",
+        "icon": "/Media/AI_Friba.png"
+      },
+      {
+        "Lenkkeily": "Running helps me clear my head, get fresh air, and spend time with friends. It balances the screen-focused work and keeps life in good rhythm.",
+        "icon": "/Media/AI_Lenkki.png"
+      },
+      {
+        "Pelaaminen": "I have played computer games for about nine years, mainly FPS games and F1 2025.",
+        "icon": "/Media/AI_Pelaa.png"
+      }
+    ]
+  },
+
+  "footer": {
+    "Links": [
+      {
+        "href": "https://github.com/Tupolaa",
+        "label": "Github",
+        "img": "/Media/GIT.png",
+        "alt": "GitHub"
+      },
+      {
+        "href": "https://www.linkedin.com/in/teemutupola/",
+        "label": "LinkedIn",
+        "img": "/Media/Linkkari.png",
+        "alt": "LinkedIn"
+      }
+    ]
+  }
 }
