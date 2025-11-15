@@ -30,6 +30,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
   align-items: start;
+  
 }
 
 /* Individual skill card */
@@ -40,7 +41,7 @@
   display: flex;
   gap: 14px;
   align-items: flex-start;   /* align items to top so long text grows downward */
-  background: rgba(255,255,255,0.02);
+  background: rgba(85, 85, 85, 0.507);
   border-radius: 12px;
   padding: 14px;
   transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
