@@ -1,12 +1,11 @@
 import React from "react";
+import Head from "next/head"; // ⬅️ import Head
 import Navbar from "../components/header.js";
 import Profile from "../components/Profile.js";
 import Projects from "../components/Projects.js";
 import Skills from "../components/Skills.js";
 import Info from "../components/info.js";
 import Footer from "../components/Footer.js";
-
-
 
 export default function Home() {
   const sectionStyle = {
@@ -17,10 +16,17 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Teemu Tupola – Portfolio</title>
+        <meta
+          name="description"
+          content="Personal portfolio website showcasing my projects, skills, and background as a software developer."
+        />
+      </Head>
+
       <Navbar />
 
       <main style={{ paddingTop: 100 }}>
-        {/* Main content wrapper */}
         <section style={sectionStyle} id="Profile">
           <section>
             <Profile />
@@ -38,6 +44,7 @@ export default function Home() {
             <Info />
           </section>
         </section>
+
         <Footer />
       </main>
     </>
