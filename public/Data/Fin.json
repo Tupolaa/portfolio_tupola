@@ -276,6 +276,12 @@
                 "label": "LinkedIn",
                 "img": "/Media/Linkkari.png",
                 "alt": "LinkedIn"
+            },
+            {
+                "href": "/Media/CV_Tupola_2025_FIN.pdf",
+                "label": "CV",
+                "img": "/Media/CV.png",
+                "alt": "CV"
             }
         ]
     }
