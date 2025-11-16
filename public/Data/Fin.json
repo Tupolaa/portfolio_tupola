@@ -21,7 +21,7 @@
     "projects": [
       {
         "title": "AI-based Invoice assistant",
-        "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
+        "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajan kielimallin käytöstä. Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit ja Astro.",
         "media": [
           {
             "type": "video",
