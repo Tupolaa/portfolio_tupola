@@ -252,6 +252,26 @@ body.modal-open header {
     font-size: 1rem;
     margin: 20px 0;
   }
+  .profile-heading-svg {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  margin-bottom: 12px; /* a bit more spacing below */
+}
+
+/* MAIN NAME */
+.profile-heading-svg text {
+  font-size: clamp(10rem, 10vw, 4rem) !important;
+  stroke-width: 1.2 !important;
+  transform: translateY(-40px); 
+}
+
+/* TITLE (Backend Developer) */
+.profile-heading-svg .title-text {
+  font-size: clamp(6.8rem, 8vw, 3rem) !important;
+  stroke-width: 1 !important;
+  transform: translateY(10px);
+}
 }
 
 /* ========== MOBILE ========== */
@@ -307,14 +327,14 @@ body.modal-open header {
 .profile-heading-svg text {
   font-size: clamp(10rem, 10vw, 4rem) !important;
   stroke-width: 1.2 !important;
-  transform: translateY(-40px); /* 🔥 adds spacing under image */
+  transform: translateY(-40px); 
 }
 
 /* TITLE (Backend Developer) */
 .profile-heading-svg .title-text {
   font-size: clamp(6.8rem, 8vw, 3rem) !important;
   stroke-width: 1 !important;
-  transform: translateY(10px); /* 🔥 pushes title further below name */
+  transform: translateY(10px); 
 }
 
 
