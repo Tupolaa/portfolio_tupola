@@ -1,4 +1,4 @@
-/* ============ HEADER FIXED (iPhone-safe) ============ */
+
 header {
   position: fixed;
   top: 0;
@@ -8,11 +8,11 @@ header {
   background-color: #000000;
   border-bottom: 3px solid #00ffdd;
 
-  /* 🟦 stronger layer & isolation fix */
+ 
   z-index: 999999;
   isolation: isolate;
 
-  /* 🟦 support iPhone notch & safe area */
+
   padding-top: env(safe-area-inset-top);
 }
 
@@ -29,7 +29,6 @@ header {
   position: relative;
   transition: all 0.1s ease-in-out;
 
-  /* 🟦 ensure visible stacking */
   z-index: 1;
 }
 
@@ -51,7 +50,7 @@ nav {
   gap: 1rem;
   flex: 1;
 
-  /* 🟦 prevent iOS clipping */
+  
   overflow: visible;
 }
 
@@ -217,7 +216,7 @@ nav:hover {
   }
 }
 
-/* 🟦 ensure content does not slide under header */
+
 body {
   padding-top: calc(70px + env(safe-area-inset-top));
 }
