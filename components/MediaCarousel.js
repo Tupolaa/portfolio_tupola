@@ -321,9 +321,9 @@ export default function MediaCarousel({ media = [] }) {
                     src={img.src}
                     alt={img.alt}
                     style={{
-                      width: "100%",
+                      width: "90%",
                       maxWidth: "700px",
-                      height: "auto",
+                      height: "400px",
                       objectFit: "cover",
                       borderRadius: "20%",
                       border: "3px solid #00ffdd",
