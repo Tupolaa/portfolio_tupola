@@ -85,6 +85,7 @@ export default function MediaCarousel({ media = [] }) {
     if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
   };
 
+  // ✅ transparent viewports so page background shows through
   const viewportStyle =
     isText || isHobbies
       ? {
@@ -94,7 +95,7 @@ export default function MediaCarousel({ media = [] }) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "flex-start",
-          background: "#111",
+          background: "transparent",
           padding: "24px",
           boxSizing: "border-box",
         }
@@ -104,12 +105,12 @@ export default function MediaCarousel({ media = [] }) {
           aspectRatio: "16 / 9",
           display: "grid",
           placeItems: "center",
-          background: "#111",
+          background: "transparent",
           padding: 0,
           boxSizing: "border-box",
         };
 
-  // 🔹 Build image list for text slides: support `image` and `images`
+  // Build image list for text slides: support `image` and `images`
   let textImages = [];
   if (Array.isArray(item?.images)) {
     item.images.forEach((img, idx) => {
@@ -128,7 +129,6 @@ export default function MediaCarousel({ media = [] }) {
     });
   }
   if (item?.image) {
-    // keep backward compatibility, add single image as first
     textImages.unshift({
       src: item.image,
       alt: item.imageAlt || item.title || "Image",
@@ -149,7 +149,7 @@ export default function MediaCarousel({ media = [] }) {
         margin: "16px 0",
         borderRadius: 12,
         overflow: "hidden",
-        background: "#0b0b0b",
+        background: "transparent", // ✅ no black panel here
       }}
     >
       {/* smooth transition wrapper */}
