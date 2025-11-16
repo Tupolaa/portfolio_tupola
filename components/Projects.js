@@ -28,6 +28,7 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <h2>{content.Projects?.header}</h2>
+      <p className="project-spoiler">{content.Projects?.Spoiler}</p>
 
       <div className="projects-container">
         {projects.map((project) => (

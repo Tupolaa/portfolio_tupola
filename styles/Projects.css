@@ -12,6 +12,13 @@
   border: 2px solid #0eb5f1;
   border-radius: 50px;
 }
+.project-spoiler {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1px;
+  color: #0eb5f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .projects-section h2 {
   text-align: center;
   margin-bottom: 30px;
