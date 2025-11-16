@@ -43,7 +43,8 @@
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
-          { "icon": "/Media/Astro.png", "alt": "Astro icon" }
+          { "icon": "/Media/Astro.png", "alt": "Astro icon" },
+          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" }
         ]
       },
 
@@ -87,7 +88,7 @@
 
       {
         "title": "Software Testing",
-        "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included test case creation, writing test scenarios, using keyword-based automation, running tests, and analyzing results.",
+        "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included defining test cases, building test scenarios, leveraging keyword-driven test automation, as well as executing the tests and analyzing the results.",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
@@ -114,20 +115,22 @@
 
       {
         "title": "Automation Robotics",
-        "description": "A school project where we implemented an automated invoice processing workflow using UiPath, Robot Framework and Python. UiPath read all PDF invoices, parsed header and row data, and saved them to CSV files. Robot Framework transferred the data into a database using SQL queries and updated processing status values. Python and Robot Framework were also used to validate invoice reference numbers, IBAN codes and sum correctness.",
+        "description": "A school project where we implemented an invoice processing workflow using robotic process automation. The solution utilized UiPath, Robot Framework, and Python to automate reading PDF invoices, extracting data, storing it, and performing validations. UiPath read all PDF invoices, parsed header and line-item details, and saved them into CSV files. Robot Framework transferred the data into a database using SQL queries and updated the processing status of invoices. Python and Robot Framework were also used for various validations, such as checking reference numbers, IBAN codes, and invoice totals.",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
+          { "icon": "/Media/UiPath.png", "alt": "UiPath icon" }
         ]
       },
 
       {
         "title": "Movie Review Website",
-        "description": "A school project, where we created react-based movie browsing and review website developed as a final project in the Backend course in spring 2025. The REST API fetches movie data from TheMovieDB API and stores it to a MongoDB database, from where it is displayed in the UI. Users can freely browse movies and, after logging in, also write reviews. The project was later continued in a Mobile Programming course by developing a React Native mobile application with the same functionality and mobile-optimized user interface.",
+        "description": "A school project completed as the final assignment for the Backend course in spring 2025. We developed a movie review website using React, where the site retrieves movies from TheMovieDB API and stores them in a MongoDB database, from which they are fetched into the UI. Users can freely browse movies and after logging in, also review them. The project was extended in the Mobile Programming course by building a React Native mobile version of the application, providing the same functionality as the web app but with a user interface optimized for mobile use",
        
         
         "links": [
@@ -203,7 +206,7 @@
     "header": "Who is Teemu?",
     "LifeCareer": { 
       "Header": "Life & Career",
-      "Info": "I am a 22-year-old developer from Hämeenlinna, and my interest in technology has followed me since middle school. When I was younger, I always wanted to understand how things work, and that same curiosity eventually led me to software development. I graduated from vocational school as an IT technician, spent and genuinely enjoyed a year in the military working with reconnaissance drones, and since then I have been building my skills toward a career in software development. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable, and collaborative person who enjoys working with others and learning from them. I’m now in my final study years, and I’m excited to see where my path as a developer will lead next. My goal is to grow into a professional who builds clear and functional solutions while keeping just the right amount of humor in the work.",
+      "Info": "I am a 22-year-old developer from Hämeenlinna, and my interest in technology has been with me since middle school. As a kid, I was always curious about how things work, and that same curiosity eventually led me to software development. I graduated from vocational school as an IT specialist, spent and enjoyed a year in the army working with reconnaissance drones, and have since been building my skills toward a career as a software developer. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable, and collaborative person who enjoys working with others and learning from them. I’m now in my final study years, and I’m excited to see where my path as a developer will lead next. My goal is to grow into a professional who builds clear and functional solutions while keeping just the right amount of humor in the work.",
       "Pic": "/Media/Lontoo.jpg"
     },
     "Abilities": { 
@@ -218,7 +221,7 @@
     },
     "Freetime": { 
       "Header": "Free Time",
-      "Info": "In my free time, I enjoy doing much more than just sitting at a computer. Working outdoors in fields and forests and using a chainsaw have surprisingly become meaningful hobbies for me — they allow hands-on work and a peaceful connection with nature. I also love spending time with friends, whether it's being outside, gaming, or simply chatting.",
+      "Info": "In my free time, I enjoy doing much more than just sitting at a computer. Working outdoors in fields and forests and using a chainsaw have surprisingly become meaningful hobbies for me — they allow hands-on work and connection with nature. I also love spending time with friends, whether it's being outside, gaming, or simply chatting.",
       "Pic": [{
       "src": "/Media/traktori.jpg",
       "alt": "Me in a tractor in the field"

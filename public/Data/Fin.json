@@ -42,7 +42,8 @@
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
-          { "icon": "/Media/Astro.png", "alt": "Astro icon" }
+          { "icon": "/Media/Astro.png", "alt": "Astro icon" },
+          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" }
         ]
       },
 
@@ -122,13 +123,15 @@
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
+          { "icon": "/Media/UiPath.png", "alt": "UiPath icon" }
         ]
       },
 
       {
         "title": "Elokuvien arviointisivusto",
-        "description": "Kouluprojektina tehty Backend-kurssin lopputyö keväällä 2025. Reactilla toteutettu elokuvasivusto, jolla sivuston REST API hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
+        "description": "Kouluprojektina tehty Backend-kurssin lopputyö keväällä 2025. Reactilla toteutettu elokuvasivusto, jolla sivuston hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
         
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
@@ -202,7 +205,7 @@
   "header": "Kuka on Teemu?",
   "LifeCareer": { 
     "Header": "Elämä & ura",
-    "Info": "Olen 22-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorempana halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta vienyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi, vietin ja nautin vuoden armeijassa tiedustelu-lennokkien parissa ja olen sen jälkeen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Pidän matkustamisesta ja uusien paikkojen näkemisestä aina kun siihen tulee mahdollisuus. Ne ovat lisänneet avoimuuttani ja vahvistaneet halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt viimeisiä opintovuosia viedään, ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
+    "Info": "Olen 22-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorempana halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta vienyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi,suoritin asepalvelukseni pääasiassa Parolassa ja erikoistuin tiedustelulennokkeihin. lennokkioperaattorina toimiminen teki kokemuksesta erittäin mielenkiintoisen, ja nautin todella ajastani, jonka jälkeen olen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Pidän matkustamisesta ja uusien paikkojen näkemisestä aina kun siihen tulee mahdollisuus. Ne ovat lisänneet avoimuuttani ja vahvistaneet halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt viimeisiä opintovuosia viedään, ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
     "Pic": "/Media/Lontoo.jpg"
   },
   "Abilities": { 
@@ -216,7 +219,7 @@
   },
   "Freetime": { 
     "Header": "Vapaa-aika",
-    "Info": "Vapaa-ajallani tykkään tehdä paljon muutakin, kuin istua koneella. Pelto ja metsähommat sekä moottorisahan 'ulkoiluttaminen' ovat itselle yllättävän tärkeitä niissä pääsee konkreettisesti tekemään käsillä ja samalla rauhoittumaan luonnon keskellä. Vietän myös mielelläni aikaa kavereiden kanssa, oli kyse sitten ulkoilusta, pelaamisesta tai vaikka ihan vain juttelusta.",   
+    "Info": "Vapaa-ajallani tykkään tehdä paljon muutakin, kuin istua koneella. Pelto ja metsähommat sekä moottorisahan 'ulkoiluttaminen' ovat itselle yllättävän tärkeitä niissä pääsee konkreettisesti tekemään käsillä ja samalla olemaan luonnon keskellä Vietän myös mielelläni aikaa kavereiden kanssa, oli kyse sitten ulkoilusta, pelaamisesta tai vaikka ihan vain juttelusta.",   
     "Pic": [{
       "src": "/Media/traktoriV2.jpg",
       "alt": "Mina traktorissa pellolla"
