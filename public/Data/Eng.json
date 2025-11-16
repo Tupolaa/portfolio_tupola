@@ -11,7 +11,7 @@
   "Profile": {
     "name": "Teemu Tupola",
     "title": "Backend Developer",
-    "description": "I am a young software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK.\n\nI know the fundamentals of programming and I am eager to develop reliable and functional software solutions. I am especially interested in backend development, bug-fixing, and debugging, because they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "description": "I am a young software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK.\n\nI know the fundamentals of programming and I am eager to develop reliable and functional software solutions. I am especially interested in backend development, bug-fixingand debugging, because they allow me to use my problem-solving skills and curiosity in the best possible way.",
     "quote": "\"I learn best by doing – with a little touch of humor.\""
   },
 
@@ -21,7 +21,7 @@
     "projects": [
       {
         "title": "AI-based Invoice Assistant",
-        "description": " In Burgos, Spain i participated in the RUN-EU BIP Smart Everything course, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
+        "description": " In Burgos, Spain i participated in the RUN-EU BIP Smart Everything course, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a 4 week remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
         "media": [
           {
             "type": "video",
@@ -50,7 +50,7 @@
 
       {
         "title": "Personal Portfolio",
-        "description": "The third and newest version of my personal portfolio. The different versions demonstrate my development over time, how I have learned new technologies and improved my implementation methods. The website showcases my skills, projects, and knowledge gained during my studies. Built with Next.js and styled to be responsive and clean.",
+        "description": "The third and newest version of my personal portfolio. The different versions demonstrate my development over time, how I have learned new technologies and improved my implementation methods. The website showcases my skills, projectsand knowledge gained during my studies. Built with Next.js and styled to be responsive and clean.",
         "media": [
           { "type": "image", "src": "/Media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
           { "type": "image", "src": "/Media/Dev.jpg", "alt": "Screenshot of portfolio website in development" }
@@ -70,7 +70,7 @@
 
       {
         "title": "React Native Application",
-        "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed information, and read reviews written by others.",
+        "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed informationand read reviews written by others.",
         "media": [
           { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
         ],
@@ -115,7 +115,7 @@
 
       {
         "title": "Automation Robotics",
-        "description": "A school project where we implemented an invoice processing workflow using robotic process automation. The solution utilized UiPath, Robot Framework, and Python to automate reading PDF invoices, extracting data, storing it, and performing validations. UiPath read all PDF invoices, parsed header and line-item details, and saved them into CSV files. Robot Framework transferred the data into a database using SQL queries and updated the processing status of invoices. Python and Robot Framework were also used for various validations, such as checking reference numbers, IBAN codes, and invoice totals.",
+        "description": "A school project where we implemented an invoice processing workflow using robotic process automation. The solution utilized UiPath, Robot Framework and Python to automate reading PDF invoices, extracting data, storing it and performing validations. UiPath read all PDF invoices, parsed header and line-item detailsand saved them into CSV files. Robot Framework transferred the data into a database using SQL queries and updated the processing status of invoices. Python and Robot Framework were also used for various validations, such as checking reference numbers, IBAN codes and invoice totals.",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
@@ -164,7 +164,7 @@
       { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon", "level": "7", "desc": "I have used Java in multiple projects.", "slot": "Programming" },
       { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon", "level": "5", "desc": "Familiar with MySQL, but have used it less frequently.", "slot": "Databases" },
       { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "level": "5", "desc": "I know the basics of WordPress usage and management.", "slot": "Developer Tools" },
-      { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "A school project where we studied algorithms like KNN, K-means, SVM, and Linear Regression. Still highly interested!", "slot": "Programming" },
+      { "name": "Machine Learning", "icon": "/Media/ML.png", "alt": "Machine learning icon", "level": "3", "desc": "A school project where we studied algorithms like KNN, K-means, SVM and Linear Regression. Still highly interested!", "slot": "Programming" },
       { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "level": "9", "desc": "I can build and utilize REST APIs effectively.", "slot": "Developer Tools" },
       { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon", "level": "9", "desc": "Version control has been an important part of my projects for years.", "slot": "Developer Tools" },
       { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "level": "9", "desc": "Used actively in several projects, strong knowledge.", "slot": "Programming" },
@@ -206,17 +206,17 @@
     "header": "Who is Teemu?",
     "LifeCareer": { 
       "Header": "Life & Career",
-      "Info": "I am a 22-year-old developer from Hämeenlinna, and my interest in technology has been with me since middle school. As a kid, I was always curious about how things work, and that same curiosity eventually led me to software development. I graduated from vocational school as an IT specialist, spent and enjoyed a year in the army working with reconnaissance drones, and have since been building my skills toward a career as a software developer. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable, and collaborative person who enjoys working with others and learning from them. I’m now in my final study years, and I’m excited to see where my path as a developer will lead next. My goal is to grow into a professional who builds clear and functional solutions while keeping just the right amount of humor in the work.",
+      "Info": "I am a 22-year-old developer from Hämeenlinna and my interest in technology has been with me since middle school. I have always wanted to understand how things work and that same curiosity eventually led me to software development. I graduated from vocational school as an ICT support technician. I completed my military service mainly in Parola and specialized in reconnaissance drones. Serving as a drone operator made the experience extremely interesting. I have since been building my skills toward a career as a software developer. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable and collaborative person who enjoys working with others and learning from them. I’m currently in my final year of studies and excited to see where my path as a developer will lead next. My goal is to grow into a professional who creates clear and functional solutions while keeping just the right touch of humor in the process.",
       "Pic": "/Media/Lontoo.jpg"
     },
     "Abilities": { 
       "Header": "Strengths",
-      "Info": "My strengths include problem-solving, teamwork, and a strong desire to continuously learn. I perform best in a team where I can share ideas, learn from others, and build solutions collaboratively. I have worked in various types of projects and situations, which has improved my adaptability and flexibility in work environments.",
+      "Info": "My strengths include problem-solving, teamwork and a strong desire to continuously learn. I perform best in a team where I can share ideas, learn from others and build solutions collaboratively. I have worked in various types of projects and situations, which has improved my adaptability and flexibility in work environments.",
       "Pic": "/Media//ryhma.jpg"
     },
     "Goals": { 
       "Header": "Goals & Future",
-      "Info": "My goal is to grow as a software developer and learn something new in every project. I want to strengthen my backend and web development skills and gain a deeper understanding of software architecture, databases, and cloud environments. I aim to think more holistically, recognize real client needs, and build solutions that help both users and developers. I see my career as a long-term learning journey towards becoming a senior developer. I want to take responsibility, be a valuable teammate, improve my communication skills, and face new challenges with confidence. I am motivated by building something meaningful, functional and impactful.",
+      "Info": "My goal is to grow as a software developer and learn something new in every project. I want to strengthen my backend and web development skills and gain a deeper understanding of software architecture, databases and cloud environments. I aim to think more holistically, recognize real client needs and build solutions that help both users and developers. I see my career as a long-term learning journey towards becoming a senior developer. I want to take responsibility, be a valuable teammate, improve my communication skills and face new challenges with confidence. I am motivated by building something meaningful, functional and impactful.",
       "Pic": "/Media/RiseUp.png"
     },
     "Freetime": { 
@@ -246,7 +246,7 @@
       },
       {
         "title": "Running",
-        "Lenkkeily": "Running helps me clear my head, get fresh air, and spend time with friends. It balances the screen-focused work and keeps life in good rhythm.",
+        "Lenkkeily": "Running helps me clear my head, get fresh air and spend time with friends. It balances the screen-focused work and keeps life in good rhythm.",
         "icon": "/Media/AI_Lenkki.png"
       },
        {
