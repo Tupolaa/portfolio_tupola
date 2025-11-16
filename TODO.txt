@@ -6,6 +6,7 @@ Features
 Bugs
 - Info kohdan caruselli puhelimella liikkuu omia aikojaan kun koittaa mennä alaspäin
 - Kun kielen vaihtaa ja on "taito valittuna" niin tulee tyhjää - kun kieli vaihtuu pitäisi vaihtaa skillit all
-- Musta aika tumma tausta - harmaa? joku neutraalimpi
-- Menu ei näy joillakin puhelimilla?
+- Musta aika tumma tausta - harmaa? joku neutraalimpi - DONE
+- Menu ei näy joillakin puhelimilla???????????????
 - Scrollable modal projekteihin - DONE
+- osa info kuvista skaalautuu väärin puhelimella.

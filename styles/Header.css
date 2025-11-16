@@ -1,3 +1,4 @@
+/* ============ HEADER FIXED (iPhone-safe) ============ */
 header {
   position: fixed;
   top: 0;
@@ -6,7 +7,13 @@ header {
   height: 70px;
   background-color: #000000;
   border-bottom: 3px solid #00ffdd;
-  z-index: 1000;
+
+  /* 🟦 stronger layer & isolation fix */
+  z-index: 999999;
+  isolation: isolate;
+
+  /* 🟦 support iPhone notch & safe area */
+  padding-top: env(safe-area-inset-top);
 }
 
 /* main nav wrapper */
@@ -21,9 +28,12 @@ header {
   padding: 0 1rem;
   position: relative;
   transition: all 0.1s ease-in-out;
+
+  /* 🟦 ensure visible stacking */
+  z-index: 1;
 }
 
-/* generic nav element (same as .navbar-container, but kept if you use <nav> elsewhere) */
+/* generic nav element */
 nav {
   transition: all 0.1s ease;
 }
@@ -40,6 +50,9 @@ nav {
   justify-content: center;
   gap: 1rem;
   flex: 1;
+
+  /* 🟦 prevent iOS clipping */
+  overflow: visible;
 }
 
 /* nav hover glow */
@@ -126,7 +139,7 @@ nav:hover {
 /* ============ HAMBURGER ============ */
 
 .hamburger {
-  display: none; /* shown only on mobile */
+  display: none;
   width: 28px;
   height: 22px;
   padding: 0;
@@ -146,7 +159,6 @@ nav:hover {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* animate to X when open */
 .hamburger.open span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -171,10 +183,9 @@ nav:hover {
     display: flex;
   }
 
-  /* nav-links becomes dropdown */
   .nav-links {
     position: absolute;
-    top: 70px; /* just under header */
+    top: 70px;
     left: 0;
     right: 0;
     background: #000000;
@@ -183,7 +194,7 @@ nav:hover {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 0 1rem;
-    display: none; /* hidden by default */
+    display: none;
   }
 
   .nav-links.open {
@@ -204,4 +215,9 @@ nav:hover {
   .lang-buttons button {
     width: auto;
   }
+}
+
+/* 🟦 ensure content does not slide under header */
+body {
+  padding-top: calc(70px + env(safe-area-inset-top));
 }
