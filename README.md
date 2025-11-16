@@ -46,11 +46,9 @@ Each file contains keys for `Profile`, `Projects`, `Skills`, `Footer`, etc. Keep
 
 Styles are in `styles/` (e.g., `Profile.css`, `Projects.css`, `Skills.css`, `Header.css`, `Footer.css`). The code uses plain CSS (no CSS-in-JS). Keep responsive breakpoints in these files to ensure mobile/tablet compatibility.
 
-## License
-
-This repository does not include a license by default. Add a `LICENSE` file (e.g., MIT) if you want to make the project open source.
-
 ## Contact
+
+if you find bug, error, typo or have improvement suggestion, please contact me.
 
 Author: Teemu Tupola
 
