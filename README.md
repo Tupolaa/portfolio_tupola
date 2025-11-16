@@ -22,7 +22,7 @@ Personal portfolio website — built with Next.js and plain CSS. This repository
 
 ## Deployment
 
-Deploy to Vercel, Netlify, or any static host that supports Next.js. For Vercel, connect the repository and Vercel detects Next.js automatically.
+Deployed  to [Vercel](https://vercel.com/)
 
 ## Project structure (important files)
 
@@ -42,22 +42,9 @@ This project loads content from JSON files under `public/Data/`:
 
 Each file contains keys for `Profile`, `Projects`, `Skills`, `Footer`, etc. Keep the JSON structure consistent: arrays for lists (e.g., `Projects.projects` or `Skills.items`) and use `slot` fields in skills for category filtering.
 
-Tips:
-
-- Image paths in JSON should use `/Media/YourImage.png` (leading slash and correct casing). If your editor or OS alters casing, fix paths to match `public/Media` exactly.
-- JSON must be valid (no comments). If you want comments, use a different file (e.g., `.jsonc`) and a small loader that strips comments.
-
 ## Styling & Components
 
 Styles are in `styles/` (e.g., `Profile.css`, `Projects.css`, `Skills.css`, `Header.css`, `Footer.css`). The code uses plain CSS (no CSS-in-JS). Keep responsive breakpoints in these files to ensure mobile/tablet compatibility.
-
-Key components to look at when editing:
-
-- `components/Profile.js` — animated SVG title and TiltedCard for desktop; static image for mobile
-- `components/Projects.js` — project cards and modal with `MediaCarousel`
-- `components/Skills.js` — category filter + hover overlays for descriptions
-- `components/MediaCarousel.js` — handles images, local videos and embeds YouTube URLs
-
 
 ## License
 
