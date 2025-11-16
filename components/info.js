@@ -40,15 +40,16 @@ const Info = () => {
   // Build slides for the carousel: Hobbies / Life / Info
  
   const slides = [
-  {
-    type: "hobbies",
-    title: profileData.Hobbytitle || "Hobbies",
-    hobbies,
-    //Friba, Lenkkeily, koodaus, Pelaaminen kuvat
-  },
-  {
+    {
     type: "text",
-    title: profileData.Abilities?.Header || "Life & Career",
+    title: profileData.LifeCareer?.Header || "",
+    content: [profileData.LifeCareer?.Info].filter(Boolean),
+    image: profileData.LifeCareer?.Pic || null,
+   
+  },
+    {
+    type: "text",
+    title: profileData.Abilities?.Header || "",
     content: [
       profileData.Abilities?.Info,
     ].filter(Boolean),
@@ -56,22 +57,21 @@ const Info = () => {
    
   },
   {
+    type: "hobbies",
+    title: profileData.Hobbytitle || "",
+    hobbies,
+    //Friba, Lenkkeily, koodaus, Pelaaminen kuvat
+  },
+  {
     type: "text",
-    title: profileData.Goals?.Header || "Goals",
+    title: profileData.Goals?.Header || "",
     content: [profileData.Goals?.Info].filter(Boolean),
     image: profileData.Goals?.Pic || null,
    
   },
   {
     type: "text",
-    title: profileData.LifeCareer?.Header || "Free Time",
-    content: [profileData.LifeCareer?.Info].filter(Boolean),
-    image: profileData.LifeCareer?.Pic || null,
-   
-  },
-  {
-    type: "text",
-    title: profileData.Freetime?.Header || "Free Time",
+    title: profileData.Freetime?.Header || "",
     content: [profileData.Freetime?.Info].filter(Boolean),
     image: profileData.Freetime?.Pic || null,
  

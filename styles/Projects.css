@@ -116,6 +116,9 @@
   z-index: 999;
   backdrop-filter: blur(6px);
 
+  /* optional: small padding so modal has space on small screens */
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .modal-content {
@@ -129,6 +132,11 @@
   position: relative;
   box-shadow: 0 0 50px 35px rgba(14, 181, 241, 0.3);
   animation: popIn 0.25s ease-out;
+
+  /* 🔥 scrollable modal */
+  max-height: 90vh;     /* never bigger than viewport height */
+  overflow-y: auto;     /* scroll inside modal when content is too tall */
+  overflow-x: hidden;   /* avoid horizontal scroll */
 }
 .modal-content h2 {
   margin-bottom: 10px;

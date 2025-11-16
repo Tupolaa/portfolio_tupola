@@ -19,22 +19,31 @@ function getYouTubeEmbedUrl(url) {
 
 export default function MediaCarousel({ media = [] }) {
   const [index, setIndex] = useState(0);
+  const [userInteracted, setUserInteracted] = useState(false); // 👈 NEW
+  const [fade, setFade] = useState(false); // 👈 For animation
   const count = media.length;
   const startX = useRef(null);
 
   const go = useCallback(
-    (delta) => {
+    (delta, user = false) => {
       if (!count) return;
-      setIndex((i) => (i + delta + count) % count);
+
+      if (user) setUserInteracted(true); // 👈 Stop auto slide after manual use
+
+      setFade(true); // start fade-out
+      setTimeout(() => {
+        setIndex((i) => (i + delta + count) % count);
+        setFade(false); // fade-in
+      }, 180); // duration matches CSS fade
     },
     [count]
   );
 
-  // Keyboard nav
+  // Keyboard navigation
   const onKey = useCallback(
     (e) => {
-      if (e.key === "ArrowRight") go(1);
-      if (e.key === "ArrowLeft") go(-1);
+      if (e.key === "ArrowRight") go(1, true);
+      if (e.key === "ArrowLeft") go(-1, true);
     },
     [go]
   );
@@ -44,7 +53,17 @@ export default function MediaCarousel({ media = [] }) {
     return () => document.removeEventListener("keydown", onKey);
   }, [onKey]);
 
-  // early return after hooks
+  // 🔁 Auto-rotate every 10 seconds until user interacts
+  useEffect(() => {
+    if (!count || userInteracted) return;
+
+    const timer = setInterval(() => {
+      go(1);
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, [count, go, userInteracted]);
+
   if (!count) return null;
 
   const safeIndex = ((index % count) + count) % count;
@@ -58,16 +77,15 @@ export default function MediaCarousel({ media = [] }) {
     (item.type ? item.type === "video" : inferIsVideo(item.src));
   const isYouTube = isVideo && /youtube|youtu\.be/.test(item.src);
 
-  // Touch swipe
   const onTouchStart = (e) => (startX.current = e.touches[0].clientX);
   const onTouchEnd = (e) => {
     if (startX.current == null) return;
+    setUserInteracted(true);
     const dx = e.changedTouches[0].clientX - startX.current;
     startX.current = null;
     if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
   };
 
-  // 🔹 Dynamic viewport style: auto height for text/hobbies, 16:9 for media
   const viewportStyle =
     isText || isHobbies
       ? {
@@ -102,15 +120,23 @@ export default function MediaCarousel({ media = [] }) {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: "100%", // full width inside info-section
+        maxWidth: "100%",
         margin: "16px 0",
         borderRadius: 12,
         overflow: "hidden",
         background: "#0b0b0b",
       }}
     >
-      {/* viewport */}
-      <div className="mc-viewport" style={viewportStyle}>
+      {/* smooth transition wrapper */}
+      <div
+        className="mc-viewport"
+        style={{
+          ...viewportStyle,
+          transition: "opacity 0.2s ease",
+          opacity: fade ? 0 : 1,
+        }}
+      >
+        {/* ---- CONTENT ---- */}
         {isHobbies ? (
           <div className="mc-hobbies-wrapper" style={{ width: "100%" }}>
             {item.title && (
@@ -127,7 +153,6 @@ export default function MediaCarousel({ media = [] }) {
                 {item.title}
               </h3>
             )}
-
             <div
               className="mc-hobbies-grid"
               style={{
@@ -177,6 +202,7 @@ export default function MediaCarousel({ media = [] }) {
                     >
                       {hobby.text}
                     </p>
+
                     {hobby.image && (
                       <img
                         src={hobby.image}
@@ -259,8 +285,8 @@ export default function MediaCarousel({ media = [] }) {
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",
-                  width: "100%",      // fill the slide width
-                  maxWidth: "700px",  // ← control how BIG it can go
+                  width: "100%",
+                  maxWidth: "700px",
                   height: "auto",
                   objectFit: "cover",
                   borderRadius: "20%",
@@ -312,7 +338,7 @@ export default function MediaCarousel({ media = [] }) {
       <button
         type="button"
         aria-label="Previous"
-        onClick={() => go(-1)}
+        onClick={() => go(-1, true)} // 👈 user = true
         className="mc-arrow mc-left"
         style={arrowStyle("left")}
       >
@@ -321,7 +347,7 @@ export default function MediaCarousel({ media = [] }) {
       <button
         type="button"
         aria-label="Next"
-        onClick={() => go(1)}
+        onClick={() => go(1, true)} // 👈 user = true
         className="mc-arrow mc-right"
         style={arrowStyle("right")}
       >
@@ -345,14 +371,17 @@ export default function MediaCarousel({ media = [] }) {
           <button
             key={i}
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => setIndex(i)}
+            onClick={() => {
+              setUserInteracted(true);
+              go(i - safeIndex);
+            }}
             style={{
               width: 10,
               height: 10,
               borderRadius: "50%",
               border: 0,
               background:
-                i === safeIndex ? "white" : "rgba(255,255,255,0.5)",
+                i === safeIndex ? "white" : "rgba(255, 0, 0, 0.5)",
               cursor: "pointer",
             }}
           />
@@ -372,9 +401,9 @@ function arrowStyle(side) {
     height: 36,
     display: "grid",
     placeItems: "center",
-    background: "rgba(0,0,0,0.6)",
+    background: "rgba(8, 62, 240, 1)",
     color: "white",
-    border: "1px solid rgba(255,255,255,0.25)",
+    border: "1px solid rgba(255, 255, 255, 0.25)",
     borderRadius: 999,
     cursor: "pointer",
     fontSize: 22,

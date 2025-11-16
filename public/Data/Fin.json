@@ -17,6 +17,7 @@
 
   "Projects": {
     "header": "Projektit",
+    "Spoiler" : "*Klikkaa projektia nähdäksesi lisätietoja.",
     "projects": [
       {
         "title": "AI-based Invoice assistant",
@@ -72,8 +73,8 @@
           
         ],
         "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" },
-          { "Name": "Backend Repository", "link": "https://github.com/joni23008/Backend-Web-Development" }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" }
+          
         ],
         "Tech": [
           { "icon": "/Media/JS.png", "alt": "JS icon" },

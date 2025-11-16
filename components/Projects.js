@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="modal-overlay" onClick={closeModal}>
           <div
             className="modal-content"
-            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+            onClick={(e) => e.stopPropagation()} 
           >
             <button className="close-btn" onClick={closeModal}>
               ✕

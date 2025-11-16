@@ -18,10 +18,6 @@ export default function Home() {
     <>
       <Head>
         <title>Teemu Tupola – Portfolio</title>
-        <meta
-          name="description"
-          content="Personal portfolio website showcasing my projects, skills, and background as a software developer."
-        />
       </Head>
 
       <Navbar />
@@ -31,15 +27,12 @@ export default function Home() {
           <section>
             <Profile />
           </section>
-
           <section id="projects">
             <Projects />
           </section>
-
           <section id="skills">
             <Skills />
           </section>
-
           <section id="Info">
             <Info />
           </section>

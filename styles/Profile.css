@@ -106,8 +106,8 @@ body.modal-open header {
   content: '"';
   position: absolute;
   font-size: 4rem;
-  color: rgb(7, 168, 243);
-  opacity: 0.3;
+  color: rgb(70, 7, 243);
+  opacity: 1.5;
   font-family: serif;
   line-height: 1;
 }

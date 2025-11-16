@@ -2,8 +2,11 @@
 
 /* ========== THEME VARIABLES ========== */
 :root {
-  --background: #000000; /* <-- musta */
-  --foreground: #ffffff;
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507)), url('/Media/backround.jpg');
+
+
+  
 }
 
 /* ========== GLOBAL BASE STYLES ========== */

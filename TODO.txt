@@ -1,5 +1,11 @@
+Features
+- Project modal aukeaa kun hoveraa projektin päällä - DENIED
+- multi image support info caruselliin
 
-BUGIT
+
+Bugs
 - Info kohdan caruselli puhelimella liikkuu omia aikojaan kun koittaa mennä alaspäin
 - Kun kielen vaihtaa ja on "taito valittuna" niin tulee tyhjää - kun kieli vaihtuu pitäisi vaihtaa skillit all
 - Musta aika tumma tausta - harmaa? joku neutraalimpi
+- Menu ei näy joillakin puhelimilla?
+- Scrollable modal projekteihin - DONE

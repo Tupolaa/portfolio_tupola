@@ -17,6 +17,7 @@
 
   "Projects": {
     "header": "Projects",
+    "Spoiler" : "*Click a project to see more details.",
     "projects": [
       {
         "title": "AI-based Invoice Assistant",
@@ -73,8 +74,8 @@
           { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
         ],
         "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" },
-          { "Name": "Backend Repository", "link": "https://github.com/joni23008/Backend-Web-Development" }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" }
+          
         ],
         "Tech": [
           { "icon": "/Media/JS.png", "alt": "JS icon" },
