@@ -1,6 +1,6 @@
 # portfolio_tupola
 
-Personal portfolio website for Teemu Tupola — built with Next.js and plain CSS. This repository contains the source for a responsive, bilingual (Finnish / English) portfolio that showcases projects, skills, and personal information.
+Personal portfolio website — built with Next.js and plain CSS. This repository contains the source for a responsive, bilingual (Finnish / English) portfolio that showcases projects, skills, and personal information.
 
 ---
 
