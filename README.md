@@ -1,40 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# portfolio_tupola
 
-## Getting Started
+Personal portfolio website for Teemu Tupola — built with Next.js and plain CSS. This repository contains the source for a responsive, bilingual (Finnish / English) portfolio that showcases projects, skills, and personal information.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Responsive portfolio layout (desktop, tablet, mobile)
+- Animated SVG headings and a TiltedCard component for profile photo
+- Projects list with modal detail view and media carousel (images/videos/YouTube)
+- Skills section with categories, level indicator and hover description overlays
+- Bilingual content support via JSON files (`public/Data/Fin.json`, `public/Data/Eng.json`)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tech stack
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Framework: Next.js
+- Language: JavaScript (React)
+- Styling: CSS modules / global CSS in `styles/`
+- Media: static files in `public/Media/`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Deploy to Vercel, Netlify, or any static host that supports Next.js. For Vercel, connect the repository and Vercel detects Next.js automatically.
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure (important files)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- `components/` — React components (Header, Footer, Profile, Projects, Skills, MediaCarousel, TiltedCard, etc.)
+- `pages/` — Next.js pages (index.js and app/document wrappers)
+- `public/Media/` — static images and videos
+- `public/Data/Fin.json` & `public/Data/Eng.json` — localized content used by `useLanguage` hook
+- `styles/` — CSS files for components and global styles
+- `package.json` — scripts and dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Localization / Content
 
-## Deploy on Vercel
+This project loads content from JSON files under `public/Data/`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `Fin.json` — Finnish content
+- `Eng.json` — English content
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Each file contains keys for `Profile`, `Projects`, `Skills`, `Footer`, etc. Keep the JSON structure consistent: arrays for lists (e.g., `Projects.projects` or `Skills.items`) and use `slot` fields in skills for category filtering.
+
+Tips:
+
+- Image paths in JSON should use `/Media/YourImage.png` (leading slash and correct casing). If your editor or OS alters casing, fix paths to match `public/Media` exactly.
+- JSON must be valid (no comments). If you want comments, use a different file (e.g., `.jsonc`) and a small loader that strips comments.
+
+## Styling & Components
+
+Styles are in `styles/` (e.g., `Profile.css`, `Projects.css`, `Skills.css`, `Header.css`, `Footer.css`). The code uses plain CSS (no CSS-in-JS). Keep responsive breakpoints in these files to ensure mobile/tablet compatibility.
+
+Key components to look at when editing:
+
+- `components/Profile.js` — animated SVG title and TiltedCard for desktop; static image for mobile
+- `components/Projects.js` — project cards and modal with `MediaCarousel`
+- `components/Skills.js` — category filter + hover overlays for descriptions
+- `components/MediaCarousel.js` — handles images, local videos and embeds YouTube URLs
+
+
+## License
+
+This repository does not include a license by default. Add a `LICENSE` file (e.g., MIT) if you want to make the project open source.
+
+## Contact
+
+Author: Teemu Tupola
+
+Email: teemu.tupola@gmail.com

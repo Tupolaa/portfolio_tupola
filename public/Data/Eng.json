@@ -173,7 +173,7 @@
       { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "level": "3", "desc": "Used in an automation testing project.", "slot": "Developer Tools" },
       { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "level": "5", "desc": "Used in React Native project.", "slot": "Developer Tools" },
       { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "level": "5", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
-      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Used to fetch the Llama language model during AI course.", "slot": "Developer Tools" },
+      { "name": "Hugging Face", "icon": "/Media/HF.png", "alt": "Hugging Face icon", "level": "3", "desc": "Used to fetch the Llama LLM during AI course.", "slot": "Developer Tools" },
       { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "level": "6", "desc": "Used frequently for API testing.", "slot": "Developer Tools" },
       { "name": "Windows basics", "icon": "/Media/Windows.png", "alt": "Windows icon", "level": "5", "desc": "Basic CMD and PowerShell usage.", "slot": "Developer Tools" },
       { "name": "Data analysis with Python", "icon": "/Media/data.png", "alt": "Data analysis icon", "level": "3", "desc": "Completed a few courses on the topic.", "slot": "Programming" },
