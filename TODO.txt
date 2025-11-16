@@ -2,3 +2,4 @@
 BUGIT
 - Info kohdan caruselli puhelimella liikkuu omia aikojaan kun koittaa mennä alaspäin
 - Kun kielen vaihtaa ja on "taito valittuna" niin tulee tyhjää - kun kieli vaihtuu pitäisi vaihtaa skillit all
+- Musta aika tumma tausta - harmaa? joku neutraalimpi
