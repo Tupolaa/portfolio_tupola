@@ -19,8 +19,8 @@ function getYouTubeEmbedUrl(url) {
 
 export default function MediaCarousel({ media = [] }) {
   const [index, setIndex] = useState(0);
-  const [userInteracted, setUserInteracted] = useState(false); // 👈 NEW
-  const [fade, setFade] = useState(false); // 👈 For animation
+  const [userInteracted, setUserInteracted] = useState(false);
+  const [fade, setFade] = useState(false);
   const count = media.length;
   const startX = useRef(null);
 
@@ -28,18 +28,17 @@ export default function MediaCarousel({ media = [] }) {
     (delta, user = false) => {
       if (!count) return;
 
-      if (user) setUserInteracted(true); // 👈 Stop auto slide after manual use
+      if (user) setUserInteracted(true);
 
-      setFade(true); // start fade-out
+      setFade(true);
       setTimeout(() => {
         setIndex((i) => (i + delta + count) % count);
-        setFade(false); // fade-in
-      }, 180); // duration matches CSS fade
+        setFade(false);
+      }, 180);
     },
     [count]
   );
 
-  // Keyboard navigation
   const onKey = useCallback(
     (e) => {
       if (e.key === "ArrowRight") go(1, true);
@@ -53,7 +52,7 @@ export default function MediaCarousel({ media = [] }) {
     return () => document.removeEventListener("keydown", onKey);
   }, [onKey]);
 
-  // 🔁 Auto-rotate every 10 seconds until user interacts
+  // Auto-rotate until user interacts
   useEffect(() => {
     if (!count || userInteracted) return;
 
@@ -109,6 +108,32 @@ export default function MediaCarousel({ media = [] }) {
           padding: 0,
           boxSizing: "border-box",
         };
+
+  // 🔹 Build image list for text slides: support `image` and `images`
+  let textImages = [];
+  if (Array.isArray(item?.images)) {
+    item.images.forEach((img, idx) => {
+      if (!img) return;
+      if (typeof img === "string") {
+        textImages.push({
+          src: img,
+          alt: item.title || `Image ${idx + 1}`,
+        });
+      } else if (typeof img === "object" && img.src) {
+        textImages.push({
+          src: img.src,
+          alt: img.alt || item.title || `Image ${idx + 1}`,
+        });
+      }
+    });
+  }
+  if (item?.image) {
+    // keep backward compatibility, add single image as first
+    textImages.unshift({
+      src: item.image,
+      alt: item.imageAlt || item.title || "Image",
+    });
+  }
 
   return (
     <div
@@ -276,23 +301,36 @@ export default function MediaCarousel({ media = [] }) {
                   </p>
                 )}
 
-            {item.image && (
-              <img
-                src={item.image}
-                alt={item.imageAlt || item.title || "Image"}
+            {textImages.length > 0 && (
+              <div
+                className="mc-text-images"
                 style={{
                   marginTop: 24,
-                  display: "block",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  width: "100%",
-                  maxWidth: "700px",
-                  height: "auto",
-                  objectFit: "cover",
-                  borderRadius: "20%",
-                  border: "3px solid #00ffdd",
+                  display: "grid",
+                  gridTemplateColumns:
+                    textImages.length > 1
+                      ? "repeat(auto-fit, minmax(180px, 1fr))"
+                      : "1fr",
+                  gap: 16,
+                  justifyItems: "center",
                 }}
-              />
+              >
+                {textImages.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img.src}
+                    alt={img.alt}
+                    style={{
+                      width: "100%",
+                      maxWidth: "700px",
+                      height: "auto",
+                      objectFit: "cover",
+                      borderRadius: "20%",
+                      border: "3px solid #00ffdd",
+                    }}
+                  />
+                ))}
+              </div>
             )}
           </div>
         ) : isVideo ? (
@@ -338,7 +376,7 @@ export default function MediaCarousel({ media = [] }) {
       <button
         type="button"
         aria-label="Previous"
-        onClick={() => go(-1, true)} // 👈 user = true
+        onClick={() => go(-1, true)}
         className="mc-arrow mc-left"
         style={arrowStyle("left")}
       >
@@ -347,7 +385,7 @@ export default function MediaCarousel({ media = [] }) {
       <button
         type="button"
         aria-label="Next"
-        onClick={() => go(1, true)} // 👈 user = true
+        onClick={() => go(1, true)}
         className="mc-arrow mc-right"
         style={arrowStyle("right")}
       >

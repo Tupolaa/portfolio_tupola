@@ -21,7 +21,7 @@
     "projects": [
       {
         "title": "AI-based Invoice assistant",
-        "description": "Osallistuin RUN-EU BIP Smart Everything -kurssiin Espanjan Burgosissa, jossa kehitettiin kansaisvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
+        "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajankielimallin käytöstä.Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit, Astro.",
         "media": [
           {
             "type": "video",
@@ -128,7 +128,7 @@
 
       {
         "title": "Elokuvien arviointisivusto",
-        "description": "Reactilla toteutettu elokuvasivusto, joka toteutettiin Backend-kurssin lopputyönä keväällä 2025. Sivuston REST API hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
+        "description": "Kouluprojektina, jossa reactilla toteutettu elokuvasivusto, joka toteutettiin Backend-kurssin lopputyönä keväällä 2025. Sivuston REST API hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
         
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
@@ -217,7 +217,16 @@
   "Freetime": { 
     "Header": "Vapaa-aika",
     "Info": "Vapaa-ajallani tykkään tehdä paljon muutakin, kuin istua koneella. Pelto ja metsähommat sekä moottorisahan 'ulkoiluttaminen' ovat itselle yllättävän tärkeitä niissä pääsee konkreettisesti tekemään käsillä ja samalla rauhoittumaan luonnon keskellä. Vietän myös mielelläni aikaa kavereiden kanssa, oli kyse sitten ulkoilusta, pelaamisesta tai vaikka ihan vain juttelusta.",   
-    "Pic": "/Media/traktori.jpg"
+    "Pic": [{
+      "src": "/Media/traktori.jpg",
+      "alt": "Mina traktorissa pellolla"
+    },
+    {
+      "src": "/Media/saha.jpg",
+      "alt": "Moottorisaha ja puukasa"
+    }
+  
+  ]
   },
   "Hobbytitle": "Harrastukset",
   "Harrastukset": [

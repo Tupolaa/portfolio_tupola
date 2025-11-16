@@ -44,14 +44,22 @@ const Info = () => {
     type: "text",
     title: profileData.LifeCareer?.Header || "",
     content: [profileData.LifeCareer?.Info].filter(Boolean),
-    image: profileData.LifeCareer?.Pic || null,
+    images: Array.isArray(profileData.LifeCareer?.Pic)
+      ? profileData.LifeCareer.Pic
+      : profileData.LifeCareer?.Pic
+      ? [profileData.LifeCareer.Pic]
+      : [],
    
   },
   {
     type: "text",
     title: profileData.Goals?.Header || "",
     content: [profileData.Goals?.Info].filter(Boolean),
-    image: profileData.Goals?.Pic || null,
+    images: Array.isArray(profileData.Goals?.Pic)
+      ? profileData.Goals.Pic
+      : profileData.Goals?.Pic
+      ? [profileData.Goals.Pic]
+      : [],
    
   },
     {
@@ -60,16 +68,23 @@ const Info = () => {
     content: [
       profileData.Abilities?.Info,
     ].filter(Boolean),
-    image: profileData.Abilities?.Pic || null,
+    images: Array.isArray(profileData.Abilities?.Pic)
+      ? profileData.Abilities.Pic
+      : profileData.Abilities?.Pic
+      ? [profileData.Abilities.Pic]
+      : [],
    
   },
   {
-    type: "text",
-    title: profileData.Freetime?.Header || "",
-    content: [profileData.Freetime?.Info].filter(Boolean),
-    image: profileData.Freetime?.Pic || null,
- 
-  },
+  type: "text",
+  title: profileData.Freetime?.Header || "",
+  content: [profileData.Freetime?.Info].filter(Boolean),
+  images: Array.isArray(profileData.Freetime?.Pic)
+    ? profileData.Freetime.Pic
+    : profileData.Freetime?.Pic
+    ? [profileData.Freetime.Pic]
+    : [],
+},
   {
     type: "hobbies",
     title: profileData.Hobbytitle || "",
