@@ -25,8 +25,13 @@
           {
             "type": "video",
             "src": "https://youtu.be/Cb2bTOat2U0",
-            "alt": "AI Invoice assistant demo video",
-            "desc": "Esittely FIMSUM"
+            "alt": "AI Invoice assistant demo video"
+            
+          },
+          {
+            "type": "image",
+            "src": "/Media/Burgosteam.jpg",
+            "alt": "Image of the my team in Burgos"
           }
         ],
         "links": [
