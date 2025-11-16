@@ -125,7 +125,7 @@
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
-          { "icon": "/Media/UiPath.png", "alt": "UiPath icon" }
+          { "icon": "/Media/uipath.png", "alt": "UiPath icon" }
         ]
       },
 
