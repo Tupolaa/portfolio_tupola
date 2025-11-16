@@ -2,15 +2,8 @@
 
 /* ========== THEME VARIABLES ========== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000; /* <-- musta */
+  --foreground: #ffffff;
 }
 
 /* ========== GLOBAL BASE STYLES ========== */
@@ -18,8 +11,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;                 /* <-- fix: remove default margins */
-  padding: 0;                /* <-- keep padding controlled by layout */
+  margin: 0;
+  padding: 0;
 }
 
 /* ========== GLOBAL MOBILE FIX ========== */
@@ -28,15 +21,13 @@ body {
     padding-top: 80px !important;
   }
 
-  /* Make ALL sections full width */
   section {
     max-width: 100% !important;
     width: 100% !important;
-    padding: 0 16px !important; /* good side padding */
+    padding: 0 16px !important;
     box-sizing: border-box;
   }
 
-  /* Remove the 1400px limit */
   #Profile,
   #projects,
   #skills,

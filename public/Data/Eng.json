@@ -127,11 +127,8 @@
       {
         "title": "Movie Review Website",
         "description": "A React-based movie browsing and review website developed as a final project in the Backend course in spring 2025. The REST API fetches movie data from TheMovieDB API and stores it to a MongoDB database, from where it is displayed in the UI. Users can freely browse movies and, after logging in, also write reviews. The project was later continued in a Mobile Programming course by developing a React Native mobile application with the same functionality and mobile-optimized user interface.",
-        "media": [
-          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Movie review demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
-        ],
+       
+        
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
           { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },

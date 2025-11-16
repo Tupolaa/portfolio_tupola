@@ -128,11 +128,7 @@
       {
         "title": "Elokuvien arviointisivusto",
         "description": "Reactilla toteutettu elokuvasivusto, joka toteutettiin Backend-kurssin lopputyönä keväällä 2025. Sivuston REST API hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
-        "media": [
-          { "type": "video", "src": "/Media/reactnative.mp4", "alt": "Movie review demo video" },
-          { "type": "image", "src": "/Media/Astro.png", "alt": "Image 1" },
-          { "type": "image", "src": "/Media/AI-invoice-assistant-2.png", "alt": "Image 2" }
-        ],
+        
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
           { "Name": "Nettisivu", "link": "https://moviereview-472307.lm.r.appspot.com/" },
