@@ -203,7 +203,7 @@
     "header": "Who is Teemu?",
     "LifeCareer": { 
       "Header": "Life & Career",
-      "Info": "I am a 22-year-old developer from Hämeenlinna, Finland, and my interest in technology has followed me since middle school. I have always wanted to understand how things work, and that curiosity eventually led me into software development. I graduated as an ICT technician from vocational school, spent a year in the army working with reconnaissance drones, and since then I have been building my path toward a career in software development. Traveling is also an important part of my life. Seeing new places and cultures has taught me openness and strengthened my motivation to take on new challenges. I believe these experiences have made me easy-going, approachable, and a collaborative team player who learns well with others. I am currently finishing my degree, and I am excited to see where my developer journey will lead next. My goal is to become a developer who builds clear and functional solutions while keeping a healthy dose of humor along the way.",
+      "Info": "I am a 22-year-old developer from Hämeenlinna, and my interest in technology has followed me since middle school. When I was younger, I always wanted to understand how things work, and that same curiosity eventually led me to software development. I graduated from vocational school as an IT technician, spent and genuinely enjoyed a year in the military working with reconnaissance drones, and since then I have been building my skills toward a career in software development. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable, and collaborative person who enjoys working with others and learning from them. I’m now in my final study years, and I’m excited to see where my path as a developer will lead next. My goal is to grow into a professional who builds clear and functional solutions while keeping just the right amount of humor in the work.",
       "Pic": "/Media/Lontoo.jpg"
     },
     "Abilities": { 
@@ -212,7 +212,7 @@
       "Pic": "/Media//ryhma.jpg"
     },
     "Goals": { 
-      "Header": "Goals",
+      "Header": "Goals & Future",
       "Info": "My goal is to grow as a software developer and learn something new in every project. I want to strengthen my backend and web development skills and gain a deeper understanding of software architecture, databases, and cloud environments. I aim to think more holistically, recognize real client needs, and build solutions that help both users and developers. I see my career as a long-term learning journey towards becoming a senior developer. I want to take responsibility, be a valuable teammate, improve my communication skills, and face new challenges with confidence. I am motivated by building something meaningful, functional and impactful.",
       "Pic": "/Media/RiseUp.png"
     },
@@ -224,11 +224,6 @@
     "Hobbytitle": "Hobbies",
     "Harrastukset": [
       {
-        "title": "Programming",
-        "Koodaus": "Programming is both a hobby and a passion for me. I enjoy learning new languages and technologies and building meaningful projects.",
-        "icon": "/Media/AI_Koodaus.png"
-      },
-      {
         "title": "Disc Golf",
         "Frisbeegolf": "I started disc golf in summer 2024 and quickly got hooked. I mostly play during the summer, either alone or with friends.",
         "icon": "/Media/AI_Friba.png"
@@ -238,6 +233,12 @@
         "Lenkkeily": "Running helps me clear my head, get fresh air, and spend time with friends. It balances the screen-focused work and keeps life in good rhythm.",
         "icon": "/Media/AI_Lenkki.png"
       },
+       {
+        "title": "Programming",
+        "Koodaus": "Programming is both a hobby and a passion for me. I enjoy learning new languages and technologies and building meaningful projects.",
+        "icon": "/Media/AI_Koodaus.png"
+      },
+      
       {
         "title": "Gaming",
         "Pelaaminen": "I have played computer games for about nine years, mainly FPS games and F1 2025.",

@@ -202,7 +202,7 @@
   "header": "Kuka on Teemu?",
   "LifeCareer": { 
     "Header": "Elämä & ura",
-    "Info": "Olen 22-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorena halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta vienyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi, vietin vuoden armeijassa tiedustelu-lennokkien kanssa ja olen sen jälkeen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Matkustaminen on myös iso osa elämääni. Uusien paikkojen ja kulttuurien näkeminen on opettanut avoimuutta ja vahvistanut halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt viimeisiä opintovuosia viedään, ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
+    "Info": "Olen 22-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorempana halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta vienyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi, vietin ja nautin vuoden armeijassa tiedustelu-lennokkien parissa ja olen sen jälkeen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Pidän matkustamisesta ja uusien paikkojen näkemisestä aina kun siihen tulee mahdollisuus. Ne ovat lisänneet avoimuuttani ja vahvistaneet halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt viimeisiä opintovuosia viedään, ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
     "Pic": "/Media/Lontoo.jpg"
   },
   "Abilities": { 
@@ -210,23 +210,18 @@
     "Info": "Vahvuuksiani ovat ongelmanratkaisukyky, tiimityöskentelytaidot sekä halu oppia jatkuvasti uutta. Olen parhaimmillani tiimissä, jossa voin jakaa ideoita, oppia muilta ja rakentaa ratkaisuja yhdessä. Uskon, että nämä ominaisuudet tekevät minusta arvokkaan lisän mihin tahansa tiimiin. Olen tottunut työskentelemään erilaisissa projekteissa ja tilanteissa, mikä on kehittänyt sopeutumiskykyäni ja joustavuutta työympäristössä.",    "Pic": "/Media//ryhma.jpg"
   },
   "Goals": { 
-    "Header": "Tavoitteet",
+    "Header": "Tavoitteet & Tulevaisuus",
     "Info": "Tavoitteenani on kasvaa ohjelmistokehittäjänä ja oppia jotain uutta jokaisessa projektissa. Haluan vahvistaa backend- ja web-kehityksen taitojani sekä ymmärtää paremmin arkkitehtuurien, tietokantojen ja pilvipalvelujen kokonaisuutta. Pyrin ajattelemaan järjestelmiä laajemmin, tunnistamaan asiakkaiden todelliset tarpeet ja tekemään ratkaisuja, jotka auttavat sekä käyttäjiä että kehittäjiä. Näen urani pitkäjänteisenä oppimatkana kohti senior-kehittäjän roolia. Haluan ottaa vastuuta, olla hyvä tiimikaveri, kehittää viestintätaitojani ja kohdata rohkeasti uusia haasteita. Minua motivoi se, että voin rakentaa jotain toimivaa ja merkityksellistä sekä jättää oman jälkeni projekteihin tavalla, josta on aidosti hyötyä pitkään.",
     "Pic": "/Media/RiseUp.png"
   },
   "Freetime": { 
     "Header": "Vapaa-aika",
-    "Info": "Vapaa-ajallani tykkään tehdä paljon muutakin kuin istua koneella. Pelto ja metsähommat sekä moottorisahan 'ulkoiluttaminen' ovat itselle yllättävän tärkeitä niissä pääsee konkreettisesti tekemään käsillä ja samalla rauhoittumaan luonnon keskellä. Vietän myös mielelläni aikaa kavereiden kanssa, oli kyse sitten ulkoilusta, pelaamisesta tai vaikka ihan vain juttelusta.",   
+    "Info": "Vapaa-ajallani tykkään tehdä paljon muutakin, kuin istua koneella. Pelto ja metsähommat sekä moottorisahan 'ulkoiluttaminen' ovat itselle yllättävän tärkeitä niissä pääsee konkreettisesti tekemään käsillä ja samalla rauhoittumaan luonnon keskellä. Vietän myös mielelläni aikaa kavereiden kanssa, oli kyse sitten ulkoilusta, pelaamisesta tai vaikka ihan vain juttelusta.",   
     "Pic": "/Media/traktori.jpg"
   },
   "Hobbytitle": "Harrastukset",
   "Harrastukset": [
     
-    {
-      "title": "Koodaus",
-      "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien kielien ja teknologioiden oppimisesta sekä erilaisten projektien tekemisestä.",
-      "icon": "/Media/AI_Koodaus.png"
-    },
     {
       "title": "Frisbeegolf",
       "Frisbeegolf": "Aloitin frisbeegolfin kesällä 2024, ja jäin nopeasti lajiin koukkuun. Käyn heittämässä pääosin kesäisin, joko yksin tai kavereiden kanssa.",
@@ -236,6 +231,11 @@
       "title": "Lenkkeily",
       "Lenkkeily": "Lenkkeily on minulle tapa tyhjentää päätä, saada raitista ilmaa ja viettää aikaa ystävien kanssa jo usean vuoden ajan. Se toimii hyvänä vastapainona koneella työskentelylle ja auttaa pitämään arjen tasapainossa.",
       "icon": "/Media/AI_Lenkki.png"
+    },
+    {
+      "title": "Koodaus",
+      "Koodaus": "Koodaus on minulle sekä harrastus että intohimo. Nautin uusien kielien ja teknologioiden oppimisesta sekä erilaisten projektien tekemisestä.",
+      "icon": "/Media/AI_Koodaus.png"
     },
     {
       "title": "Pelaaminen",

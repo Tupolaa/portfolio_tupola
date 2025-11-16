@@ -47,6 +47,13 @@ const Info = () => {
     image: profileData.LifeCareer?.Pic || null,
    
   },
+  {
+    type: "text",
+    title: profileData.Goals?.Header || "",
+    content: [profileData.Goals?.Info].filter(Boolean),
+    image: profileData.Goals?.Pic || null,
+   
+  },
     {
     type: "text",
     title: profileData.Abilities?.Header || "",
@@ -57,25 +64,19 @@ const Info = () => {
    
   },
   {
-    type: "hobbies",
-    title: profileData.Hobbytitle || "",
-    hobbies,
-    //Friba, Lenkkeily, koodaus, Pelaaminen kuvat
-  },
-  {
-    type: "text",
-    title: profileData.Goals?.Header || "",
-    content: [profileData.Goals?.Info].filter(Boolean),
-    image: profileData.Goals?.Pic || null,
-   
-  },
-  {
     type: "text",
     title: profileData.Freetime?.Header || "",
     content: [profileData.Freetime?.Info].filter(Boolean),
     image: profileData.Freetime?.Pic || null,
  
   },
+  {
+    type: "hobbies",
+    title: profileData.Hobbytitle || "",
+    hobbies,
+  
+  },
+  
 
 ].filter((slide) => {
   if (slide.type === "hobbies") return slide.hobbies && slide.hobbies.length;
