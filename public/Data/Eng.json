@@ -64,7 +64,9 @@
           { "icon": "/Media/JS.png", "alt": "JS icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Next.png", "alt": "Next.js icon" },
+          { "icon": "/Media/Vercel.png", "alt": "Vercel icon" }
         ]
       },
 
