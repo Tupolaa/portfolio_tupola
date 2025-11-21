@@ -200,7 +200,9 @@
   { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Opettelen juuri JUnitin käyttöä uuden projektin merkeissä", "slot": "Ohjelmointi" },
   { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
-  { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" }
+  { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
+  { "name": "Visual Studio Code", "icon": "/Media/vscode.png", "alt": "VSCode icon", "level": "9", "desc": "Pääasiallinen koodieditorini useimmissa projekteissa.", "slot": "Kehittäjän työkalut" }
+
 ]
   },
   "info": {

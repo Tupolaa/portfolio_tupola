@@ -200,7 +200,8 @@
       { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "level": "4", "desc": "Currently learning JUnit in a project.", "slot": "Developer Tools" },
       { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "level": "5", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
-      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
+      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "level": "6", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
+      { "name": "Visual Studio Code", "icon": "/Media/vscode.png", "alt": "VSCode icon", "level": "9", "desc": "My primary code editor for most projects.", "slot": "Developer Tools" }
     ]
   },
 
