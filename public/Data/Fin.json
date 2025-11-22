@@ -55,7 +55,7 @@
           { "type": "image", "src": "/Media/Dev.jpg", "alt": "Screenshot of portfolio website in development" }
         ],
         "links": [
-          { "Name": "repository", "link": "https://github.com/Tupolaa/portfolio_tupola"},
+          { "Name": "Repository Portfolio 3.0", "link": "https://github.com/Tupolaa/portfolio_tupola"},
           { "Name": "Portfolio 1.0", "link": "https://teemutupola.netlify.app/" },
           { "Name": "Portfolio 2.0", "link": "https://tupolaportfolio.netlify.app/" }
         ],
