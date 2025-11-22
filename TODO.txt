@@ -1,6 +1,7 @@
 Features
 - Project modal aukeaa kun hoveraa projektin päällä - DENIED
 - multi image support info caruselliin DONE
+- Aikataulut projekteihin
 
 
 Bugs
