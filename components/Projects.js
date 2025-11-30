@@ -43,14 +43,16 @@ const Projects = () => {
                 ? project.description.slice(0, 50) + "…"
                 : project.description}
             </p>
-            {Array.isArray(project.Tech) && (
+             {Array.isArray(project.Tech) && (
               <div className="modal-tech">
                 {project.Tech.map((t, i) => (
                   <img
                     key={i}
                     src={t.icon}
                     alt={t.alt || `Tech ${i + 1}`}
-                    className="skill-icon"
+                    className="tech-favicon"
+                    width="24"
+                    height="24"
                   />
                 ))}
               </div>
@@ -108,7 +110,9 @@ const Projects = () => {
                     key={i}
                     src={t.icon}
                     alt={t.alt || `Tech ${i + 1}`}
-                    className="skill-icon-modal"
+                    className="tech-favicon"
+                    width="24"
+                    height="24"
                   />
                 ))}
               </div>

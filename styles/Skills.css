@@ -36,19 +36,18 @@
 /* Individual skill card */
 
 .skill-item {
-  position: relative;        /* allow absolute desc inside */
-  overflow: visible;         /* let desc overlap other items */
+  position: relative;
+  overflow: visible;
   display: flex;
   gap: 14px;
-  align-items: flex-start;   /* align items to top so long text grows downward */
+  align-items: center;        /* <-- changed: vertically center icon + meta */
   background: rgba(85, 85, 85, 0.507);
   border-radius: 12px;
   padding: 14px;
   transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
   border: 1px solid rgba(255,255,255,0.03);
   backdrop-filter: blur(4px);
-  /* allow item to grow vertically as needed */
-  min-height: 0;
+  min-height: 64px;           /* ensure comfortable height for centering */
   z-index: 1;
 }
 
@@ -59,6 +58,18 @@
   box-shadow: 0 0 25px 6px rgba(38, 12, 185, 0.8);  background: linear-gradient(180deg, rgba(0,255,221,0.03), rgba(78,199,243,0.03));
   border-color: rgba(0, 255, 221, 0.973);
 }
+
+/* make the meta column center its children vertically so name/level sit middle */
+.skill-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* <-- center text vertically inside card */
+  gap: 6px;
+}
+
+/* ensure skill-name aligns nicely when centered */
 .skill-name {
   font-size: 1.1rem;
   font-weight: 600;
