@@ -155,7 +155,7 @@
 
   "Skills": {
     "header": "Tech Stack",
-    "subheader": "1–3 = Limited experience, 4–5 = Basic knowledge, 6–8 = Strong skills, 9–10 = Very strong skills. *Click a skill to see more information.*",
+    "subheader": "*Click a skill to see more information.*",
     "categoryHeader": "All, Project Management, Programming, Communication Skills, Databases, Cloud Services, Developer Tools",
     "items": [
       { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "I have used Python in several projects and I know it well.", "slot": "Programming" },
