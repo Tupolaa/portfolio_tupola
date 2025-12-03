@@ -3,6 +3,11 @@ Features
 - multi image support info caruselliin DONE
 - Aikataulut projekteihin
 
+Changed things
+- Poistettu level kohta taidoista - DONE
+- muokattu projektit käyttämään faviconia - DONE
+- 
+
 
 Bugs
 - Info kohdan caruselli puhelimella liikkuu omia aikojaan kun koittaa mennä alaspäin
