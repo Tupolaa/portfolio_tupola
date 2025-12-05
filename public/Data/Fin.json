@@ -158,7 +158,7 @@
     "subheader": "*Taitoa clikkaamalla näet lisää tietoa kyseisestä taidosta.*",
     "categoryHeader": "All, Projektinhallinta, Ohjelmointi, Vuorovaikutustaidot, Tietokannat, pilvipalvelut, kehittäjän työkalut",
     "items": [
-  { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "Olen käyttänyt Pythonia muutamissa eri projekteissa ja on minulla hyvin hallussa.", "slot": "Ohjelmointi" },
+  { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "Olen käyttänyt Pythonia muutamissa eri projekteissa ja osaan perusteet.", "slot": "Ohjelmointi" },
   { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum on ollut käytössä viimeisen parin vuoden aikana jokaisella projektissa.", "slot": "Projektinhallinta" },
   { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon",  "desc": "Jira on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan", "slot": "Projektinhallinta" },
   { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "desc": "Confluence on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan.", "slot": "Projektinhallinta" },

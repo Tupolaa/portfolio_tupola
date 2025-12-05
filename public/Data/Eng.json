@@ -158,7 +158,7 @@
     "subheader": "*Click a skill to see more information.*",
     "categoryHeader": "All, Project Management, Programming, Communication Skills, Databases, Cloud Services, Developer Tools",
     "items": [
-      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "I have used Python in several projects and I know it well.", "slot": "Programming" },
+      { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "I have used Python in several projects and I know basics.", "slot": "Programming" },
       { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum has been used in every project for the past couple of years.", "slot": "Project Management" },
       { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon",  "desc": "Jira has been a key tool in project management and task tracking.", "slot": "Project Management" },
       { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon",  "desc": "Confluence has been a key tool in documentation and project collaboration.", "slot": "Project Management" },
