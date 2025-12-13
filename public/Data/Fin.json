@@ -86,8 +86,8 @@
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
-          { "icon": "/Media/Expo.png", "alt": "Expo icon" },
-          { "icon": "/Media/AndroidStudio.png", "alt": "Android Studio icon" }
+          { "icon": "/Media/EXPO.png", "alt": "Expo icon" },
+          { "icon": "/Media/androidstudio.png", "alt": "Android Studio icon" }
 
         ]
       },
@@ -110,9 +110,9 @@
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
-          { "icon": "/Media/Node.png", "alt": "Node.js icon" },
-          { "icon": "/Media/Expressjs.png", "alt": "Express.js icon" },
-          { "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon" }
+          { "icon": "/Media/node.png", "alt": "Node.js icon" },
+          { "icon": "/Media/expressjs.png", "alt": "Express.js icon" },
+          { "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon" }
         
 
         ]
