@@ -4,7 +4,7 @@ import { useLanguage } from '../components/LangChanger.js';
 import MediaCarousel from "./MediaCarousel.js";
 
 const Projects = () => {
-  const { content } = useLanguage();
+  const { content, lang } = useLanguage();
   const projects = Array.isArray(content.Projects?.projects)
     ? content.Projects.projects
     : [];
@@ -38,6 +38,7 @@ const Projects = () => {
             onClick={() => setSelectedProject(project)}
           >
             <h3>{project.title}</h3>
+            <h4>{project.Timeline}</h4>
             <p>
               {project.description.length > 50
                 ? project.description.slice(0, 50) + "…"
@@ -73,6 +74,17 @@ const Projects = () => {
             </button>
 
             <h2>{selectedProject.title}</h2>
+            <h4>{selectedProject.Timeline}</h4>
+
+            {selectedProject.reference && (
+              <h4>{lang === 'fi' ? 'Suosittelijat:' : 'References:'}</h4>
+            )}
+            {selectedProject.reference && (
+              <p className="project-reference" style={{ whiteSpace: 'pre-line' }}>
+                {selectedProject.reference}
+              </p>
+            )}
+
 
 <MediaCarousel
   media={

@@ -20,7 +20,107 @@
     "Spoiler" : "*Click a project to see more details.",
     "projects": [
       {
+        "title": "Finna integration for Triplan Oy",
+        "Timeline": "10/2025 - Present",
+        "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514",
+"description": "I was part of a team that developed a OAI-PMH provider prototype for Triplan Oy, aiming to enable harvesting of data available through Triplan's REST API into Finna according to the OAI-PMH 2.0 standard. The project focused particularly on converting data to Finna-compatible format, implementing key OAI-PMH verbs, and ensuring compatibility with Finna and OAI-PMH requirements in close collaboration with Triplan.",
+        "media": [
+          { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
+          { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentation" }
+         
+        ],
+        "links": [
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
+          { "Name": "OAI-PMH Protocol", "link": "https://www.openarchives.org/pmh/" }
+        ],
+        "Tech": [
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/Spring.png", "alt": "Spring icon" },
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Junit.png", "alt": "Junit icon" },
+          { "icon": "/Media/TDD.png", "alt": "TDD icon" },
+          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
+          { "icon": "/Media/Confluence.png", "alt": "Confluence icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/postman.png", "alt": "Postman icon" }
+        ]
+      },
+
+
+
+      {
+        "title": "Personal Portfolio 3.0",
+        "Timeline": "10/2025 - Present",
+        "description": "The third and newest version of my personal portfolio. The different versions demonstrate my development over time, how I have learned new technologies and improved my implementation methods. The website showcases my skills, projectsand knowledge gained during my studies. Built with Next.js and styled to be responsive and clean.",
+        "media": [
+          { "type": "image", "src": "/Media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
+          { "type": "image", "src": "/Media/Dev.jpg", "alt": "Screenshot of portfolio website in development" }
+        ],
+        "links": [
+          { "Name": "Repository of Portfolio 3.0", "link": "https://github.com/Tupolaa/portfolio_tupola"},
+          { "Name": "Portfolio 1.0", "link": "https://teemutupola.netlify.app/" },
+          { "Name": "Portfolio 2.0", "link": "https://tupolaportfolio.netlify.app/" }
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Next.png", "alt": "Next.js icon" },
+          { "icon": "/Media/Vercel.png", "alt": "Vercel icon" }
+        ]
+      },
+
+      {
+        "title": "React Native Application",
+        "Timeline": "9/2025 - 10/2025",
+        "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed informationand read reviews written by others.",
+        "media": [
+          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
+        ],
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" }
+          
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Expo.png", "alt": "Expo icon" },
+          { "icon": "/Media/AndroidStudio.png", "alt": "Android Studio icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" }
+        ]
+      },
+      {
+        "title": "Movie Review Website",
+        "Timeline": "3/2025 - 5/2025 + 9/2025 - 10/2025",
+        "description": "A school project completed as the final assignment for the Backend course in spring 2025. We developed a movie review website using React, where the site retrieves movies from TheMovieDB API and stores them in a MongoDB database, from which they are fetched into the UI. Users can freely browse movies and after logging in, also review them. The project was extended in the Mobile Programming course by building a React Native mobile version of the application, providing the same functionality as the web app but with a user interface optimized for mobile use",
+       
+        
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
+          { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },
+          { "Name": "themoviedb - API", "link": "https://www.themoviedb.org/" }
+        ],
+        "Tech": [
+          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/Mongo.png", "alt": "Mongo icon" },
+          { "icon": "/Media/HBS.png", "alt": "HBS icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/Node.png", "alt": "Node.js icon" },
+          { "icon": "/Media/Expressjs.png", "alt": "Express.js icon" },
+          { "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon" }
+        ]
+      },
+       {
         "title": "AI-based Invoice Assistant",
+        "Timeline": "3/2025 - 5/2025",
         "description": " In Burgos, Spain i participated in the RUN-EU BIP Smart Everything course, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a 4 week remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
         "media": [
           {
@@ -44,79 +144,13 @@
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Astro.png", "alt": "Astro icon" },
-          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" }
+          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" }
         ]
       },
-
-      {
-        "title": "Personal Portfolio 3.0",
-        "description": "The third and newest version of my personal portfolio. The different versions demonstrate my development over time, how I have learned new technologies and improved my implementation methods. The website showcases my skills, projectsand knowledge gained during my studies. Built with Next.js and styled to be responsive and clean.",
-        "media": [
-          { "type": "image", "src": "/Media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
-          { "type": "image", "src": "/Media/Dev.jpg", "alt": "Screenshot of portfolio website in development" }
-        ],
-        "links": [
-          { "Name": "Repository of Portfolio 3.0", "link": "https://github.com/Tupolaa/portfolio_tupola"},
-          { "Name": "Portfolio 1.0", "link": "https://teemutupola.netlify.app/" },
-          { "Name": "Portfolio 2.0", "link": "https://tupolaportfolio.netlify.app/" }
-        ],
-        "Tech": [
-          { "icon": "/Media/JS.png", "alt": "JS icon" },
-          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
-          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
-          { "icon": "/Media/Next.png", "alt": "Next.js icon" },
-          { "icon": "/Media/Vercel.png", "alt": "Vercel icon" }
-        ]
-      },
-
-      {
-        "title": "React Native Application",
-        "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed informationand read reviews written by others.",
-        "media": [
-          { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
-        ],
-        "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Mobile_project" }
-          
-        ],
-        "Tech": [
-          { "icon": "/Media/JS.png", "alt": "JS icon" },
-          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
-          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
-        ]
-      },
-
-      {
-        "title": "Software Testing",
-        "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included defining test cases, building test scenarios, leveraging keyword-driven test automation, as well as executing the tests and analyzing the results.",
-        "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
-        ],
-        "Tech": [
-          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
-        ]
-      },
-
-      {
-        "title": "LejosEV3",
-        "description": "A school project where we programmed a Lejos EV3 Lego robot to follow a color-marked path on the floor and detect and avoid obstacles using sensors. In addition to robot programming, we implemented remote control functionality by creating a REST API that allowed the robot to be controlled through a web browser, enabling usage without physical interaction.",
-        "media": [
-          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
-        ],
-        "links": [],
-        "Tech": [
-          { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/Java.png", "alt": "Java icon" },
-          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
-          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
-        ]
-      },
-
-      {
+       {
         "title": "Automation Robotics",
+        "Timeline": "1/2025 - 3/2025",
         "description": "A school project where we implemented an invoice processing workflow using robotic process automation. The solution utilized UiPath, Robot Framework and Python to automate reading PDF invoices, extracting data, storing it and performing validations. UiPath read all PDF invoices, parsed header and line-item detailsand saved them into CSV files. Robot Framework transferred the data into a database using SQL queries and updated the processing status of invoices. Python and Robot Framework were also used for various validations, such as checking reference numbers, IBAN codes and invoice totals.",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
@@ -131,23 +165,31 @@
       },
 
       {
-        "title": "Movie Review Website",
-        "description": "A school project completed as the final assignment for the Backend course in spring 2025. We developed a movie review website using React, where the site retrieves movies from TheMovieDB API and stores them in a MongoDB database, from which they are fetched into the UI. Users can freely browse movies and after logging in, also review them. The project was extended in the Mobile Programming course by building a React Native mobile version of the application, providing the same functionality as the web app but with a user interface optimized for mobile use",
-       
-        
+        "title": "Software Testing",
+        "Timeline": "10/2024 - 10/2024",
+        "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included defining test cases, building test scenarios, leveraging keyword-driven test automation, as well as executing the tests and analyzing the results.",
         "links": [
-          { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
-          { "Name": "Website", "link": "https://moviereview-472307.lm.r.appspot.com/" },
-          { "Name": "themoviedb - API", "link": "https://www.themoviedb.org/" }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
         "Tech": [
-          { "icon": "/Media/JS.png", "alt": "JS icon" },
-          { "icon": "/Media/REACT.png", "alt": "REACT icon" },
-          { "icon": "/Media/Mongo.png", "alt": "Mongo icon" },
-          { "icon": "/Media/HBS.png", "alt": "HBS icon" },
-          { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "LejosEV3",
+        "Timeline": "3/2024 - 5/2024",
+        "description": "A school project where we programmed a Lejos EV3 Lego robot to follow a color-marked path on the floor and detect and avoid obstacles using sensors. In addition to robot programming, we implemented remote control functionality by creating a REST API that allowed the robot to be controlled through a web browser, enabling usage without physical interaction.",
+        "media": [
+          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
+        ],
+        "links": [],
+        "Tech": [
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
         ]
       }
     ]

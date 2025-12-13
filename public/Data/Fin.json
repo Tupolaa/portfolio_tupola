@@ -20,35 +20,35 @@
     "Spoiler" : "*Klikkaa projektia nähdäksesi lisätietoja.",
     "projects": [
       {
-        "title": "AI-based Invoice assistant",
-        "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajan kielimallin käytöstä. Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit ja Astro.",
+        "title": "Finna integaatio Triplan Oy:lle",
+        "Timeline": "10/2025 - Nykyhetki",
+        "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514",
+        "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista, jonka tavoitteena oli mahdollistaa Triplanin REST API:n kautta saatavan datan haravointi Finnaan OAI-PMH 2.0 -standardin mukaisesti. Projektissa keskityttiin erityisesti datan muuntamiseen Finnalle sopivaksi, keskeisten OAI-PMH-verbien toteutukseen sekä yhteensopivuuden varmistamiseen Finnan ja OAI-PMH vaatimusten kanssa tiiviissä yhteistyössä Triplanin kanssa. ",
         "media": [
-          {
-            "type": "video",
-            "src": "https://youtu.be/Cb2bTOat2U0",
-            "alt": "AI Invoice assistant demo video"
-            
-          },
-          {
-            "type": "image",
-            "src": "/Media/Burgosteam.jpg",
-            "alt": "Image of the my team in Burgos"
-          }
+          { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
+          { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentatiion" }
+         
         ],
         "links": [
-          { "Name": "Demo", "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0" },
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" }
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
+          { "Name": "OAI-PMH Protokolla", "link": "https://www.openarchives.org/pmh/" }
         ],
         "Tech": [
-          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/Spring.png", "alt": "Spring icon" },
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
-          { "icon": "/Media/Astro.png", "alt": "Astro icon" },
-          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" }
+          { "icon": "/Media/Junit.png", "alt": "Junit icon" },
+          { "icon": "/Media/TDD.png", "alt": "TDD icon" },
+          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
+          { "icon": "/Media/Confluence.png", "alt": "Confluence icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/postman.png", "alt": "Postman icon" }
         ]
       },
-
-      {
+       {
         "title": "Henkilökohtainen portfolioni 3.0",
+        "Timeline": "10/2025 - nykyhetki",
 "description": "Kolmas ja uusin versio henkilökohtaisesta portfoliostani. Portfolioiden eri versiot kuvaavat hyvin omaa kehitystäni ja sitä, miten olen oppinut uusia teknologioita ja parantanut toteutustapoja. Sivusto esittelee osaamistani, projektejani ja opintojeni aikana kertyneitä taitoja. Rakennettu Next.js:llä ja tyylitelty responsiiviseksi ja selkeäksi kokonaisuudeksi.",
         "media": [
           { "type": "image", "src": "/Media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
@@ -71,6 +71,7 @@
 
       {
         "title": "React native sovellus",
+        "Timeline": "9/2025 - 10/2025",
 "description": "Kouluprojekti, jossa toteutimme React Native -mobiilisovelluksen jatko-osana elokuva-arvostelusivustolle. Sovellus hyödyntää backend-projektissa toteutettuja REST API -rajapintoja elokuvien hakemiseen ja esittämiseen selkeässä mobiilikäyttöliittymässä. Käyttäjä voi selata elokuvia, tarkastella yksityiskohtaisia tietoja sekä lukea muiden käyttäjien tekemiä arvosteluja.",        "media": [
           { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
           
@@ -83,56 +84,16 @@
           { "icon": "/Media/JS.png", "alt": "JS icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
-        ]
-      },
-
-      {
-        "title": "Ohjelmistotestaus",
-"description": "Kurssin lopputyö, jossa harjoittelimme ohjelmistotestauksen suunnittelua ja toteutusta Robot Frameworkin avulla. Projektin aikana loimme automaattisia testejä verkkosivulle, keskittyen käyttöliittymän toiminnallisuuden ja keskeisten käyttäjäpolkujen varmistamiseen. Työhön sisältyi testitapausten määrittely, testiskenaarioiden rakentaminen, avainsanapohjaisen testiautomaation hyödyntäminen sekä testien suorittaminen ja tulosten analysointi.",     
-         
-        "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
-        ],
-        "Tech": [
-          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
-        ]
-      },
-
-      {
-        "title": "LejosEV3",
-"description": "Kouluprojekti, jossa ohjelmoimme Lejos EV3 -legorobotin seuraamaan lattiaan merkittyä väriviivaa sekä havaitsemaan ja väistämään edessä olevia esteitä sensoreiden avulla. Projektiin sisältyi robottiohjelmoinnin lisäksi myös etäohjattavuuden toteuttaminen. Rakensimme REST API -rajapinnan, jonka kautta robottia voitiin ohjata ja lähettää komentoja verkkoselaimen kautta, jolloin robotin toimintoja pystyi käyttämään myös ilman fyysistä kosketusta laitteeseen.", 
-       "media": [
-          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
-        ],
-        "links": [],
-        "Tech": [
-          { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/Java.png", "alt": "Java icon" },
-          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
-          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
-        ]
-      },
-
-      {
-        "title": "Automaatiorobotiikka",
-"description": "Kouluprojekti, jossa toteutimme laskujen käsittelyprosessin ohjelmistorobotiikan avulla. Ratkaisussa hyödynnettiin UiPathia, Robot Frameworkia ja Pythonia automatisoimaan PDF-laskujen lukeminen, tietojen poiminta, tallennus ja tarkistus. UiPath luki kaikki PDF-laskut, parsii niistä otsikko- ja rivitiedot ja tallensi ne CSV-tiedostoihin. Robot Framework siirsi tiedot tietokantaan SQL-kyselyiden avulla ja päivitti laskujen käsittelytilan. Pythonia ja Robot Frameworkia käytettiin myös eri validointeihin, kuten viitenumeron, IBAN-tunnuksen ja laskusummien tarkistamiseen.", 
-        
-        "links": [
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
-        ],
-        "Tech": [
-          { "icon": "/Media/Python.png", "alt": "Python icon" },
-          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
-          { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
-          { "icon": "/Media/uipath.png", "alt": "UiPath icon" }
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/Expo.png", "alt": "Expo icon" },
+          { "icon": "/Media/AndroidStudio.png", "alt": "Android Studio icon" }
+
         ]
       },
-
       {
         "title": "Elokuvien arviointisivusto",
+        "Timeline": "3/2025 - 5/2025 + 9/2025 - 10/2025",
         "description": "Kouluprojektina tehty Backend-kurssin lopputyö keväällä 2025. Reactilla toteutettu elokuvasivusto, jolla sivuston hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
         
         "links": [
@@ -147,7 +108,88 @@
           { "icon": "/Media/HBS.png", "alt": "HBS icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/Node.png", "alt": "Node.js icon" },
+          { "icon": "/Media/Expressjs.png", "alt": "Express.js icon" },
+          { "icon": "/Media/GoogleCloud.png", "alt": "Google Cloud icon" }
+        
+
+        ]
+      },
+      {
+        "title": "AI-based Invoice assistant",
+        "Timeline": "3/2025 - 5/2025",
+        "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajan kielimallin käytöstä. Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit ja Astro.",
+        "media": [
+          {
+            "type": "video",
+            "src": "https://youtu.be/Cb2bTOat2U0",
+            "alt": "AI Invoice assistant demo video"
+          },
+          {
+            "type": "image",
+            "src": "/Media/Burgosteam.jpg",
+            "alt": "Image of the my team in Burgos"
+          }
+        ],
+        "links": [
+          { "Name": "Demo", "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0" },
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" }
+        ],
+        "Tech": [
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/Astro.png", "alt": "Astro icon" },
+          { "icon": "/Media/HF.png", "alt": "Hugging Face icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" }
+        ]
+      },
+      {
+        "title": "Automaatiorobotiikka",
+        "Timeline": "1/2025 - 3/2025",
+"description": "Kouluprojekti, jossa toteutimme laskujen käsittelyprosessin ohjelmistorobotiikan avulla. Ratkaisussa hyödynnettiin UiPathia, Robot Frameworkia ja Pythonia automatisoimaan PDF-laskujen lukeminen, tietojen poiminta, tallennus ja tarkistus. UiPath luki kaikki PDF-laskut, parsii niistä otsikko- ja rivitiedot ja tallensi ne CSV-tiedostoihin. Robot Framework siirsi tiedot tietokantaan SQL-kyselyiden avulla ja päivitti laskujen käsittelytilan. Pythonia ja Robot Frameworkia käytettiin myös eri validointeihin, kuten viitenumeron, IBAN-tunnuksen ja laskusummien tarkistamiseen.", 
+        
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
+        ],
+        "Tech": [
+          { "icon": "/Media/Python.png", "alt": "Python icon" },
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
+          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
+          { "icon": "/Media/uipath.png", "alt": "UiPath icon" }
+        ]
+      },
+      
+
+      {
+        "title": "Ohjelmistotestaus",
+        "Timeline": "10/2024 - 10/2024",
+"description": "Kurssin lopputyö, jossa harjoittelimme ohjelmistotestauksen suunnittelua ja toteutusta Robot Frameworkin avulla. Projektin aikana loimme automaattisia testejä verkkosivulle, keskittyen käyttöliittymän toiminnallisuuden ja keskeisten käyttäjäpolkujen varmistamiseen. Työhön sisältyi testitapausten määrittely, testiskenaarioiden rakentaminen, avainsanapohjaisen testiautomaation hyödyntäminen sekä testien suorittaminen ja tulosten analysointi.",     
+         
+        "links": [
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
+        ],
+        "Tech": [
+          { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+        ]
+      },
+
+      {
+        "title": "LejosEV3",
+        "Timeline": "3/2024 - 5/2024",
+"description": "Kouluprojekti, jossa ohjelmoimme Lejos EV3 -legorobotin seuraamaan lattiaan merkittyä väriviivaa sekä havaitsemaan ja väistämään edessä olevia esteitä sensoreiden avulla. Projektiin sisältyi robottiohjelmoinnin lisäksi myös etäohjattavuuden toteuttaminen. Rakensimme REST API -rajapinnan, jonka kautta robottia voitiin ohjata ja lähettää komentoja verkkoselaimen kautta, jolloin robotin toimintoja pystyi käyttämään myös ilman fyysistä kosketusta laitteeseen.", 
+       "media": [
+          { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
+        ],
+        "links": [],
+        "Tech": [
+          { "icon": "/Media/REST.png", "alt": "REST API icon" },
+          { "icon": "/Media/Java.png", "alt": "Java icon" },
+          { "icon": "/Media/HTML.png", "alt": "HTML icon" },
+          { "icon": "/Media/CSS.png", "alt": "CSS icon" }
         ]
       }
     ]

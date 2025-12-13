@@ -25,6 +25,7 @@
   font-size: 2.5rem;
 }
 
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +61,7 @@
 .project-box {
   padding: 20px;
   width: 300px;
-  height: 220px;
+  height: 280px;
   background-color: #333;
   border: 2px solid #0eb5f1;
   text-align: center;
@@ -79,6 +80,13 @@
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1e90ff;
+}
+.project-box h4 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #716fe9;
 }
 
 .project-box::before {
@@ -152,6 +160,21 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1e90ff;
 }
+.modal-content h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #716fe9;
+}
+.modal-content p.project-reference {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #11c5c5;
+  font-weight: bolder;
+}
 
 @keyframes popIn {
   from {
@@ -187,6 +210,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .modal-video {
