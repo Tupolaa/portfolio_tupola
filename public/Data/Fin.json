@@ -226,6 +226,7 @@
   { "name": "Suomi", "icon": "/Media/FIN.png", "alt": "Finnish icon",  "desc": "Äidinkieli", "slot": "Vuorovaikutustaidot" },
   { "name": "Englanti", "icon": "/Media/UK.png", "alt": "English icon","desc": "Sujuva suullinen ja kirjallinen taito.", "slot": "Vuorovaikutustaidot" },
   { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja opiskelen sitä parhaillaan.", "slot": "Kehittäjän työkalut" },
+  { "name": "Windows 11", "icon": "/Media/Windows.png", "alt": "Windows icon", "desc": "Perustiedot Windows 11 käyttöjärjestelmästä datanomikoulutuksen kautta.", "slot": "Kehittäjän työkalut" },
   { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Käytin Spring Bootia Triplan projektissa.", "slot": "Ohjelmointi" },
   { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon","desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
   { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon",  "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },

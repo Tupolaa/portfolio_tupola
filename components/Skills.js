@@ -97,7 +97,7 @@ const Skills = () => {
             <div className="skill-meta">
               <div className="skill-name">{s.name}</div>
               {s.level && renderLevel(s.level)}
-              {s.desc && <div className="skill-desc">{s.desc}</div>}
+              
             </div>
           </div>
         ))}
