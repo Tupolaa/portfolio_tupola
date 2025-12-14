@@ -22,8 +22,8 @@
       {
         "title": "Finna integration for Triplan Oy",
         "Timeline": "10/2025 - Present",
-        "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514",
-"description": "I was part of a team that developed a OAI-PMH provider prototype for Triplan Oy, aiming to enable harvesting of data available through Triplan's REST API into Finna according to the OAI-PMH 2.0 standard. The project focused particularly on converting data to Finna-compatible format, implementing key OAI-PMH verbs, and ensuring compatibility with Finna and OAI-PMH requirements in close collaboration with Triplan.",
+        "reference": "CTO - Joni Turunen +358 40 451 5514",
+"description": "I was part of a team that developed a OAI-PMH provider prototype for Triplan Oy, aiming to enable harvesting of data available through Triplan's REST API into Finna according to the OAI-PMH 2.0 standard. The project focused particularly on converting data to Finna-compatible format, implementing key OAI-PMH verbs and ensuring compatibility with Finna and OAI-PMH requirements.",
         "media": [
           { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
           { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentation" }
@@ -31,7 +31,8 @@
         ],
         "links": [
           { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
-          { "Name": "OAI-PMH Protocol", "link": "https://www.openarchives.org/pmh/" }
+          { "Name": "OAI-PMH Protocol", "link": "https://www.openarchives.org/pmh/" },
+          { "Name": "Finna", "link": "https://finna.fi/"}
         ],
         "Tech": [
           { "icon": "/Media/Java.png", "alt": "Java icon" },

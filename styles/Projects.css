@@ -79,14 +79,14 @@
   font-size: 1rem;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1e90ff;
+  color: #63a3e4;
 }
 .project-box h4 {
   margin-bottom: 10px;
   font-size: 0.9rem;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #716fe9;
+  color: #1e90ff;
 }
 
 .project-box::before {
@@ -162,17 +162,17 @@
 }
 .modal-content h4 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-size: 1.1rem;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #716fe9;
+  color: #5ca9f7;
 }
 .modal-content p.project-reference {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  color: #11c5c5;
+  color: #027af1;
   font-weight: bolder;
 }
 

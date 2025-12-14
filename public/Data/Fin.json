@@ -23,7 +23,7 @@
         "title": "Finna integaatio Triplan Oy:lle",
         "Timeline": "10/2025 - Nykyhetki",
         "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514",
-        "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista, jonka tavoitteena oli mahdollistaa Triplanin REST API:n kautta saatavan datan haravointi Finnaan OAI-PMH 2.0 -standardin mukaisesti. Projektissa keskityttiin erityisesti datan muuntamiseen Finnalle sopivaksi, keskeisten OAI-PMH-verbien toteutukseen sekä yhteensopivuuden varmistamiseen Finnan ja OAI-PMH vaatimusten kanssa tiiviissä yhteistyössä Triplanin kanssa. ",
+        "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista. Projektin tavoitteena oli mahdollistaa Triplanin REST API:n kautta saatavan datan haravointi Finnan käyttöön OAI-PMH 2.0 -standardin mukaisesti. Projektissa keskityttiin erityisesti datan muuntamiseen Finnalle sopivaksi, keskeisten OAI-PMH-verbien toteutukseen sekä Finnan ja OAI-PMH-vaatimusten toteuttamiseen. ",
         "media": [
           { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
           { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentatiion" }
@@ -31,7 +31,8 @@
         ],
         "links": [
           { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
-          { "Name": "OAI-PMH Protokolla", "link": "https://www.openarchives.org/pmh/" }
+          { "Name": "OAI-PMH Protokolla", "link": "https://www.openarchives.org/pmh/" },
+          { "Name": "Finna", "link": "https://finna.fi/"}
         ],
         "Tech": [
           { "icon": "/Media/Java.png", "alt": "Java icon" },
