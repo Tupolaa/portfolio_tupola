@@ -102,7 +102,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <p>{content?.Skills?.subheader}</p>
+      
     </section>
   );
 };
