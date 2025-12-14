@@ -226,7 +226,7 @@
       { "name": "Finnish", "icon": "/Media/FIN.png", "alt": "Finnish icon", "desc": "Native language", "slot": "Communication Skills" },
       { "name": "English", "icon": "/Media/UK.png", "alt": "English icon", "desc": "Fluent spoken and written skills.", "slot": "Communication Skills" },
       { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "Currently learning and using TDD.", "slot": "Developer Tools" },
-      { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "A new framework for me, currently learning and practicing.", "slot": "Programming" },
+      { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Used this Framework in Triplan project.", "slot": "Programming" },
       { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon", "desc": "Used Netlify to deploy my older portfolios.", "slot": "Cloud Services" },
       { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon", "desc": "Used Vercel to deploy this portfolio.", "slot": "Cloud Services" },
       { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "desc": "Used to create this portfolio website.", "slot": "Programming" },
@@ -234,7 +234,7 @@
       { "name": "Problem-solving", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Improved through different projects and challenges.", "slot": "Communication Skills" },
       { "name": "Creativity", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "I enjoy brainstorming and creating new ideas.", "slot": "Communication Skills" },
       { "name": "Active learning", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Committed to continuous learning in software development.", "slot": "Communication Skills" },
-      { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "Currently learning JUnit in a project.", "slot": "Developer Tools" },
+      { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Developer Tools" },
       { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
       { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
