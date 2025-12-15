@@ -137,7 +137,9 @@
         ],
         "links": [
           { "Name": "Demo", "link": "https://www.youtube.com/watch?v=Cb2bTOat2U0" },
-          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" }
+          { "Name": "Repository", "link": "https://github.com/Tupolaa/BIP-AI-model" },
+          { "Name": "Kurssi", "link": "https://run-eu.eu/2025/03/01/bip-smart-everything-connecting-artificial-intelligence-tools-with-business-ideas/" }
+        
         ],
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
