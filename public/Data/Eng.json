@@ -122,6 +122,7 @@
        {
         "title": "AI-based Invoice Assistant",
         "Timeline": "3/2025 - 5/2025",
+        "reference": "HAMK - Mazhar Mohsin, +358 40 836 8023",
         "description": " In Burgos, Spain i participated in the RUN-EU BIP Smart Everything course, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a 4 week remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
         "media": [
           {
