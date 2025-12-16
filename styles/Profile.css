@@ -332,7 +332,7 @@ body.modal-open header {
 
 /* TITLE (Backend Developer) */
 .profile-heading-svg .title-text {
-  font-size: clamp(6.8rem, 8vw, 3rem) !important;
+  font-size: clamp(6rem, 8vw, 3rem) !important;
   stroke-width: 1 !important;
   transform: translateY(10px); 
 }
