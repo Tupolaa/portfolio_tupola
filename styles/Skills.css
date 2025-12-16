@@ -36,28 +36,20 @@
 /* Individual skill card */
 
 .skill-item {
-  position: relative;
-  overflow: visible;
   display: flex;
-  gap: 14px;
-  align-items: center;        /* <-- changed: vertically center icon + meta */
-  background: rgba(85, 85, 85, 0.507);
-  border-radius: 12px;
-  padding: 14px;
-  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
-  border: 1px solid rgba(255,255,255,0.03);
-  backdrop-filter: blur(4px);
-  min-height: 64px;           /* ensure comfortable height for centering */
-  z-index: 1;
+  align-items: center;
+  gap: 12px;
+  padding: 1px 1px;
+  min-height: 40px;
+  background: rgba(59, 58, 58, 0.822);
+  border: 1px solid rgb(7, 7, 7);
+  border-radius: 10px;
+
+ 
 }
 
 /* enlarge card and lift it above others on hover */
-.skill-item:hover {
-  transform: translateY(-8px) scale(1.06);
-  z-index: 50; 
-  box-shadow: 0 0 25px 6px rgba(38, 12, 185, 0.8);  background: linear-gradient(180deg, rgba(0,255,221,0.03), rgba(78,199,243,0.03));
-  border-color: rgba(0, 255, 221, 0.973);
-}
+
 
 /* make the meta column center its children vertically so name/level sit middle */
 .skill-meta {
@@ -256,10 +248,11 @@
 }
 
 /* small-screen adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .skills-section {
     width: 100%;
     padding: 24px 16px;
+    
   }
 
   .skills-filter {
