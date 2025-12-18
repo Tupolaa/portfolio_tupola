@@ -20,7 +20,7 @@
     "Spoiler" : "*Klikkaa projektia nähdäksesi lisätietoja.",
     "projects": [
       {
-        "title": "Finna integaatio Triplan Oy:lle",
+        "title": "Finna integaatio PoC Triplan Oy:lle",
         "Timeline": "10/2025 - 12/2025",
         "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514, joni.turunen@triplan.fi",
         "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista Finna-integraatiota varten. Oma vastuualueeni projektissa oli Triplanin REST API -integraation toteutus, jossa keskityin autentikoitujen API-kutsujen rakentamiseen, datan hakemiseen ja normalisointiin. Kaaviossa esitetty REST-integraatio on keskeinen osa järjestelmän toimivuutta ja tiedon luotettavaa välittämistä Finnaan.",

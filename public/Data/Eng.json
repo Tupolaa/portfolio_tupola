@@ -20,7 +20,7 @@
     "Spoiler" : "*Click a project to see more details.",
     "projects": [
       {
-        "title": "Finna integration for Triplan Oy",
+        "title": "Finna integration PoC for Triplan Oy",
         "Timeline": "10/2025 - 12/2025",
         "reference": "Joni Turunen - Triplan Oy,  +358 40 451 5514, joni.turunen@triplan.fi",
         "description": "I was part of a team that developed a prototype OAI-PMH provider for Triplan Oy to enable integration with Finna. My primary responsibility in the project was implementing the Triplan REST API integration, focusing on building authenticated API calls, retrieving and normalizing data. The REST integration layer shown in the diagram is a key component in ensuring system reliability and accurate data delivery to Finna.",
