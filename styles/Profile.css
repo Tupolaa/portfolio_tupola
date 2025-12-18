@@ -163,6 +163,7 @@ body.modal-open header {
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
+    filter: none;
   }
   50% {
     fill: rgba(20, 46, 204, 0);
@@ -176,6 +177,7 @@ body.modal-open header {
     fill: rgba(20, 46, 204, 0);
     stroke: rgba(54, 95, 160, 1);
     stroke-width: 3;
+    filter: none;
   }
   85% {
     fill: rgb(7, 168, 243);
@@ -183,6 +185,7 @@ body.modal-open header {
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
+    filter: drop-shadow(0 0 30px rgb(7, 168, 243)) drop-shadow(0 0 46px rgb(5, 9, 212));
   }
   100% {
     fill: rgb(7, 168, 243);
@@ -190,6 +193,7 @@ body.modal-open header {
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
+    filter: drop-shadow(0 0 30px rgb(7, 168, 243)) drop-shadow(0 0 46px rgb(5, 9, 212));
   }
 }
 .profile-links {
