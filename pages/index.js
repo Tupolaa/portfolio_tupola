@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+
 import Head from "next/head"; // ⬅️ import Head
 import Navbar from "../components/header.js";
 import Profile from "../components/Profile.js";
@@ -9,14 +9,8 @@ import Footer from "../components/Footer.js";
 import ParticleBackground from "../components/ParticleBackround.jsx";
 
 export default function Home() {
-  const [isDesktop, setIsDesktop] = useState(false);
+ 
 
-  useEffect(() => {
-    const checkIsDesktop = () => setIsDesktop(window.innerWidth >= 768);
-    checkIsDesktop();
-    window.addEventListener("resize", checkIsDesktop);
-    return () => window.removeEventListener("resize", checkIsDesktop);
-  }, []);
 
   const sectionStyle = {
     maxWidth: 1400,
@@ -30,13 +24,8 @@ export default function Home() {
       <title>Teemu Tupola – Portfolio</title>
     </Head>
 
-    {/* Background wrapper */}
-    <div
-     
-      
-    >
-    
-
+   
+    <div>
       {/* Foreground content */}
       <div style={{ position: "relative", zIndex: 1 }}>
         <Navbar />

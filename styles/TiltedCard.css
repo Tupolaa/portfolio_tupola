@@ -20,10 +20,10 @@
     }
     
     50% {
-        box-shadow: 0 0 25px #f0f,
-                    0 0 35px #f0f,
-                    0 0 45px #f0f,
-                    0 0 55px #f0f;
+        box-shadow: 0 0 25px rgb(38, 2, 241),
+                    0 0 35px rgb(38, 2, 241),
+                    0 0 45px rgb(38, 2, 241),
+                    0 0 55px rgb(38, 2, 241);
     }
     100% {
         box-shadow: 0 0 25px #0ff,
@@ -33,10 +33,10 @@
     }
 
     50% {
-        box-shadow: 0 0 25px #f0f,
-                    0 0 35px #f0f,
-                    0 0 45px #f0f,
-                    0 0 55px #f0f;
+        box-shadow: 0 0 25px rgb(38, 2, 241),
+                    0 0 35px rgb(38, 2, 241),
+                    0 0 45px rgb(38, 2, 241),
+                    0 0 55px rgb(38, 2, 241);
     }
     100% {
         box-shadow: 0 0 25px #0ff,

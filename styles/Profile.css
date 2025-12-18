@@ -38,7 +38,7 @@ body.modal-open header {
     box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
   }
   50% {
-    box-shadow: 0 0 20px #f0f, 0 0 30px #f0f, 0 0 40px #f0f, 0 0 50px #f0f;
+    box-shadow: 0 0 20px rgb(38, 2, 241), 0 0 30px rgb(38, 2, 241), 0 0 40px rgb(38, 2, 241), 0 0 50px rgb(38, 2, 241);
   }
   100% {
     box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
