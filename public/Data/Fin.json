@@ -22,8 +22,8 @@
       {
         "title": "Finna integaatio Triplan Oy:lle",
         "Timeline": "10/2025 - Nykyhetki",
-        "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514",
-        "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista. Projektin tavoitteena oli mahdollistaa Triplanin REST API:n kautta saatavan datan haravointi Finnan käyttöön OAI-PMH 2.0 -standardin mukaisesti. Projektissa keskityttiin erityisesti datan muuntamiseen Finnalle sopivaksi, keskeisten OAI-PMH-verbien toteutukseen sekä Finnan ja OAI-PMH-vaatimusten toteuttamiseen. ",
+        "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514, joni.turunen@triplan.fi",
+        "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista Finna-integraatiota varten. Oma vastuualueeni projektissa oli Triplanin REST API -integraation toteutus, jossa keskityin autentikoitujen API-kutsujen rakentamiseen, datan hakemiseen ja normalisointiin. Kaaviossa esitetty REST-integraatio on keskeinen osa järjestelmän toimivuutta ja tiedon luotettavaa välittämistä Finnaan.",
         "media": [
           { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
           { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentatiion" }
@@ -45,12 +45,13 @@
           { "icon": "/Media/Confluence.png", "alt": "Confluence icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/postman.png", "alt": "Postman icon" }
-        ]
+        ],
+        "Feedback": "My experience acting as Product Owner for this HAMK team was excellent. They were professional, communicative, and took real responsibility for the project. The team didn't settle for the easy path. They proactively chose to learn our specific tech stack (Java Spring) to ensure a frictionless handover and adoption on our end. The quality of their resulting solution was impressive. They clearly exceeded my expectations, and I highly recommend them for future collaborations. - Joni Turunen, CTO Triplan Oy"
       },
        {
         "title": "Henkilökohtainen portfolioni 3.0",
         "Timeline": "10/2025 - nykyhetki",
-"description": "Kolmas ja uusin versio henkilökohtaisesta portfoliostani. Portfolioiden eri versiot kuvaavat hyvin omaa kehitystäni ja sitä, miten olen oppinut uusia teknologioita ja parantanut toteutustapoja. Sivusto esittelee osaamistani, projektejani ja opintojeni aikana kertyneitä taitoja. Rakennettu Next.js:llä ja tyylitelty responsiiviseksi ja selkeäksi kokonaisuudeksi.",
+        "description": "Kolmas ja uusin versio henkilökohtaisesta portfoliostani. Portfolioiden eri versiot kuvaavat hyvin omaa kehitystäni ja sitä, miten olen oppinut uusia teknologioita ja parantanut toteutustapoja. Sivusto esittelee osaamistani, projektejani ja opintojeni aikana kertyneitä taitoja. Rakennettu Next.js:llä ja tyylitelty responsiiviseksi ja selkeäksi kokonaisuudeksi.",
         "media": [
           { "type": "image", "src": "/Media/portfolio.png", "alt": "Screenshot of portfolio website in development" },
           { "type": "image", "src": "/Media/Dev.jpg", "alt": "Screenshot of portfolio website in development" }
@@ -121,7 +122,7 @@
       {
         "title": "AI-based Invoice assistant",
         "Timeline": "3/2025 - 5/2025",
-        "reference": "HAMK - Mazhar Mohsin, +358 40 836 8023",
+        "reference": "Mazhar Mohsin - HAMK, +358 40 836 8023, mazhar.mohsin@hamk.fi",
         "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajan kielimallin käytöstä. Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit ja Astro.",
         "media": [
           {

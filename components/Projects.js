@@ -47,6 +47,7 @@ const Projects = () => {
              {Array.isArray(project.Tech) && (
               <div className="modal-tech">
                 {project.Tech.map((t, i) => (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     key={i}
                     src={t.icon}
@@ -118,6 +119,7 @@ const Projects = () => {
             {Array.isArray(selectedProject.Tech) && (
               <div className="modal-tech">
                 {selectedProject.Tech.map((t, i) => (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     key={i}
                     src={t.icon}
@@ -128,6 +130,16 @@ const Projects = () => {
                   />
                 ))}
               </div>
+            )}
+            {selectedProject.Feedback && (
+              <h4 className="modal-notes">
+                <strong>{lang === 'fi' ? 'Asiakkaan palaute: ' : 'Feedback from customer: '}</strong>
+              </h4>
+            )}
+            {selectedProject.Feedback && (
+              <p className="modal-notes">
+                {selectedProject.Feedback}
+              </p>
             )}
           </div>
         </div>
