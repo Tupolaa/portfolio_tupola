@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // profile.js
 import React from "react";
 import { useLanguage } from "../components/LangChanger.js";
@@ -23,6 +24,18 @@ const Profile = () => {
 
   return (
     <div className="profile-container">
+      {/* MOBILE: Title above photo */}
+      <div className="mobile-only mobile-title">
+        <svg viewBox="0 0 1000 300" className="profile-heading-svg">
+          <text x="50%" y="50%" textAnchor="middle">
+            {profileData.name}
+          </text>
+          <text className="title-text" x="50%" y="80%" textAnchor="middle">
+            {profileData.title}
+          </text>
+        </svg>
+      </div>
+
       {/* DESKTOP / TABLET: TiltedCard */}
       <div className="profile-photo-wrapper desktop-only">
         <TiltedCard
@@ -50,8 +63,8 @@ const Profile = () => {
       </div>
 
       <div className="profile-info">
-        {/* Animated SVG title (same for all, just styled differently on mobile) */}
-        <svg viewBox="0 0 1000 300" className="profile-heading-svg">
+        {/* Animated SVG title - hidden on mobile */}
+        <svg viewBox="0 0 1000 300" className="profile-heading-svg desktop-only">
           <text x="50%" y="50%" textAnchor="middle">
             {profileData.name}
           </text>

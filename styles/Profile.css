@@ -68,7 +68,7 @@ body.modal-open header {
   border-radius: 24px;
   object-fit: cover;
   border: 3px solid #333;
-  box-shadow: 0 8px 20px rgba(6, 64, 224, 0.2);
+  box-shadow: 0 8px 20px rgb(6, 64, 224);
 }
 
 .profile-info {
@@ -297,12 +297,13 @@ body.modal-open header {
   .profile-photo-wrapper.mobile-only {
     justify-content: center;
     width: 100%;
+    
   }
 
   .profile-photo-static {
-    width: 85vw;
-    max-width: 420px; /* bigger mobile image */
-    border-radius: 24px;
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 8px;
   }
@@ -332,7 +333,7 @@ body.modal-open header {
 
 /* TITLE (Backend Developer) */
 .profile-heading-svg .title-text {
-  font-size: clamp(6rem, 8vw, 3rem) !important;
+  font-size: clamp(5.6rem, 8vw, 3rem) !important;
   stroke-width: 1 !important;
   transform: translateY(10px); 
 }
