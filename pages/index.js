@@ -32,14 +32,10 @@ export default function Home() {
 
     {/* Background wrapper */}
     <div
-      style={{
-        position: "relative",
-        minHeight: "100vh",
-        ...(isDesktop && { background: "#1b1b1b" }),
-      }}
+     
+      
     >
-      {/* Particle background - only on desktop */}
-      {isDesktop && <ParticleBackground />}
+    
 
       {/* Foreground content */}
       <div style={{ position: "relative", zIndex: 1 }}>
