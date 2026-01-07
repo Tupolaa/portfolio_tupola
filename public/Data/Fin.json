@@ -232,8 +232,8 @@
   { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja opiskelen sitä parhaillaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Windows 11", "icon": "/Media/Windows.png", "alt": "Windows icon", "desc": "Perustiedot Windows 11 käyttöjärjestelmästä datanomikoulutuksen kautta.", "slot": "Kehittäjän työkalut" },
   { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Käytin Spring Bootia Triplan projektissa.", "slot": "Ohjelmointi" },
-  { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon","desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
-  { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon",  "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },
+  { "name": "Netlify", "icon": "/Media/Netlify.png", "altß": "Netlify icon","desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
+  { "name": "Vercel", "icon": "/Media/Vercel.pnsg", "alt": "Vercel icon",  "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },
   { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "desc": "Olen käyttänyt Next.js:ää tämän portfolion rakentamiseen.", "slot": "Ohjelmointi" },
   { "name": "Tiimityöskentely", "icon": "/Media/Teamwork.png", "alt": "Teamwork icon", "desc": "Olen tottunut työskentelemään tiimeissä erilaisissa projekteissa ja tilanteissa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Ongelmanratkaisu", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Olen kehittänyt ongelmanratkaisutaitojani erilaisten projektien ja haasteiden kautta.", "slot": "Vuorovaikutustaidot" },
@@ -242,8 +242,8 @@
   { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "Käytin JUnitia Triplan projektin testaamiseen.", "slot": "Ohjelmointi" },
   { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon",  "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
-  { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" }
-
+  { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
+  { "name": "N8N", "icon": "/Media/n8n.png", "alt": "N8N icon", "desc": "Olen tutustunut N8N:ään työnkulkujen automatisointiin ja integrointiin.", "slot": "Kehittäjän työkalut" }
 ]
   },
   "info": {

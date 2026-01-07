@@ -241,7 +241,9 @@
       { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Developer Tools" },
       { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
-      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
+      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
+      { "name": "N8N", "icon": "/Media/n8n.png", "alt": "N8N icon", "desc": "I have explored N8N for workflow automation and integration.", "slot": "Developer Tools" }
+
     ]
   },
 
