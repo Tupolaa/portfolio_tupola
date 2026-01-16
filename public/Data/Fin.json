@@ -243,6 +243,7 @@
   { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon",  "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
+  { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "Olen tutustunut n8n:ään työnkulkujen automatisointiin ja integrointiin.", "slot": "Kehittäjän työkalut" },
   { "name": "Luotettavuus", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "Pidän itseäni luotettavana ja vastuullisena tiimin jäsenenä, johon voi luottaa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Pitkäjänteisyys", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "Olen pitkäjänteinen ja sitoutunut saavuttamaan tavoitteeni, vaikka kohtaisin haasteita matkan varrella.", "slot": "Vuorovaikutustaidot" },
   { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" }
