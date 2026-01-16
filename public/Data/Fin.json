@@ -32,7 +32,8 @@
         "Tech": [
           { "icon": "/Media/Jira.png", "alt": "Jira icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
-          { "icon": "/Media/AI.png", "alt": "Agentic AI icon" }
+          { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
+          { "icon": "/Media/LLM.png", "alt": "LLM icon" }
         ]
       },
       {
@@ -261,7 +262,7 @@
   { "name": "Luovuus", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "Pidän itseäni luovana henkilönä, joka nauttii uusien ideoiden ja ratkaisujen kehittämisestä.", "slot": "Vuorovaikutustaidot" },
   { "name": "Aktiivinen oppiminen", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Olen sitoutunut jatkuvaan oppimiseen ja itseni kehittämiseen ohjelmistokehityksen alalla.", "slot": "Vuorovaikutustaidot" },
   { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "Käytin JUnitia Triplan projektin testaamiseen.", "slot": "Ohjelmointi" },
-  { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
+  { "name": "AI (LLMs)", "icon": "/Media/LLM.png", "alt": "ChatGPT icon", "desc": "Käytän ChatGPT:tä koodaus assistenttina, joka selittää koodia ja auttaa ratkaisemaan ongelmia.", "slot": "Kehittäjän työkalut" },
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon",  "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
   { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "Olen tutustunut n8n:ään työnkulkujen automatisointiin ja integrointiin.", "slot": "Kehittäjän työkalut" },
