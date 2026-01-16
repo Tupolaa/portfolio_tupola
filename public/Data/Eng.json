@@ -11,7 +11,7 @@
   "Profile": {
     "name": "Teemu Tupola",
     "title": "Backend/Web Developer",
-    "description": "I am a young software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK.\n\nI know the fundamentals of programming and I am eager to develop reliable and functional software solutions. I am especially interested in backend and Web development, bug-fixingand debugging, because they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "description": "I am a software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
     "quote": "\"I learn best by doing – with a little touch of humour.\""
   },
 
@@ -241,7 +241,11 @@
       { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Developer Tools" },
       { "name": "ChatGPT", "icon": "/Media/GPT.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
-      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" }
+      { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
+      { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Communication Skills" },
+      { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Communication Skills" },
+      { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" }
+
     ]
   },
 
