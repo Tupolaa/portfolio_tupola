@@ -34,7 +34,12 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="project-box"
+            className={`project-box${project.bgLogo ? " has-bg" : ""}`}
+            style={
+              project.bgLogo
+                ? { "--project-bg-logo": `url(\"${project.bgLogo}\")` }
+                : undefined
+            }
             onClick={() => setSelectedProject(project)}
           >
             <h3>{project.title}</h3>

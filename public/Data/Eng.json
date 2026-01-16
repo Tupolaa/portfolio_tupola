@@ -19,11 +19,28 @@
     "header": "Projects",
     "Spoiler" : "*Click a project to see more details.",
     "projects": [
+       {
+        "title": "Thesis: Automating the customer support process with agent-based automation",
+        "Timeline": "1/2026 - present",
+        "description": "In spring 2026, I am working on my thesis titled \"Automating the customer support process with agent-based automation, Comparison of automation platforms and Proof of Concept implementation using Jira integration.\" The client for the thesis is Triplan Oy. More information about the project will be provided later.",
+        "bgLogo": "/Media/Triplan.png",
+        
+        "links": [
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/"}
+        
+        ],
+        "Tech": [
+          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/AI.png", "alt": "Agentic AI icon" }
+        ]
+      },
       {
         "title": "Finna integration PoC for Triplan Oy",
         "Timeline": "10/2025 - 12/2025",
         "reference": "Joni Turunen - Triplan Oy,  +358 40 451 5514, joni.turunen@triplan.fi",
         "description": "I was part of a team that developed a prototype OAI-PMH provider for Triplan Oy to enable integration with Finna. My primary responsibility in the project was implementing the Triplan REST API integration, focusing on building authenticated API calls, retrieving and normalizing data. The REST integration layer shown in the diagram is a key component in ensuring system reliability and accurate data delivery to Finna.",
+        "bgLogo": "/Media/Triplan.png",
         "media": [
           { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
           { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentation" }
@@ -78,6 +95,7 @@
         "title": "React Native Application",
         "Timeline": "9/2025 - 10/2025",
         "description": "A school project where we created a React Native mobile application as a continuation of a movie review website. The app uses REST API endpoints implemented in the backend project to fetch movies and display them in a clear mobile user interface. Users can browse movies, view detailed informationand read reviews written by others.",
+        "bgLogo": "/Media/HAMK.png",
         "media": [
           { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
         ],
@@ -99,7 +117,8 @@
         "title": "Movie Review Website",
         "Timeline": "3/2025 - 5/2025 + 9/2025 - 10/2025",
         "description": "A school project completed as the final assignment for the Backend course in spring 2025. We developed a movie review website using React, where the site retrieves movies from TheMovieDB API and stores them in a MongoDB database, from which they are fetched into the UI. Users can freely browse movies and after logging in, also review them. The project was extended in the Mobile Programming course by building a React Native mobile version of the application, providing the same functionality as the web app but with a user interface optimized for mobile use",
-       
+        "bgLogo": "/Media/HAMK.png",
+
         
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
@@ -125,6 +144,8 @@
         "Timeline": "3/2025 - 5/2025",
         "reference": "Mazhar Mohsin - HAMK, +358 40 836 8023, mazhar.mohsin@hamk.fi",
         "description": " In Burgos, Spain i participated in the RUN-EU BIP Smart Everything course, where international teams developed AI-based solutions for real business problems. Our project focused on invoice processing using artificial intelligence (AI Invoice Assistant / Finsum AI). The course included an intensive week in Burgos and a 4 week remote working phase. During the project, I was responsible for the user interface and integrating the large language model. The project used various frameworks and technologies, such as Python, Hugging Face, Streamlit and Astro.",
+        "bgLogo": "/Media/HAMK.png",
+
         "media": [
           {
             "type": "video",
@@ -156,6 +177,8 @@
         "title": "Automation Robotics",
         "Timeline": "1/2025 - 3/2025",
         "description": "A school project where we implemented an invoice processing workflow using robotic process automation. The solution utilized UiPath, Robot Framework and Python to automate reading PDF invoices, extracting data, storing it and performing validations. UiPath read all PDF invoices, parsed header and line-item detailsand saved them into CSV files. Robot Framework transferred the data into a database using SQL queries and updated the processing status of invoices. Python and Robot Framework were also used for various validations, such as checking reference numbers, IBAN codes and invoice totals.",
+        "bgLogo": "/Media/HAMK.png",
+
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
@@ -172,6 +195,7 @@
         "title": "Software Testing",
         "Timeline": "10/2024 - 10/2024",
         "description": "Course final project where we practiced designing and implementing software testing using Robot Framework. During the project, we created automated tests for a website, focusing on validating UI functionality and key user flows. The work included defining test cases, building test scenarios, leveraging keyword-driven test automation, as well as executing the tests and analyzing the results.",
+        "bgLogo": "/Media/HAMK.png",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
@@ -185,6 +209,7 @@
         "title": "LejosEV3",
         "Timeline": "3/2024 - 5/2024",
         "description": "A school project where we programmed a Lejos EV3 Lego robot to follow a color-marked path on the floor and detect and avoid obstacles using sensors. In addition to robot programming, we implemented remote control functionality by creating a REST API that allowed the robot to be controlled through a web browser, enabling usage without physical interaction.",
+        "bgLogo": "/Media/HAMK.png",
         "media": [
           { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
         ],
@@ -243,6 +268,7 @@
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
       { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
       { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "I have explored n8n for workflow automation and integration.", "slot": "Developer Tools" },
+      { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Developer Tools" },
       { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Communication Skills" },
       { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Communication Skills" },
       { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" }

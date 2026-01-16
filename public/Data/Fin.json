@@ -10,6 +10,7 @@
 
   "Profile": {
     "name": "Teemu Tupola",
+        "bgLogo": "/Media/AI.png",
     "title": "Backend/Web Developer",
     "description": "Olen ohjelmistokehittäjä Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa ja minulla on vahvat ohjelmointitaidot sekä vahva kiinnostus luotettavien ja toimivien ohjelmistoratkaisujen kehittämiseen. Kiinnostukseni kohdistuu erityisesti backend- ja Web kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani hyödyksi parhaalla mahdollisella tavalla.",
     "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
@@ -20,10 +21,26 @@
     "Spoiler" : "*Klikkaa projektia nähdäksesi lisätietoja.",
     "projects": [
       {
+        "title": "Opinnäytetyö: Asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla",
+        "Timeline": "1/2026 - nykyhetki",
+        "description": "Keväällä 2026 teen opinnäytetyöni aiheesta \"asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla, Automaatioalustojen vertailu ja Proof of Concept -toteutus Jira-integraation avulla\". ONT:n toimeksiantajana toimii Triplan Oy. Lisää tietoa projektista tulee myöhemmin.",
+        "bgLogo": "/Media/Triplan.png",
+
+        "links": [
+        { "Name": "Triplan Oy", "link": "https://triplan.fi/"}
+        ],
+        "Tech": [
+          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
+          { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
+          { "icon": "/Media/AI.png", "alt": "Agentic AI icon" }
+        ]
+      },
+      {
         "title": "Finna integaatio PoC Triplan Oy:lle",
         "Timeline": "10/2025 - 12/2025",
         "reference": "Joni Turunen  - Triplan Oy, +358 40 451 5514, joni.turunen@triplan.fi",
         "description": "Olin osa ryhmää, joka kehitti Triplan Oy:lle prototyypin OAI-PMH-providerista Finna-integraatiota varten. Oma vastuualueeni projektissa oli Triplanin REST API -integraation toteutus, jossa keskityin autentikoitujen API-kutsujen rakentamiseen, datan hakemiseen ja normalisointiin. Kaaviossa esitetty REST-integraatio on keskeinen osa järjestelmän toimivuutta ja tiedon luotettavaa välittämistä Finnaan.",
+        "bgLogo": "/Media/Triplan.png",
         "media": [
           { "type": "image", "src": "/Media/C4_Triplan.jpg", "alt": "C4 diagram of the prototype" },
           { "type": "image", "src": "/Media/TriplanPresentation.png", "alt": "First slide of presentatiion" }
@@ -74,7 +91,9 @@
       {
         "title": "React native sovellus",
         "Timeline": "9/2025 - 10/2025",
-"description": "Kouluprojekti, jossa toteutimme React Native -mobiilisovelluksen jatko-osana elokuva-arvostelusivustolle. Sovellus hyödyntää backend-projektissa toteutettuja REST API -rajapintoja elokuvien hakemiseen ja esittämiseen selkeässä mobiilikäyttöliittymässä. Käyttäjä voi selata elokuvia, tarkastella yksityiskohtaisia tietoja sekä lukea muiden käyttäjien tekemiä arvosteluja.",        "media": [
+        "description": "Kouluprojekti, jossa toteutimme React Native -mobiilisovelluksen jatko-osana elokuva-arvostelusivustolle. Sovellus hyödyntää backend-projektissa toteutettuja REST API -rajapintoja elokuvien hakemiseen ja esittämiseen selkeässä mobiilikäyttöliittymässä. Käyttäjä voi selata elokuvia, tarkastella yksityiskohtaisia tietoja sekä lukea muiden käyttäjien tekemiä arvosteluja.",        
+        "bgLogo": "/Media/HAMK.png",
+        "media": [
           { "type": "video", "src": "https://youtu.be/dO-wskIrzYQ", "alt": "React Native demo video" }
           
         ],
@@ -97,7 +116,7 @@
         "title": "Elokuvien arviointisivusto",
         "Timeline": "3/2025 - 5/2025 + 9/2025 - 10/2025",
         "description": "Kouluprojektina tehty Backend-kurssin lopputyö keväällä 2025. Reactilla toteutettu elokuvasivusto, jolla sivuston hakee elokuvat TheMovieDB -rajapinnasta ja tallentaa ne MongoDB-tietokantaan, josta ne haetaan käyttöliittymään. Käyttäjä voi selata elokuvia vapaasti ja kirjautumisen jälkeen myös arvostella niitä. Projektia jatkettiin Mobile Programming -kurssilla rakentamalla sovelluksesta React Native -mobiiliversio, jossa käyttäjällä on käytettävissä samat toiminnallisuudet kuin verkkosovelluksessa, mutta mobiilikäyttöön optimoidulla käyttöliittymällä.",
-        
+        "bgLogo": "/Media/HAMK.png",
         "links": [
           { "Name": "Repository", "link": "https://github.com/joni23008/Backend-Web-Development" },
           { "Name": "Nettisivu", "link": "https://moviereview-472307.lm.r.appspot.com/" },
@@ -124,6 +143,7 @@
         "Timeline": "3/2025 - 5/2025",
         "reference": "Mazhar Mohsin - HAMK, +358 40 836 8023, mazhar.mohsin@hamk.fi",
         "description": "Osallistuin Espanjassa RUN-EU BIP Smart Everything -kurssille, jossa kehitettiin kansainvälisissä tiimeissä tekoälypohjaisia ratkaisuja todellisiin liiketoimintaongelmiin. Projektimme keskittyi laskujen käsittelyyn tekoälyn avulla (AI Invoice Assistant / Finsum AI). Kurssiin sisältyi intensiiviviikko Burgosissa sekä 4 viikon etätyöskentelyvaihe, joiden aikana vastasin mm. käyttöliittymän ja laajan kielimallin käytöstä. Projektissa hyödynnettiin erilaisia frameworkeja ja teknologioita, kuten Python, Hugging Face, Streamlit ja Astro.",
+        "bgLogo": "/Media/HAMK.png",
         "media": [
           {
             "type": "video",
@@ -153,8 +173,8 @@
       {
         "title": "Automaatiorobotiikka",
         "Timeline": "1/2025 - 3/2025",
-"description": "Kouluprojekti, jossa toteutimme laskujen käsittelyprosessin ohjelmistorobotiikan avulla. Ratkaisussa hyödynnettiin UiPathia, Robot Frameworkia ja Pythonia automatisoimaan PDF-laskujen lukeminen, tietojen poiminta, tallennus ja tarkistus. UiPath luki kaikki PDF-laskut, parsii niistä otsikko- ja rivitiedot ja tallensi ne CSV-tiedostoihin. Robot Framework siirsi tiedot tietokantaan SQL-kyselyiden avulla ja päivitti laskujen käsittelytilan. Pythonia ja Robot Frameworkia käytettiin myös eri validointeihin, kuten viitenumeron, IBAN-tunnuksen ja laskusummien tarkistamiseen.", 
-        
+        "description": "Kouluprojekti, jossa toteutimme laskujen käsittelyprosessin ohjelmistorobotiikan avulla. Ratkaisussa hyödynnettiin UiPathia, Robot Frameworkia ja Pythonia automatisoimaan PDF-laskujen lukeminen, tietojen poiminta, tallennus ja tarkistus. UiPath luki kaikki PDF-laskut, parsii niistä otsikko- ja rivitiedot ja tallensi ne CSV-tiedostoihin. Robot Framework siirsi tiedot tietokantaan SQL-kyselyiden avulla ja päivitti laskujen käsittelytilan. Pythonia ja Robot Frameworkia käytettiin myös eri validointeihin, kuten viitenumeron, IBAN-tunnuksen ja laskusummien tarkistamiseen.", 
+        "bgLogo": "/Media/HAMK.png",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistorobotiikka" }
         ],
@@ -171,8 +191,8 @@
       {
         "title": "Ohjelmistotestaus",
         "Timeline": "10/2024 - 10/2024",
-"description": "Kurssin lopputyö, jossa harjoittelimme ohjelmistotestauksen suunnittelua ja toteutusta Robot Frameworkin avulla. Projektin aikana loimme automaattisia testejä verkkosivulle, keskittyen käyttöliittymän toiminnallisuuden ja keskeisten käyttäjäpolkujen varmistamiseen. Työhön sisältyi testitapausten määrittely, testiskenaarioiden rakentaminen, avainsanapohjaisen testiautomaation hyödyntäminen sekä testien suorittaminen ja tulosten analysointi.",     
-         
+        "description": "Kurssin lopputyö, jossa harjoittelimme ohjelmistotestauksen suunnittelua ja toteutusta Robot Frameworkin avulla. Projektin aikana loimme automaattisia testejä verkkosivulle, keskittyen käyttöliittymän toiminnallisuuden ja keskeisten käyttäjäpolkujen varmistamiseen. Työhön sisältyi testitapausten määrittely, testiskenaarioiden rakentaminen, avainsanapohjaisen testiautomaation hyödyntäminen sekä testien suorittaminen ja tulosten analysointi.",     
+        "bgLogo": "/Media/HAMK.png",
         "links": [
           { "Name": "Repository", "link": "https://github.com/Tupolaa/Ohjelmistotestaus_projekti" }
         ],
@@ -185,8 +205,9 @@
       {
         "title": "LejosEV3",
         "Timeline": "3/2024 - 5/2024",
-"description": "Kouluprojekti, jossa ohjelmoimme Lejos EV3 -legorobotin seuraamaan lattiaan merkittyä väriviivaa sekä havaitsemaan ja väistämään edessä olevia esteitä sensoreiden avulla. Projektiin sisältyi robottiohjelmoinnin lisäksi myös etäohjattavuuden toteuttaminen. Rakensimme REST API -rajapinnan, jonka kautta robottia voitiin ohjata ja lähettää komentoja verkkoselaimen kautta, jolloin robotin toimintoja pystyi käyttämään myös ilman fyysistä kosketusta laitteeseen.", 
-       "media": [
+        "description": "Kouluprojekti, jossa ohjelmoimme Lejos EV3 -legorobotin seuraamaan lattiaan merkittyä väriviivaa sekä havaitsemaan ja väistämään edessä olevia esteitä sensoreiden avulla. Projektiin sisältyi robottiohjelmoinnin lisäksi myös etäohjattavuuden toteuttaminen. Rakensimme REST API -rajapinnan, jonka kautta robottia voitiin ohjata ja lähettää komentoja verkkoselaimen kautta, jolloin robotin toimintoja pystyi käyttämään myös ilman fyysistä kosketusta laitteeseen.", 
+        "bgLogo": "/Media/HAMK.png",
+        "media": [
           { "type": "video", "src": "/Media/Testi.mp4", "alt": "LejosEV3 demo video" }
         ],
         "links": [],
@@ -244,6 +265,7 @@
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon",  "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
   { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "Olen tutustunut n8n:ään työnkulkujen automatisointiin ja integrointiin.", "slot": "Kehittäjän työkalut" },
+  { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Kehittäjän työkalut" },
   { "name": "Luotettavuus", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "Pidän itseäni luotettavana ja vastuullisena tiimin jäsenenä, johon voi luottaa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Pitkäjänteisyys", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "Olen pitkäjänteinen ja sitoutunut saavuttamaan tavoitteeni, vaikka kohtaisin haasteita matkan varrella.", "slot": "Vuorovaikutustaidot" },
   { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" }
