@@ -23,7 +23,7 @@
       {
         "title": "Opinnäytetyö: Asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla",
         "Timeline": "1/2026 - nykyhetki",
-        "description": "Keväällä 2026 teen opinnäytetyöni aiheesta \"asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla, Automaatioalustojen vertailu ja Proof of Concept -toteutus\". ONT:n toimeksiantajana toimii Triplan Oy. Työssä vertailen automaatioalustoja ja rakennan Proof of Concept -ratkaisua, joka tutkii agenttipohjaisen automaation hyödyntämistä asiakastuen tehostamisessa. Lisää tietoa projektista tulee myöhemmin.",
+        "description": "Keväällä 2026 teen opinnäytetyöni aiheesta \"asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla, Automaatioalustojen vertailu ja Proof of Concept -toteutus\". ONT:n toimeksiantajana toimii Triplan Oy. Työssä vertailen automaatioalustoja ja rakennan Proof of Concept -ratkaisua käyttäen n8n-alustaa, joka tutkii agenttipohjaisen automaation hyödyntämistä asiakastuen tehostamisessa. Lisää tietoa projektista tulee myöhemmin.",
         "bgLogo": "/Media/Triplan.png",
 
         "links": [
