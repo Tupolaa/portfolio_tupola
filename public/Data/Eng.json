@@ -20,9 +20,9 @@
     "Spoiler" : "*Click a project to see more details.",
     "projects": [
        {
-        "title": "Thesis: Automating the customer support process with agent-based automation",
+        "title": "Thesis: Automating the customer support process with agenttic automation",
         "Timeline": "1/2026 - present",
-        "description": "In spring 2026, I am working on my thesis titled \"Automating the customer support process with agent-based automation, Comparison of automation platforms and Proof of Concept implementation using Jira integration.\" The client for the thesis is Triplan Oy. More information about the project will be provided later.",
+        "description": "In spring 2026, I am working on my thesis titled \"Automating the customer support process with agent-based automation, Comparison of automation platforms and Proof of Concept implementation.\" The client for the thesis is Triplan Oy. In the thesis, I compare automation platforms and develop a Proof of Concept solution that explores the use of agent-based automation to improve customer support processes. More information about the project will be provided later.",
         "bgLogo": "/Media/Triplan.png",
         
         "links": [
@@ -30,10 +30,13 @@
         
         ],
         "Tech": [
-          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
-          { "icon": "/Media/LLM.png", "alt": "LLM icon" }
+          { "icon": "/Media/LLM.png", "alt": "LLM icon" },
+          { "icon": "/Media/Podmanv2.png", "alt": "Podman icon" },
+          { "icon": "/Media/n8n.png", "alt": "n8n icon" }
+
+
         ]
       },
       {
@@ -270,10 +273,13 @@
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
       { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
       { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "I have explored n8n for workflow automation and integration.", "slot": "Developer Tools" },
+      { "name": "Podman", "icon": "/Media/Podmanv2.png", "alt": "Podman icon", "desc": "Used podman in Thesis to setup local n8n instance.", "slot": "Developer Tools" },
       { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Developer Tools" },
       { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Communication Skills" },
       { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Communication Skills" },
       { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" }
+      
+
 
     ]
   },

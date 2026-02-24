@@ -23,17 +23,20 @@
       {
         "title": "Opinnäytetyö: Asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla",
         "Timeline": "1/2026 - nykyhetki",
-        "description": "Keväällä 2026 teen opinnäytetyöni aiheesta \"asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla, Automaatioalustojen vertailu ja Proof of Concept -toteutus Jira-integraation avulla\". ONT:n toimeksiantajana toimii Triplan Oy. Lisää tietoa projektista tulee myöhemmin.",
+        "description": "Keväällä 2026 teen opinnäytetyöni aiheesta \"asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla, Automaatioalustojen vertailu ja Proof of Concept -toteutus\". ONT:n toimeksiantajana toimii Triplan Oy. Työssä vertailen automaatioalustoja ja rakennan Proof of Concept -ratkaisua, joka tutkii agenttipohjaisen automaation hyödyntämistä asiakastuen tehostamisessa. Lisää tietoa projektista tulee myöhemmin.",
         "bgLogo": "/Media/Triplan.png",
 
         "links": [
         { "Name": "Triplan Oy", "link": "https://triplan.fi/"}
         ],
         "Tech": [
-          { "icon": "/Media/Jira.png", "alt": "Jira icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
-          { "icon": "/Media/LLM.png", "alt": "LLM icon" }
+          { "icon": "/Media/LLM.png", "alt": "LLM icon" },
+          { "icon": "/Media/n8n.png", "alt": "n8n icon" },
+          { "icon": "/Media/Podmanv2.png", "alt": "Podman icon" }
+
+
         ]
       },
       {
@@ -267,6 +270,7 @@
   { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon",  "desc": "Käytän Dockeria konttien ja kehitysympäristöjen hallintaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Käytin Expoa React Native projektissa sovelluksen kehittämiseen ja testaamiseen.", "slot": "Kehittäjän työkalut" },
   { "name": "n8n", "icon": "/Media/n8n.png", "alt": "n8n icon", "desc": "Olen tutustunut n8n:ään työnkulkujen automatisointiin ja integrointiin.", "slot": "Kehittäjän työkalut" },
+  { "name": "Podman", "icon": "/Media/Podmanv2.png", "alt": "Podman icon", "desc": "Käytin podmania opinnäytetytössä paikallisessa n8n ymäristössä", "slot": "Kehittäjän työkalut"},
   { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Kehittäjän työkalut" },
   { "name": "Luotettavuus", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "Pidän itseäni luotettavana ja vastuullisena tiimin jäsenenä, johon voi luottaa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Pitkäjänteisyys", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "Olen pitkäjänteinen ja sitoutunut saavuttamaan tavoitteeni, vaikka kohtaisin haasteita matkan varrella.", "slot": "Vuorovaikutustaidot" },
