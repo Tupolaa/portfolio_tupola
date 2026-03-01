@@ -10,7 +10,6 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-        "bgLogo": "/Media/AI.png",
     "title": "Backend/Web Developer",
     "description": "Olen ohjelmistokehittäjä Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa ja minulla on vahvat ohjelmointitaidot sekä vahva kiinnostus luotettavien ja toimivien ohjelmistoratkaisujen kehittämiseen. Kiinnostukseni kohdistuu erityisesti backend- ja Web kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani hyödyksi parhaalla mahdollisella tavalla.",
     "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
