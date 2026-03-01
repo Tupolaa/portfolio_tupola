@@ -33,7 +33,9 @@
           { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
           { "icon": "/Media/LLM.png", "alt": "LLM icon" },
           { "icon": "/Media/n8n.png", "alt": "n8n icon" },
-          { "icon": "/Media/podmanv2.png", "alt": "Podman icon" }
+          { "icon": "/Media/podmanv2.png", "alt": "Podman icon" },
+          { "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon" }
+
 
 
         ]
@@ -242,6 +244,7 @@
   { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "desc": "Osaan luoda ja käyttää REST API -rajapintoja tehokkaasti.", "slot": "Ohjelmointi" },
   { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon",  "desc": "Github ja versionhallinta on ollut olennainen osa projekteja jo usean vuoden.", "slot": "Kehittäjän työkalut" },
   { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon",  "desc": "Viimeisen vuoden aikana olen käyttänyt JavaScriptiä useissa projekteissa ja hallitsen sen erittäin hyvin.", "slot": "Ohjelmointi" },
+  { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Käytän TypeScriptiä Next.js ja React Native projekteissa.", "slot": "Ohjelmointi" },
   { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon",  "desc": "HTML koodi on ollut osa useissa web-projekteissa.", "slot": "Ohjelmointi" },
   { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon",  "desc": "CSS koodi on ollut keskeisessä osassa useissa web-projekteissa.", "slot": "Ohjelmointi" },
   { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon",  "desc": "Kuten JavaScript, React ja React Native ovat olleet keskeisiä työkaluja useissa projekteissa viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
@@ -257,7 +260,7 @@
   { "name": "Englanti", "icon": "/Media/UK.png", "alt": "English icon","desc": "Sujuva suullinen ja kirjallinen taito.", "slot": "Vuorovaikutustaidot" },
   { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja opiskelen sitä parhaillaan.", "slot": "Kehittäjän työkalut" },
   { "name": "Windows 11", "icon": "/Media/Windows.png", "alt": "Windows icon", "desc": "Perustiedot Windows 11 käyttöjärjestelmästä datanomikoulutuksen kautta.", "slot": "Kehittäjän työkalut" },
-  { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Käytin Spring Bootia Triplan projektissa.", "slot": "Ohjelmointi" },
+  { "name": "Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Käytin Spring Bootia Triplan projektissa.", "slot": "Ohjelmointi" },
   { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon","desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
   { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon",  "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },
   { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "desc": "Olen käyttänyt Next.js:ää tämän portfolion rakentamiseen.", "slot": "Ohjelmointi" },
@@ -274,10 +277,15 @@
   { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Kehittäjän työkalut" },
   { "name": "Luotettavuus", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "Pidän itseäni luotettavana ja vastuullisena tiimin jäsenenä, johon voi luottaa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Pitkäjänteisyys", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "Olen pitkäjänteinen ja sitoutunut saavuttamaan tavoitteeni, vaikka kohtaisin haasteita matkan varrella.", "slot": "Vuorovaikutustaidot" },
-  { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Käytän TypeScriptiä Next.js ja React Native projekteissa.", "slot": "Ohjelmointi" },
   { "name": "Claude", "icon": "/Media/Claude.png", "alt": "Claude icon", "desc": "Käytän Claude:a avustajana ohjelmointiin ja sisällöntuotantoon.", "slot": "Kehittäjän työkalut" },
   { "name": "Copilot", "icon": "/Media/CoPilot.png", "alt": "Copilot icon", "desc": "Käytän Copilotia ohjelmointiin ja sisällöntuotantoon.", "slot": "Kehittäjän työkalut" },
-  { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" }
+  { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" },
+  { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "Olen käyttänyt LinearAppia projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
+  { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "Olen käyttänyt Miroa projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
+  { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "Olen käyttänyt CosmoDB:ää projekteissa tietokannan hallintaan.", "slot": "Tietokannat" }
+
+      
+
 ]
   },
   "info": {

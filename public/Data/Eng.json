@@ -34,7 +34,9 @@
           { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
           { "icon": "/Media/LLM.png", "alt": "LLM icon" },
           { "icon": "/Media/podmanv2.png", "alt": "Podman icon" },
-          { "icon": "/Media/n8n.png", "alt": "n8n icon" }
+          { "icon": "/Media/n8n.png", "alt": "n8n icon" },
+          { "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon" }
+
 
 
         ]
@@ -239,13 +241,14 @@
       { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum has been used in every project for the past couple of years.", "slot": "Project Management" },
       { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon",  "desc": "Jira has been a key tool in project management and task tracking.", "slot": "Project Management" },
       { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon",  "desc": "Confluence has been a key tool in documentation and project collaboration.", "slot": "Project Management" },
-      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon",  "desc": "I have used Robot Framework a few times for front-end testing.", "slot": "Developer Tools" },
+      { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon",  "desc": "I have used Robot Framework a few times for front-end testing.", "slot": "Programming" },
       { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon",  "desc": "I have used Java in multiple projects.", "slot": "Programming" },
       { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon",  "desc": "Familiar with MySQL, but have used it less frequently.", "slot": "Databases" },
       { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon",  "desc": "I know the basics of WordPress usage and management.", "slot": "Developer Tools" },
       { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "desc": "I can build and utilize REST APIs effectively.", "slot": "Programming"},
       { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon",  "desc": "Version control has been an important part of my projects for years.", "slot": "Developer Tools" },
       { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "desc": "Used actively in several projects, strong knowledge.", "slot": "Programming" },
+      { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Used in React Native and Next.js projects.", "slot": "Programming" },
       { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon",  "desc": "Used in several web projects.", "slot": "Programming" },
       { "name": "CSS", "icon": "/Media/CSS.png", "alt": "CSS icon", "desc": "Used in several web projects.", "slot": "Programming" },
       { "name": "React + React Native", "icon": "/Media/REACT.png", "alt": "REACT icon", "desc": "Key technology in multiple projects during the last year.", "slot": "Programming" },
@@ -261,7 +264,7 @@
       { "name": "English", "icon": "/Media/UK.png", "alt": "English icon", "desc": "Fluent spoken and written skills.", "slot": "Communication Skills" },
       { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "Currently learning and using TDD.", "slot": "Developer Tools" },
       { "name": "Windows 11", "icon": "/Media/Windows.png", "alt": "Windows icon", "desc": "Basic knowledge from vocational school studies.", "slot": "Developer Tools" },
-      { "name": "Java Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Used this Framework in Triplan project.", "slot": "Programming" },
+      { "name": "Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Used this Framework in Triplan project.", "slot": "Programming" },
       { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon", "desc": "Used Netlify to deploy my older portfolios.", "slot": "Cloud Services" },
       { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon", "desc": "Used Vercel to deploy this portfolio.", "slot": "Cloud Services" },
       { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "desc": "Used to create this portfolio website.", "slot": "Programming" },
@@ -269,8 +272,7 @@
       { "name": "Problem-solving", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Improved through different projects and challenges.", "slot": "Communication Skills" },
       { "name": "Creativity", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "I enjoy brainstorming and creating new ideas.", "slot": "Communication Skills" },
       { "name": "Active learning", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Committed to continuous learning in software development.", "slot": "Communication Skills" },
-      { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Developer Tools" },
-      { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Used in React Native and Next.js projects.", "slot": "Programming" },
+      { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Programming" },
       { "name": "AI (LLMs)", "icon": "/Media/LLM.png", "alt": "ChatGPT icon", "desc": "I use ChatGPT as a coding assistant.", "slot": "Developer Tools" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
       { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
@@ -281,7 +283,10 @@
       { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Developer Tools" },
       { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Communication Skills" },
       { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Communication Skills" },
-      { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" }
+      { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" },
+      { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "I have used LinearApp for project management and task tracking in several projects.", "slot": "Project Management" },
+      { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "I have used Miro for project management and task tracking in several projects.", "slot": "Project Management" },
+      { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "I have used CosmoDB in several projects for database management.", "slot": "Databases" }
       
 
 
