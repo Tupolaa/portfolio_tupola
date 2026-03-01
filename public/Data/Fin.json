@@ -82,8 +82,9 @@
           { "Name": "Portfolio 2.0", "link": "https://tupolaportfolio.netlify.app/" }
         ],
         "Tech": [
-          { "icon": "/Media/JS.png", "alt": "JS icon" },
+          { "icon": "/Media/TS.png", "alt": "TypeScript icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
+          { "icon": "/Media/CoPilot.png", "alt": "Copilot icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Next.png", "alt": "Next.js icon" },
@@ -273,6 +274,9 @@
   { "name": "Agentic AI", "icon": "/Media/AI.png", "alt": "Communication icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Kehittäjän työkalut" },
   { "name": "Luotettavuus", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "Pidän itseäni luotettavana ja vastuullisena tiimin jäsenenä, johon voi luottaa.", "slot": "Vuorovaikutustaidot" },
   { "name": "Pitkäjänteisyys", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "Olen pitkäjänteinen ja sitoutunut saavuttamaan tavoitteeni, vaikka kohtaisin haasteita matkan varrella.", "slot": "Vuorovaikutustaidot" },
+  { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Käytän TypeScriptiä Next.js ja React Native projekteissa.", "slot": "Ohjelmointi" },
+  { "name": "Claude", "icon": "/Media/Claude.png", "alt": "Claude icon", "desc": "Käytän Claude:a avustajana ohjelmointiin ja sisällöntuotantoon.", "slot": "Kehittäjän työkalut" },
+  { "name": "Copilot", "icon": "/Media/CoPilot.png", "alt": "Copilot icon", "desc": "Käytän Copilotia ohjelmointiin ja sisällöntuotantoon.", "slot": "Kehittäjän työkalut" },
   { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" }
 ]
   },
