@@ -17,3 +17,4 @@ Bugs
 - Scrollable modal projekteihin - DONE
 - osa info kuvista skaalautuu väärin puhelimella.
 - Projekti skill icons hover efekti poistettu. DONE
+test
