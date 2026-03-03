@@ -1,15 +1,14 @@
 # portfolio_tupola
 
-Personal portfolio website — built with Next.js and plain CSS. This repository contains the source for a responsive, bilingual (Finnish / English) portfolio that showcases projects, skills, and personal information.
+Personal portfolio website — built with Next.js and tailwind css. This repository contains the source for a responsive, bilingual (Finnish / English) portfolio that showcases projects, skills, and personal information.
 
 ---
 
 ## Features
 
 - Responsive portfolio layout (desktop, tablet, mobile)
-- Animated SVG headings and a TiltedCard component for profile photo
 - Projects list with modal detail view and media carousel (images/videos/YouTube)
-- Skills section with categories, level indicator and hover description overlays
+- Skills section with categories
 - Bilingual content support via JSON files (`public/Data/Fin.json`, `public/Data/Eng.json`)
 
 ## Tech stack
