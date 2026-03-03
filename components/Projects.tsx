@@ -149,6 +149,7 @@ const Projects = () => {
             )}
 
             <MediaCarousel
+              imageFit="contain"
               media={
                 selectedProject.media ??
                 [

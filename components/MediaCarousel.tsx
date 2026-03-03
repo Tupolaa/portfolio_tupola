@@ -27,7 +27,7 @@ function getYouTubeEmbedUrl(url: string) {
     : url;
 }
 
-export default function MediaCarousel({ media = [] }: { media: MediaItemBase[] }) {
+export default function MediaCarousel({ media = [], imageFit = "cover" }: { media: MediaItemBase[]; imageFit?: "cover" | "contain" }) {
   const [index, setIndex] = useState(0);
   const [userInteracted, setUserInteracted] = useState(false);
   const [fade, setFade] = useState(false);
@@ -213,7 +213,7 @@ export default function MediaCarousel({ media = [] }: { media: MediaItemBase[] }
               src={item.src}
               alt={item.alt || ""}
               loading="lazy"
-              className="h-full w-full rounded-xl object-cover"
+              className={`h-full w-full rounded-xl ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
             />
           </div>
         )}
