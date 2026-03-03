@@ -15,7 +15,7 @@ Personal portfolio website — built with Next.js and plain CSS. This repository
 ## Tech stack
 
 - Framework: Next.js
-- Language: JavaScript (React)
+- Language: TypeScript/JavaScript
 - Styling: CSS modules / global CSS in `styles/`
 - Media: static files in `public/Media/`
 
@@ -42,9 +42,6 @@ This project loads content from JSON files under `public/Data/`:
 
 Each file contains keys for `Profile`, `Projects`, `Skills`, `Footer`, etc. Keep the JSON structure consistent: arrays for lists (e.g., `Projects.projects` or `Skills.items`) and use `slot` fields in skills for category filtering.
 
-## Styling & Components
-
-Styles are in `styles/` (e.g., `Profile.css`, `Projects.css`, `Skills.css`, `Header.css`, `Footer.css`). The code uses plain CSS (no CSS-in-JS). Keep responsive breakpoints in these files to ensure mobile/tablet compatibility.
 
 ## Contact
 
