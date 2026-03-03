@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Teemu Tupola - Portfolio</title>
+        <link rel="icon" href="/Media/OmaKuva.jpg" />
         <meta name="description" content="Teemu Tupola - Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Teemu Tupola" />
@@ -25,7 +26,7 @@ export default function Home() {
         <meta property="og:url" content="https://Tupola.dev" />
         <meta property="og:image" content="https://Tupola.dev/Media/OmaKuva.jpg" />
 
-        {/* Twitter Card */}
+        {/* Twitter/X Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Teemu Tupola - Portfolio" />
         <meta name="twitter:description" content="Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
