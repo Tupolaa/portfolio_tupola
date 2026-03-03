@@ -16,20 +16,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Teemu Tupola" />
         <meta name="theme-color" content="#0a0a0f" />
-        <link rel="canonical" href="https://teemutupola.com" />
+        <link rel="canonical" href="https://Tupola.dev" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Teemu Tupola - Portfolio" />
         <meta property="og:description" content="Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
-        <meta property="og:url" content="https://teemutupola.com" />
-        <meta property="og:image" content="https://teemutupola.com/Media/OmaKuva.jpg" />
+        <meta property="og:url" content="https://Tupola.dev" />
+        <meta property="og:image" content="https://Tupola.dev/Media/OmaKuva.jpg" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Teemu Tupola - Portfolio" />
         <meta name="twitter:description" content="Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
-        <meta name="twitter:image" content="https://teemutupola.com/Media/OmaKuva.jpg" />
+        <meta name="twitter:image" content="https://Tupola.dev/Media/OmaKuva.jpg" />
       </Head>
 
       <AnimatedBackground />
