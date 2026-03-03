@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Teemu Tupola - Portfolio</title>
-        <link rel="icon" href="/Media/OmaKuva.jpg" />
+        <link rel="icon" href="/Media/Favicon.png" />
         <meta name="description" content="Teemu Tupola - Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Teemu Tupola" />
