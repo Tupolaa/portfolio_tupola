@@ -31,7 +31,6 @@
         "Tech": [
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/AI.png", "alt": "Agentic AI icon" },
-          { "icon": "/Media/LLM.png", "alt": "LLM icon" },
           { "icon": "/Media/n8n.png", "alt": "n8n icon" },
           { "icon": "/Media/podmanv2.png", "alt": "Podman icon" },
           { "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon" }
