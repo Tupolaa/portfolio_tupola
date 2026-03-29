@@ -47,7 +47,7 @@ const Profile = () => {
           {/* Glow ring behind photo */}
           <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-purple-500/50 via-cyan/40 to-blue/50 opacity-80 blur-lg group-hover:opacity-80 transition-opacity duration-500" />
           <img
-            src="/Media/OmaKuva.jpg"
+            src="/Media/Muotokuva4.JPG"
             alt={profileData.name || "Profile picture"}
             className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-96 lg:h-[480px] rounded-full object-cover border-2 border-white/15 shadow-1xl shadow-black/40"
           />
