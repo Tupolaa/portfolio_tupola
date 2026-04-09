@@ -10,8 +10,8 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-    "title": "Backend/Web Developer",
-    "description": "I am a software developer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "title": "Junior Software Engineer",
+    "description": "I am a software engineer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
     "quote": "\"I learn best by doing – with a little touch of humour.\""
   },
 
@@ -22,7 +22,7 @@
        {
         "title": "Thesis: Automating the customer support process with agenttic automation",
         "Timeline": "1/2026 - present",
-        "description": "I implemented a Proof of Concept (PoC) solution for agent-based automation in a customer support process as part of my thesis, in collaboration with Triplan Oy. I built a multi-agent system on the n8n platform consisting of an orchestrator, classifier, translator, and summarizer agents. The solution is capable of automatically processing support tickets, identifying their type and priority, and generating summarized data for further analysis and reuse. The project utilized advanced AI models along with structured instructions to guide agent behavior. The results showed that agent-based automation works well in dynamic customer support environments and can significantly improve process efficiency. At the same time, the project highlighted key challenges, such as aligning classification criteria, evaluating classification confidence, and bridging the gap between AI-driven decisions and organizational practices.",
+        "description": "As part of my bachelor's thesis, I developed a Proof of Concept for agent-based automation in a customer support process for Triplan Oy. The solution is a multi-agent system built on n8n (orchestrator, classifier, translator, summarizer) that automatically processes support tickets, identifies their type and priority, and generates structured summaries for further use. It combines modern AI models with guided logic to operate effectively in a dynamic environment. The results demonstrate clear potential for improving efficiency, while also highlighting challenges such as classification consistency and alignment with organizational practices. The work is currently being evaluated.",
         "bgLogo": "/Media/Triplan.png",
         
         "links": [
