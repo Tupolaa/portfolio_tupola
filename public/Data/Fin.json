@@ -21,12 +21,13 @@
     "projects": [
       {
         "title": "Opinnäytetyö: Asiakastukiprosessin automaatisointi agenttipohjaisella automaatiolla",
-        "Timeline": "1/2026 - nykyhetki",
-        "description": "Toteutin opinnäytetyössäni yhteistyössä Triplan Oy:n kanssa Proof of Concept -ratkaisun agenttipohjaisesta automaatiosta asiakastukiprosessiin. Rakensin n8n-alustalle usean agentin järjestelmän (orkestroija, luokittelija, kääntäjä, tiivistäjä), joka pystyy automaattisesti käsittelemään tukipyyntöjä, tunnistamaan niiden tyypin ja prioriteetin sekä tuottamaan rakenteista ja tiivistettyä analyysidataa jatkokäyttöä varten. Toteutus yhdistää kehittyneitä tekoälymalleja sekä agenttien toimintaa ohjaavia sääntöjä ja ohjeistuksia, mahdollistaen toiminnan dynaamisessa asiakastukiympäristössä. Tulokset osoittivat selkeää potentiaalia prosessin tehostamiseen, mutta toivat esiin myös keskeisiä haasteita, kuten luokittelun johdonmukaisuuden, varmuuden arvioinnin sekä tekoälyn ja organisaation käytäntöjen yhteensovittamisen. Työ on parhaillaan arvioitavana.",
+        "Timeline": "1/2026 - 4/2026",
+        "description": "Toteutin opinnäytetyössäni yhteistyössä Triplan Oy:n kanssa Proof of Concept -ratkaisun agenttipohjaisesta automaatiosta asiakastukiprosessiin. Rakensin n8n-alustalle usean agentin järjestelmän (orkestroija, luokittelija, kääntäjä, tiivistäjä), joka pystyy automaattisesti käsittelemään tukipyyntöjä, tunnistamaan niiden tyypin ja prioriteetin sekä tuottamaan rakenteista ja tiivistettyä analyysidataa jatkokäyttöä varten. Toteutus yhdistää kehittyneitä tekoälymalleja sekä agenttien toimintaa ohjaavia sääntöjä ja ohjeistuksia, mahdollistaen toiminnan dynaamisessa asiakastukiympäristössä. Tulokset osoittivat selkeää potentiaalia prosessin tehostamiseen, mutta toivat esiin myös keskeisiä haasteita, kuten luokittelun johdonmukaisuuden, varmuuden arvioinnin sekä tekoälyn ja organisaation käytäntöjen yhteensovittamisen.",
         "bgLogo": "/Media/Triplan.png",
 
         "links": [
-        { "Name": "Triplan Oy", "link": "https://triplan.fi/"}
+        { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
+        { "Name": "Opinnäytetyö", "link": "https://urn.fi/URN:NBN:fi:amk-202604237541"}
         ],
         "Tech": [
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
@@ -289,7 +290,7 @@
   "header": "Kuka on Teemu?",
   "LifeCareer": { 
     "Header": "Elämä & ura",
-    "Info": "Olen 22-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorempana halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta viennyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi. Suoritin asepalvelukseni pääasiassa Parolassa ja erikoistuin tiedustelulennokkeihin. Lennokkioperaattorina toimiminen teki kokemuksesta erittäin mielenkiintoisen ja nautin todella ajastani siellä. Tämän jälkeen olen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Pidän matkustamisesta ja uusien paikkojen näkemisestä aina kun siihen tulee mahdollisuus. Ne ovat lisänneet avoimuuttani ja vahvistaneet halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt on viimenen opintovuosi meneillään ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
+    "Info": "Olen 23-vuotias kehittäjä Hämeenlinnasta, ja kiinnostus teknologiaan on kulkenut mukana yläasteelta lähtien. Nuorempana halusin aina tietää, miten asiat toimivat ja sama uteliaisuus on lopulta viennyt minut ohjelmistokehityksen pariin. Valmistuin ammattikoulusta datanomiksi. Suoritin asepalvelukseni pääasiassa Parolassa ja erikoistuin tiedustelulennokkeihin. Lennokkioperaattorina toimiminen teki kokemuksesta erittäin mielenkiintoisen ja nautin todella ajastani siellä. Tämän jälkeen olen rakentanut osaamistani kohti ohjelmistokehittäjän uraa. Pidän matkustamisesta ja uusien paikkojen näkemisestä aina kun siihen tulee mahdollisuus. Ne ovat lisänneet avoimuuttani ja vahvistaneet halua tarttua uusiin haasteisiin. Koen, että nämä kokemukset ovat tehneet minusta rennon, helposti lähestyttävän ja yhteistyökykyisen tyypin, joka viihtyy tiimissä ja oppii mielellään myös muilta. Nyt on viimenen opintovuosi meneillään ja olen innoissani siitä, mihin kehittäjän polku seuraavaksi vie. Tavoitteeni on kasvaa osaajaksi, joka tekee selkeitä ja toimivia ratkaisuja sekä pitää samalla sopivan ripauksen huumoria mukana tekemisessä.",
     "Pic": "/Media/Lontoo.jpg"
   },
   "Abilities": { 

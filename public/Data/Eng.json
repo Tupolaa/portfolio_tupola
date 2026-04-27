@@ -21,12 +21,13 @@
     "projects": [
        {
         "title": "Thesis: Automating the customer support process with agenttic automation",
-        "Timeline": "1/2026 - present",
-        "description": "As part of my bachelor's thesis, I developed a Proof of Concept for agent-based automation in a customer support process for Triplan Oy. The solution is a multi-agent system built on n8n (orchestrator, classifier, translator, summarizer) that automatically processes support tickets, identifies their type and priority, and generates structured summaries for further use. It combines modern AI models with guided logic to operate effectively in a dynamic environment. The results demonstrate clear potential for improving efficiency, while also highlighting challenges such as classification consistency and alignment with organizational practices. The work is currently being evaluated.",
+        "Timeline": "1/2026 - 4/2026",
+        "description": "As part of my bachelor's thesis, I developed a Proof of Concept for agent-based automation in a customer support process for Triplan Oy. The solution is a multi-agent system built on n8n (orchestrator, classifier, translator, summarizer) that automatically processes support tickets, identifies their type and priority, and generates structured summaries for further use. It combines modern AI models with guided logic to operate effectively in a dynamic environment. The results demonstrate clear potential for improving efficiency, while also highlighting challenges such as classification consistency and alignment with organizational practices",
         "bgLogo": "/Media/Triplan.png",
         
         "links": [
-          { "Name": "Triplan Oy", "link": "https://triplan.fi/"}
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
+          { "Name": "Thesis", "link": "https://urn.fi/URN:NBN:fi:amk-202604237541"}
         
         ],
         "Tech": [
@@ -294,7 +295,7 @@
     "header": "Who is Teemu?",
     "LifeCareer": { 
       "Header": "Life & Career",
-      "Info": "I am a 22-year-old software engineer from Hämeenlinna and my interest in technology has been with me since middle school. I have always wanted to understand how things work and that same curiosity eventually led me to software development. I graduated from vocational school as an ICT support technician. I completed my military service mainly in Parola and specialized in reconnaissance drones. Serving as a drone operator made the experience extremely interesting. I have since been building my skills toward a career as a software engineer. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable and collaborative person who enjoys working with others and learning from them. I’m currently in my final year of studies and excited to see where my path as a SWE will lead next. My goal is to grow into a professional, who creates clear and functional solutions while keeping just the right touch of humor in the process.",
+      "Info": "I am a 23-year-old software engineer from Hämeenlinna and my interest in technology has been with me since middle school. I have always wanted to understand how things work and that same curiosity eventually led me to software development. I graduated from vocational school as an ICT support technician. I completed my military service mainly in Parola and specialized in reconnaissance drones. Serving as a drone operator made the experience extremely interesting. I have since been building my skills toward a career as a software engineer. I enjoy traveling and seeing new places whenever I get the opportunity. These experiences have broadened my perspective and strengthened my willingness to take on new challenges. I believe they have helped shape me into a relaxed, approachable and collaborative person who enjoys working with others and learning from them. I’m currently in my final year of studies and excited to see where my path as a SWE will lead next. My goal is to grow into a professional, who creates clear and functional solutions while keeping just the right touch of humor in the process.",
       "Pic": "/Media/Lontoo.jpg"
     },
     "Abilities": { 
