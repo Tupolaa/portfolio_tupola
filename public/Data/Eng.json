@@ -54,6 +54,7 @@
         ],
         "links": [
           { "Name": "Triplan Oy", "link": "https://triplan.fi/"},
+          { "Name": "Published article about the project", "link": "https://www.hamk.fi/en/publications/building-a-data-provider-prototype-as-a-student-company-collaboration/"},
           { "Name": "OAI-PMH Protocol", "link": "https://www.openarchives.org/pmh/" },
           { "Name": "Finna", "link": "https://finna.fi/"}
         ],
