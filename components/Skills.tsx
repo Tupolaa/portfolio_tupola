@@ -6,22 +6,22 @@ const normalize = (s: string | undefined) => (s || "").toString().trim().toLower
 
 const Skills = () => {
   const { content } = useLanguage();
-  const skills: SkillItem[] = Array.isArray(content?.Skills?.items)
-    ? content.Skills.items
-    : [];
-
-  const rawCats = content?.Skills?.categoryHeader;
-  const categories: string[] =
-    typeof rawCats === "string"
-      ? rawCats.split(",").map((c: string) => c.trim()).filter(Boolean)
-      : Array.isArray(rawCats)
-        ? rawCats
-        : ["All"];
-
-  // Remove "All" from category list since we show all grouped
-  const displayCategories = categories.filter((c) => normalize(c) !== "all");
+  const skillsData = content?.Skills;
 
   const grouped = useMemo(() => {
+    const skills: SkillItem[] = Array.isArray(skillsData?.items) ? skillsData.items : [];
+
+    const rawCats = skillsData?.categoryHeader;
+    const categories: string[] =
+      typeof rawCats === "string"
+        ? rawCats.split(",").map((c: string) => c.trim()).filter(Boolean)
+        : Array.isArray(rawCats)
+          ? rawCats
+          : ["All"];
+
+    // Remove "All" from category list since we show all grouped
+    const displayCategories = categories.filter((c) => normalize(c) !== "all");
+
     const map = new Map<string, SkillItem[]>();
     skills.forEach((skill) => {
       const slot = normalize(skill.slot);
@@ -32,7 +32,7 @@ const Skills = () => {
       map.get(key)!.push(skill);
     });
     return map;
-  }, [skills, displayCategories]);
+  }, [skillsData]);
 
   return (
     <section className="relative rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm md:p-8 lg:p-12">

@@ -50,6 +50,23 @@ export interface ProjectsData {
   projects: Project[];
 }
 
+export interface Job {
+  title: string;
+  company: string;
+  Timeline: string;
+  location?: string;
+  logo?: string;
+  description: string;
+  tasks?: string[];
+  links?: ProjectLink[];
+  Tech?: TechItem[];
+}
+
+export interface WorkData {
+  header: string;
+  jobs: Job[];
+}
+
 export interface SkillItem {
   name: string;
   icon?: string;
@@ -101,6 +118,7 @@ export interface FooterLink {
 }
 
 export interface FooterData {
+  email?: string;
   Links?: FooterLink[];
   links?: FooterLink[];
   text?: string;
@@ -109,6 +127,7 @@ export interface FooterData {
 export interface SiteContent {
   Nav: Nav;
   Profile: ProfileData;
+  Work?: WorkData;
   Projects: ProjectsData;
   Skills: SkillsData;
   info: InfoData;

@@ -1,25 +1,12 @@
 import React from "react";
 import { motion } from "motion/react";
 import { useLanguage } from "./LangChanger";
-import type { FooterLink } from "../types/content";
-
-const normalizeImgPath = (img: string | undefined) => {
-  if (!img) return null;
-  const fixed = img.replace(/^\/?media\//i, "/Media/");
-  return fixed.startsWith("/") ? fixed : `/${fixed}`;
-};
+import { getFooter, normalizeImgPath } from "../lib/footer";
 
 const Profile = () => {
   const { content } = useLanguage();
   const profileData = content.Profile || { name: "", title: "", description: "", quote: "" };
-
-  const footerData = content?.Footer ?? content?.footer ?? {};
-  const links: FooterLink[] =
-    (Array.isArray(footerData.Links) && footerData.Links.length
-      ? footerData.Links
-      : Array.isArray(footerData.links) && footerData.links.length
-        ? footerData.links
-        : []) as FooterLink[];
+  const { links } = getFooter(content);
 
   return (
     <motion.div

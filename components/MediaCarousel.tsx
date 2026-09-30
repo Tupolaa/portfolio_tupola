@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useEffect, useEffectEvent, useRef, useState } from "react";
 
 interface MediaItemBase {
   type?: string;
@@ -32,39 +32,42 @@ export default function MediaCarousel({ media = [], imageFit = "cover" }: { medi
   const [userInteracted, setUserInteracted] = useState(false);
   const [fade, setFade] = useState(false);
   const count = media.length;
-  const startX = useRef<number | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
 
-  const go = useCallback(
-    (delta: number, user = false) => {
-      if (!count) return;
-      if (user) setUserInteracted(true);
-      setFade(true);
-      setTimeout(() => {
-        setIndex((i) => (i + delta + count) % count);
-        setFade(false);
-      }, 180);
-    },
-    [count]
-  );
+  const go = (delta: number, user = false) => {
+    if (!count) return;
+    if (user) setUserInteracted(true);
+    setFade(true);
+    setTimeout(() => {
+      setIndex((i) => (i + delta + count) % count);
+      setFade(false);
+    }, 180);
+  };
 
-  const onKey = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") go(1, true);
-      if (e.key === "ArrowLeft") go(-1, true);
-    },
-    [go]
-  );
+  const onKey = useEffectEvent((e: KeyboardEvent) => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    // Only the carousel that has focus, or sits inside the focused element
+    // (e.g. an open modal), reacts, so background carousels stay still
+    const root = rootRef.current;
+    const active = document.activeElement;
+    if (!root || !active || !(root.contains(active) || active.contains(root))) return;
+    go(e.key === "ArrowRight" ? 1 : -1, true);
+  });
 
   useEffect(() => {
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [onKey]);
+    const handler = (e: KeyboardEvent) => onKey(e);
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  }, []);
+
+  const autoAdvance = useEffectEvent(() => go(1));
 
   useEffect(() => {
     if (!count || userInteracted) return;
-    const timer = setInterval(() => go(1), 10000);
+    const timer = setInterval(() => autoAdvance(), 10000);
     return () => clearInterval(timer);
-  }, [count, go, userInteracted]);
+  }, [count, userInteracted]);
 
   if (!count) return null;
 
@@ -77,17 +80,24 @@ export default function MediaCarousel({ media = [], imageFit = "cover" }: { medi
     !isText && !isHobbies && (item.type ? item.type === "video" : inferIsVideo(item.src || ""));
   const isYouTube = isVideo && /youtube|youtu\.be/.test(item.src || "");
 
-  const onTouchStart = (e: React.TouchEvent) => (startX.current = e.touches[0].clientX);
+  const onTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+  };
   const onTouchEnd = (e: React.TouchEvent) => {
-    if (startX.current == null) return;
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start) return;
     setUserInteracted(true);
-    const dx = e.changedTouches[0].clientX - startX.current;
-    startX.current = null;
-    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    // Ignore mostly-vertical gestures so scrolling the page doesn't change the slide
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
   };
 
   // Build image list for text slides
-  let textImages: { src: string; alt: string }[] = [];
+  const textImages: { src: string; alt: string }[] = [];
   if (Array.isArray(item?.images)) {
     item.images.forEach((img, idx) => {
       if (!img) return;
@@ -104,9 +114,11 @@ export default function MediaCarousel({ media = [], imageFit = "cover" }: { medi
 
   return (
     <div
+      ref={rootRef}
       className="relative my-4 w-full overflow-hidden rounded-xl"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
+      onTouchCancel={() => (touchStart.current = null)}
       role="region"
       aria-label="Media carousel"
     >
@@ -248,10 +260,7 @@ export default function MediaCarousel({ media = [], imageFit = "cover" }: { medi
             <button
               key={i}
               aria-label={`Go to slide ${i + 1}`}
-              onClick={() => {
-                setUserInteracted(true);
-                go(i - safeIndex);
-              }}
+              onClick={() => go(i - safeIndex, true)}
               className={`h-3 w-3 cursor-pointer rounded-full border-0 p-1 transition-all ${
                 i === safeIndex
                   ? "bg-white shadow-[0_0_6px_rgba(255,255,255,0.5)]"

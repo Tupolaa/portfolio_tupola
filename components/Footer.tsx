@@ -1,23 +1,10 @@
 import React from "react";
 import { useLanguage } from "./LangChanger";
-import type { FooterLink } from "../types/content";
-
-const normalizeImgPath = (img: string | undefined) => {
-  if (!img) return null;
-  const fixed = img.replace(/^\/?media\//i, "/Media/");
-  return fixed.startsWith("/") ? fixed : `/${fixed}`;
-};
+import { getFooter, normalizeImgPath } from "../lib/footer";
 
 const Footer = () => {
   const { content } = useLanguage();
-
-  const footerData = content?.Footer ?? content?.footer ?? {};
-  const links: FooterLink[] =
-    (Array.isArray(footerData.Links) && footerData.Links.length
-      ? footerData.Links
-      : Array.isArray(footerData.links) && footerData.links.length
-        ? footerData.links
-        : []) as FooterLink[];
+  const { data: footerData, links } = getFooter(content);
 
   const footerText =
     footerData.text ??
@@ -26,9 +13,11 @@ const Footer = () => {
   return (
     <footer className="mt-8 border-t border-cyan-400/15 bg-[#0a0a0f]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-5 px-6 py-10">
-        <p className="text-sm font-medium text-slate-300">
-          teemu.tupola@gmail.com
-        </p>
+        {footerData.email && (
+          <p className="text-sm font-medium text-slate-300">
+            {footerData.email}
+          </p>
+        )}
 
         {links.length > 0 && (
           <div className="flex flex-wrap justify-center gap-4">

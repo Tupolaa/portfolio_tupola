@@ -1,11 +1,54 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLanguage } from "./LangChanger";
 
 export default function Navbar() {
   const { lang, setLang, content } = useLanguage();
   const links = Array.isArray(content?.Nav?.links) ? content.Nav.links : [];
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<string | null>(null);
+
+  // Ids are the same in both languages, so a string key keeps the effect from re-running on language change
+  const idsKey = links.map((l) => l.id).join(",");
+
+  // Highlight the section whose top has passed a line 35% down the viewport
+  useEffect(() => {
+    const ids = idsKey ? idsKey.split(",") : [];
+    if (!ids.length) return;
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      const line = window.innerHeight * 0.35;
+      let current: string | null = null;
+      let bestTop = -Infinity;
+      for (const id of ids) {
+        const top = document.getElementById(id)?.getBoundingClientRect().top;
+        if (top !== undefined && top <= line && top > bestTop) {
+          bestTop = top;
+          current = id;
+        }
+      }
+      // The last section may be too short to reach the line, so select it at the bottom of the page
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) current = ids[ids.length - 1];
+      setActive(current ?? ids[0]);
+    };
+
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [idsKey]);
 
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
@@ -48,16 +91,28 @@ export default function Navbar() {
             open ? "flex" : "hidden"
           } absolute top-[70px] left-0 right-0 flex-col items-center gap-2 border-b border-cyan-400/30 bg-[#0a0a0f]/95 px-4 py-4 backdrop-blur-xl md:static md:flex md:flex-row md:gap-4 md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none`}
         >
-          {links.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => scrollTo(link.id)}
-              className="group relative w-full max-w-[320px] cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-transparent px-6 py-2 text-sm font-medium uppercase tracking-wider text-white transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] md:w-auto"
-            >
-              <span className="relative z-10">{link.Name}</span>
-              <div className="absolute inset-0 -translate-y-full bg-gradient-to-b from-cyan-400/10 to-transparent transition-transform duration-500 group-hover:translate-y-0" />
-            </button>
-          ))}
+          {links.map((link) => {
+            const isActive = active === link.id;
+            return (
+              <button
+                key={link.id}
+                onClick={() => scrollTo(link.id)}
+                aria-current={isActive ? "location" : undefined}
+                className={`group relative w-full max-w-[320px] cursor-pointer overflow-hidden rounded-xl border bg-transparent px-6 py-2 text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] md:w-auto ${
+                  isActive
+                    ? "border-cyan-400/60 text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.2)]"
+                    : "border-white/10 text-white"
+                }`}
+              >
+                <span className="relative z-10">{link.Name}</span>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-b from-cyan-400/10 to-transparent transition-transform duration-500 group-hover:translate-y-0 ${
+                    isActive ? "translate-y-0" : "-translate-y-full"
+                  }`}
+                />
+              </button>
+            );
+          })}
 
           {/* Language buttons */}
           <div className="mt-2 flex gap-0 md:ml-4 md:mt-0">

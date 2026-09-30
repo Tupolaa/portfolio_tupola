@@ -2,6 +2,7 @@
   "Nav": {
     "links": [
       { "Name": "Profile", "id": "Profile" },
+      { "Name": "Work", "id": "work" },
       { "Name": "Projects", "id": "projects" },
       { "Name": "Tech Stack", "id": "skills" },
       { "Name": "Who is Teemu?", "id": "Info" }
@@ -10,9 +11,47 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-    "title": "Junior Software Engineer",
-    "description": "I am a software engineer from Hämeenlinna, Finland, always curious and not afraid to ask questions! I am a third-year Business Information Technology student at HAMK with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "title": "Junior Software Developer At AIneo Agency",
+    "description": "I am a software engineer from Hämeenlinna, Finland, always curious and not afraid to ask questions! Currently working as a Junior Developer at AIneo Agency and with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
     "quote": "\"I learn best by doing – with a little touch of humour.\""
+  },
+
+  "Work": {
+    "header": "Work Experience",
+    "jobs": [
+      {
+        "title": "Junior Software Developer",
+        "company": "AIneo Agency",
+        "Timeline": "09/2026 - Present",
+        "location": "Hämeenlinna, Finland - Remote",
+        "logo": "/Media/AIneo.png",
+        "description": "Agentic applications and systems for industrial, supply chain and project-based operations.",
+        "tasks": [],
+        "links": [
+          { "Name": "AIneo Agency", "link": "https://aineoagency.com/" }
+        ],
+        "Tech": []
+      },
+      {
+        "title": "Software Developer Intern and Thesis Worker",
+        "company": "Triplan Oy",
+        "Timeline": "10/2025 - 09/2026",
+        "location": "Hämeenlinna, Finland - On-site/Hybrid",
+        "logo": "/Media/Triplan.png",
+        "description": "I built a Java Spring Boot based OAI-PMH prototype for sharing metadata through REST APIs. In my thesis, I developed an AI-powered automation that classifies, translates and summarizes customer support tickets. During my internship, I developed my thesis PoC into a system running in production and maintained it.",
+        "tasks": [
+          "Carrying out the thesis and developing the PoC.",
+          "Developing a production-ready solution based on the PoC and releasing it to production.",
+          "Piloting internal AI usage and maintaining customer support automations."
+        ],
+        "links": [
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/" },
+          { "Name": "Thesis", "link": "https://urn.fi/URN:NBN:fi:amk-202604237541" },
+          { "Name": "ICT project", "link": "https://www.hamk.fi/en/publications/building-a-data-provider-prototype-as-a-student-company-collaboration/" }
+        ],
+        "Tech": []
+      }
+    ]
   },
 
   "Projects": {
@@ -20,7 +59,7 @@
     "Spoiler" : "*Click a project to see more details.",
     "projects": [
        {
-        "title": "Thesis: Automating the customer support process with agenttic automation",
+        "title": "Thesis: Automating the customer support process with agentic automation",
         "Timeline": "1/2026 - 4/2026",
         "description": "As part of my bachelor's thesis, I developed a Proof of Concept for agent-based automation in a customer support process for Triplan Oy. The solution is a multi-agent system built on n8n (orchestrator, classifier, translator, summarizer) that automatically processes support tickets, identifies their type and priority, and generates structured summaries for further use. It combines modern AI models with guided logic to operate effectively in a dynamic environment. The results demonstrate clear potential for improving efficiency, while also highlighting challenges such as classification consistency and alignment with organizational practices",
         "bgLogo": "/Media/Triplan.png",
@@ -91,7 +130,7 @@
         "Tech": [
           { "icon": "/Media/TS.png", "alt": "TypeScript icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
-          { "icon": "/Media/CoPilot.png", "alt": "Copilot icon" },
+          { "icon": "/Media/Claude.png", "alt": "Claude icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Next.png", "alt": "Next.js icon" },
@@ -236,7 +275,7 @@
   "Skills": {
     "header": "Tech Stack",
     "subheader": "*Click a skill to see more information.*",
-    "categoryHeader": "All, Project Management, Programming, Communication Skills, Databases, Cloud Services, Developer Tools",
+    "categoryHeader": "All, Project Management, Programming, Soft Skills, Databases, Cloud Services, Developer Tools",
     "items": [
       { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "I have used Python in several projects and I know basics.", "slot": "Programming" },
       { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum has been used in every project for the past couple of years.", "slot": "Project Management" },
@@ -261,17 +300,17 @@
       { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "desc": "Used in React Native project.", "slot": "Developer Tools" },
       { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
       { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "desc": "Used frequently for API testing.", "slot": "Developer Tools" },
-      { "name": "Finnish", "icon": "/Media/FIN.png", "alt": "Finnish icon", "desc": "Native language", "slot": "Communication Skills" },
-      { "name": "English", "icon": "/Media/UK.png", "alt": "English icon", "desc": "Fluent spoken and written skills.", "slot": "Communication Skills" },
-      { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "Currently learning and using TDD.", "slot": "Developer Tools" },
+      { "name": "Finnish", "icon": "/Media/FIN.png", "alt": "Finnish icon", "desc": "Native language", "slot": "Soft Skills" },
+      { "name": "English", "icon": "/Media/UK.png", "alt": "English icon", "desc": "Fluent spoken and written skills.", "slot": "Soft Skills" },
+      { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "Currently learning and using TDD.", "slot": "Soft Skills" },
       { "name": "Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Used this Framework in Triplan project.", "slot": "Programming" },
       { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon", "desc": "Used Netlify to deploy my older portfolios.", "slot": "Cloud Services" },
       { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon", "desc": "Used Vercel to deploy this portfolio.", "slot": "Cloud Services" },
       { "name": "Next.js", "icon": "/Media/Next.png", "alt": "Next.js icon", "desc": "Used to create this portfolio website.", "slot": "Programming" },
-      { "name": "Teamwork", "icon": "/Media/Teamwork.png", "alt": "Teamwork icon", "desc": "Comfortable working and collaborating in teams.", "slot": "Communication Skills" },
-      { "name": "Problem-solving", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Improved through different projects and challenges.", "slot": "Communication Skills" },
-      { "name": "Creativity", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "I enjoy brainstorming and creating new ideas.", "slot": "Communication Skills" },
-      { "name": "Active learning", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Committed to continuous learning in software development.", "slot": "Communication Skills" },
+      { "name": "Teamwork", "icon": "/Media/Teamwork.png", "alt": "Teamwork icon", "desc": "Comfortable working and collaborating in teams.", "slot": "Soft Skills" },
+      { "name": "Problem-solving", "icon": "/Media/Problem.png", "alt": "Problem solving icon", "desc": "Improved through different projects and challenges.", "slot": "Soft Skills" },
+      { "name": "Creativity", "icon": "/Media/Creativity.png", "alt": "Creativity icon", "desc": "I enjoy brainstorming and creating new ideas.", "slot": "Soft Skills" },
+      { "name": "Active learning", "icon": "/Media/Learning.png", "alt": "Active learning icon", "desc": "Committed to continuous learning in software development.", "slot": "Soft Skills" },
       { "name": "JUnit", "icon": "/Media/Junit.png", "alt": "JUnit icon", "desc": "used JUnit to test Triplan project.", "slot": "Programming" },
       { "name": "Docker", "icon": "/Media/Docker.png", "alt": "Docker icon", "desc": "I use Docker for managing containers and development environments.", "slot": "Developer Tools" },
       { "name": "Expo", "icon": "/Media/EXPO.png", "alt": "Expo icon", "desc": "Used Expo in a React Native project for development and testing.", "slot": "Developer Tools" },
@@ -280,13 +319,14 @@
       { "name": "Copilot", "icon": "/Media/CoPilot.png", "alt": "Copilot icon", "desc": "I use Copilot to assist with coding tasks.", "slot": "Developer Tools" },
       { "name": "Claude", "icon": "/Media/Claude.png", "alt": "Claude icon", "desc": "I use Claude for AI assistance in coding and content creation.", "slot": "Developer Tools" },
       { "name": "Prompt engineering", "icon": "/Media/AI.png", "alt": "Prompt engineering icon", "desc": "I have developed skills in crafting effective prompts for AI systems.", "slot": "Developer Tools" },
-      { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Communication Skills" },
-      { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Communication Skills" },
-      { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong communication skills that help me express my thoughts clearly and effectively.", "slot": "Communication Skills" },
+      { "name": "Reliability", "icon": "/Media/Reliability.png", "alt": "Reliability icon", "desc": "I consider myself a reliable and responsible team member who can be trusted.", "slot": "Soft Skills" },
+      { "name": "Persistence", "icon": "/Media/Persistence.png", "alt": "Persistence icon", "desc": "I am persistent and committed to achieving my goals, even when facing challenges along the way.", "slot": "Soft Skills" },
+      { "name": "Adaptability", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "I have developed strong Soft Skills that help me express my thoughts clearly and effectively.", "slot": "Soft Skills" },
       { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "I have used LinearApp for project management and task tracking in several projects.", "slot": "Project Management" },
       { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "I have used Miro for project management and task tracking in several projects.", "slot": "Project Management" },
-      { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "I have used CosmoDB in several projects for database management.", "slot": "Databases" }
-      
+      { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "I have used CosmoDB in several projects for database management.", "slot": "Databases" }, 
+      { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "I have used Azure for cloud services in several projects.", "slot": "Cloud Services" }
+
 
 
     ]
@@ -347,14 +387,21 @@
       
       {
         "title": "Gaming",
-        "Pelaaminen": "I have played computer games for about nine years, mainly FPS games and F1 2025.",
+        "Pelaaminen": "I have played computer games for about nine years, mainly FPS games.",
         "icon": "/Media/AI_Pelaa.png"
       }
     ]
   },
 
   "footer": {
+    "email": "teemu.tupola@gmail.com",
     "Links": [
+      {
+        "href": "https://aineoagency.com/",
+        "label": "Aineo Agency",
+        "img": "/Media/AIneo.png",
+        "alt": "Aineo Agency"
+      },
       {
         "href": "https://github.com/Tupolaa",
         "label": "Github",

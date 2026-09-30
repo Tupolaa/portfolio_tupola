@@ -1,11 +1,25 @@
 import Head from "next/head";
 import Navbar from "../components/Header";
 import Profile from "../components/Profile";
+import Work from "../components/Work";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Info from "../components/Info";
 import Footer from "../components/Footer";
 import AnimatedBackground from "../components/AnimatedBackground";
+
+const PERSON_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Teemu Tupola",
+  url: "https://tupola.dev",
+  jobTitle: "Junior Software Developer",
+  worksFor: { "@type": "Organization", name: "AIneo Agency", url: "https://aineoagency.com/" },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "HAMK" },
+  address: { "@type": "PostalAddress", addressLocality: "Hämeenlinna", addressCountry: "FI" },
+  image: "https://tupola.dev/Media/Muotokuva4.JPG",
+  sameAs: ["https://github.com/Tupolaa", "https://www.linkedin.com/in/teemutupola/"],
+};
 
 export default function Home() {
   return (
@@ -31,6 +45,12 @@ export default function Home() {
         <meta name="twitter:title" content="Teemu Tupola - Portfolio" />
         <meta name="twitter:description" content="Backend/Web Developer Portfolio. Projects, tech stack, and contact information." />
         <meta name="twitter:image" content="https://Tupola.dev/Media/muotokuvaFacicon.png" />
+
+        {/* Structured data (schema.org Person) for search engines */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_JSON_LD) }}
+        />
       </Head>
 
       <AnimatedBackground />
@@ -42,6 +62,10 @@ export default function Home() {
           <div className="mx-auto max-w-[1400px] px-4 md:px-6">
             <section id="Profile">
               <Profile />
+            </section>
+
+            <section id="work" className="mt-24">
+              <Work />
             </section>
 
             <section id="projects" className="mt-24">

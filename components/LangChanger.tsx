@@ -1,6 +1,8 @@
 "use client";
-import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import React, { createContext, useContext, useEffect, useSyncExternalStore, ReactNode } from "react";
 import type { SiteContent } from "../types/content";
+import eng from "../public/Data/Eng.json";
+import fin from "../public/Data/Fin.json";
 
 interface LanguageContextType {
   lang: string;
@@ -10,48 +12,49 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
-const FILE_BY_LANG: Record<string, string> = {
-  en: "/Data/Eng.json",
-  fi: "/Data/Fin.json",
+// Content is bundled at build time so the server-rendered HTML already contains
+// the text (visible to search engines and link previews, no empty first paint).
+const CONTENT_BY_LANG: Record<string, SiteContent> = {
+  en: eng as SiteContent,
+  fi: fin as SiteContent,
+};
+
+// Selected language lives outside React so it can be restored from localStorage
+// without a setState-in-effect; the server always renders English.
+let currentLang: string | null = null;
+const listeners = new Set<() => void>();
+
+const getLang = () => {
+  if (currentLang === null) {
+    try {
+      const saved = localStorage.getItem("lang");
+      currentLang = saved && CONTENT_BY_LANG[saved] ? saved : "en";
+    } catch {
+      currentLang = "en";
+    }
+  }
+  return currentLang;
+};
+
+const subscribe = (cb: () => void) => {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+};
+
+const setLang = (newLang: string) => {
+  currentLang = newLang;
+  try { localStorage.setItem("lang", newLang); } catch {}
+  listeners.forEach((cb) => cb());
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState("en");
-  const [content, setContent] = useState<Partial<SiteContent>>({});
-
-  // Read saved language on mount
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("lang");
-      if (saved && FILE_BY_LANG[saved]) setLangState(saved);
-    } catch {}
-  }, []);
-
-  const setLang = (newLang: string) => {
-    setLangState(newLang);
-    try { localStorage.setItem("lang", newLang); } catch {}
-  };
+  const lang = useSyncExternalStore(subscribe, getLang, () => "en");
 
   useEffect(() => {
-    const url = FILE_BY_LANG[lang];
-    let cancelled = false;
-
-    (async () => {
-      try {
-        const res = await fetch(url, { cache: "no-cache" });
-        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-        const data = await res.json();
-        if (!cancelled) setContent(data);
-      } catch (e) {
-        console.error("Language load failed:", e);
-        if (!cancelled) setContent({});
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
+    document.documentElement.lang = lang;
   }, [lang]);
+
+  const content = CONTENT_BY_LANG[lang] ?? CONTENT_BY_LANG.en;
 
   return (
     <LanguageContext.Provider value={{ lang, setLang, content }}>

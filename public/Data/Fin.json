@@ -2,6 +2,7 @@
   "Nav": {
     "links": [
       { "Name": "Profiili", "id": "Profile" },
+      { "Name": "Työkokemus", "id": "work" },
       { "Name": "Projektit", "id": "projects" },
       { "Name": "Tech Stack", "id": "skills" },
       { "Name": "Kuka on teemu?", "id": "Info" }
@@ -10,9 +11,47 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-    "title": "Junior Software Engineer",
-    "description": "Olen ohjelmistokehittäjä Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Opiskelen kolmatta vuotta tietojenkäsittelyä HAMK:issa ja minulla on vahvat ohjelmointitaidot sekä vahva kiinnostus luotettavien ja toimivien ohjelmistoratkaisujen kehittämiseen. Kiinnostukseni kohdistuu erityisesti backend- ja Web kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani hyödyksi parhaalla mahdollisella tavalla.",
+    "title": "Junior Software Developer AIneo Agencyllä",
+    "description": "Olen ohjelmistokehittäjä Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Työskentelen tällä hetkellä AIneo Agencyllä Junior kehittäjänä ja minulla on vahvat ohjelmointitaidot sekä vahva kiinnostus luotettavien ja toimivien ohjelmistoratkaisujen kehittämiseen. Kiinnostukseni kohdistuu erityisesti backend- ja AI kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani hyödyksi parhaalla mahdollisella tavalla.",
     "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
+  },
+
+  "Work": {
+    "header": "Työkokemus",
+    "jobs": [
+      {
+        "title": "Junior Software Developer",
+        "company": "AIneo Agency",
+        "Timeline": "09/2026 - nykyhetki",
+        "location": "Hämeenlinna, Suomi - Etätyö",
+        "logo": "/Media/AIneo.png",
+        "description": "Agenttipohjaiset sovellukset ja järjestelmät teollisuuden, toimitusketjujen ja projektipohjaisen toiminnan tarpeisiin.",
+        "tasks": [],
+        "links": [
+          { "Name": "AIneo Agency", "link": "https://aineo.fi/" }
+        ],
+        "Tech": []
+      },
+      {
+        "title": "Ohjelmistokehittäjäharjoittelija ja opinnäytetyöntekijä",
+        "company": "Triplan Oy",
+        "Timeline": "10/2025 - 09/2026",
+        "location": "Hämeenlinna, Suomi - Lähityö/Hybridi",
+        "logo": "/Media/Triplan.png",
+        "description": "Rakensin Java Spring Boot -pohjaisen OAI-PMH-prototyypin metadatan jakamiseen REST-rajapintojen kautta. Opinnäytetyössäni kehitin tekoälyä hyödyntävän automaation, joka luokittelee, kääntää ja tiivistää asiakastukipyyntöjä. Harjoitteluni aikana kehitin ja ylläpidin opinnäytetyöni PoC-projektista tuotannossa toimivan järjestelmän.",
+        "tasks": [
+          "Opinnäytetyön toteutus ja PoC:n kehittäminen.",
+          "PoC:n pohjalta tuotantovalmiin ratkaisun kehitys ja julkaisu tuotantoon.",
+          "Sisäisen tekoälyn käytön pilotointi ja asiakastuen automaatioiden ylläpito."
+        ],
+        "links": [
+          { "Name": "Triplan Oy", "link": "https://triplan.fi/" },
+          { "Name": "Opinnäytetyö", "link": "https://urn.fi/URN:NBN:fi:amk-202604237541"},
+          { "Name": "ICT-projekti", "link": "https://www.hamk.fi/en/publications/building-a-data-provider-prototype-as-a-student-company-collaboration/" }
+        ],
+        "Tech": []
+      }
+    ]
   },
 
   "Projects": {
@@ -87,7 +126,7 @@
         "Tech": [
           { "icon": "/Media/TS.png", "alt": "TypeScript icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
-          { "icon": "/Media/CoPilot.png", "alt": "Copilot icon" },
+          { "icon": "/Media/Claude.png", "alt": "Claude icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/GIT.png", "alt": "GIT icon" },
           { "icon": "/Media/Next.png", "alt": "Next.js icon" },
@@ -259,7 +298,7 @@
   { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon",  "desc": "Postman on ollut usein käytössä API rajapintojen testauksessa.", "slot": "Kehittäjän työkalut" },
   { "name": "Suomi", "icon": "/Media/FIN.png", "alt": "Finnish icon",  "desc": "Äidinkieli", "slot": "Vuorovaikutustaidot" },
   { "name": "Englanti", "icon": "/Media/UK.png", "alt": "English icon","desc": "Sujuva suullinen ja kirjallinen taito.", "slot": "Vuorovaikutustaidot" },
-  { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja opiskelen sitä parhaillaan.", "slot": "Kehittäjän työkalut" },
+  { "name": "Test Driven Development", "icon": "/Media/TDD.png", "alt": "TDD icon", "desc": "TDD on itselle uusi asia ja opiskelen sitä parhaillaan.", "slot": "Vuorovaikutustaidot" },
   { "name": "Spring Boot", "icon": "/Media/Spring.png", "alt": "Spring Boot icon", "desc": "Käytin Spring Bootia Triplan projektissa.", "slot": "Ohjelmointi" },
   { "name": "Netlify", "icon": "/Media/Netlify.png", "alt": "Netlify icon","desc": "Olen käyttänyt Netlifyä aikaisempien portfolioideni julkaisuun.", "slot": "Pilvipalvelut" },
   { "name": "Vercel", "icon": "/Media/Vercel.png", "alt": "Vercel icon",  "desc": "Olen käyttänyt Verceliä tämän portfolion julkaisuun", "slot": "Pilvipalvelut" },
@@ -281,9 +320,8 @@
   { "name": "Sopeutuvuus", "icon": "/Media/Adaptable.png", "alt": "Adaptable icon", "desc": "Olen kehittänyt vahvat kommunikointitaidot, jotka auttavat minua ilmaisemaan ajatuksiani selkeästi ja tehokkaasti.", "slot": "Vuorovaikutustaidot" },
   { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "Olen käyttänyt LinearAppia projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
   { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "Olen käyttänyt Miroa projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
-  { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "Olen käyttänyt CosmoDB:ää projekteissa tietokannan hallintaan.", "slot": "Tietokannat" }
-
-      
+  { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "Olen käyttänyt CosmoDB:ää projekteissa tietokannan hallintaan.", "slot": "Tietokannat" },
+  { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "Olen käyttänyt Azuren alustaa eri työpaikoissa.", "slot": "Pilvipalvelut" }
 
 ]
   },
@@ -342,31 +380,38 @@
     },
     {
       "title": "Pelaaminen",
-      "Pelaaminen": "Olen pelannut erilaisia tietokonepelejä noin yhdeksän vuoden ajan. Pelaan pääasiassa FPS-pelejä sekä F1 2025 -peliä.",
+      "Pelaaminen": "Olen pelannut erilaisia tietokonepelejä noin yhdeksän vuoden ajan. Pelaan pääasiassa FPS-pelejä.",
       "icon": "/Media/AI_Pelaa.png"
     }
   ]
 },
 "footer": {
+        "email": "teemu.tupola@gmail.com",
         "Links": [
             {
-                "href": "https://github.com/Tupolaa",
-                "label": "Github",
-                "img": "/Media/GIT.png",
-                "alt": "GitHub"
-            },
-            {
-                "href": "https://www.linkedin.com/in/teemutupola/",
-                "label": "LinkedIn",
-                "img": "/Media/Linkkari.png",
-                "alt": "LinkedIn"
-            },
-            {
-                "href": "/Media/CV_Tupola_2026_FIN.pdf",
-                "label": "CV",
-                "img": "/Media/CV.png",
-                "alt": "CV"
-            }
+        "href": "https://aineoagency.com/",
+        "label": "Aineo Agency",
+        "img": "/Media/AIneo.png",
+        "alt": "Aineo Agency"
+      },
+      {
+        "href": "https://github.com/Tupolaa",
+        "label": "Github",
+        "img": "/Media/GIT.png",
+        "alt": "GitHub"
+      },
+      {
+        "href": "https://www.linkedin.com/in/teemutupola/",
+        "label": "LinkedIn",
+        "img": "/Media/Linkkari.png",
+        "alt": "LinkedIn"
+      },
+      {
+        "href": "/Media/CV_Tupola_2026_FIN.pdf",
+        "label": "CV",
+        "img": "/Media/CV.png",
+        "alt": "CV"
+      }
         ]
     }
 }
