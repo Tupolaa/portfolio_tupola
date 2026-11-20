@@ -11,8 +11,8 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-    "title": "Junior Software Developer AIneo Agencyllä",
-    "description": "Olen ohjelmistokehittäjä Hämeenlinnasta, jolla ei huumori tai kysymykset lopu! Työskentelen tällä hetkellä AIneo Agencyllä Junior kehittäjänä ja minulla on vahvat ohjelmointitaidot sekä vahva kiinnostus luotettavien ja toimivien ohjelmistoratkaisujen kehittämiseen. Kiinnostukseni kohdistuu erityisesti backend- ja AI kehitykseen, virheiden ja bugien korjaamiseen sekä debuggaamiseen, sillä niissä pääsen käyttämään ongelmanratkaisukykyäni ja uteliaisuuttani hyödyksi parhaalla mahdollisella tavalla.",
+    "title": "Software Engineer",
+    "description": "Olen ohjelmistokehittäjä, jolla eivät huumori tai kysymykset lopu! Etsin uusia mahdollisuuksia, joissa pääsen hyödyntämään osaamistani, kehittämään taitojani ja oppimaan jatkuvasti uutta. Minulla on kokemusta ohjelmistokehityksestä, API-integraatioista sekä tekoälyyn ja automaatioon liittyvistä ratkaisuista. Erityisesti minua kiinnostavat ongelmanratkaisu, ohjelmistojen kehittäminen, virheiden selvittäminen ja debuggaaminen. Tartun mielelläni uusiin haasteisiin, kysyn rohkeasti ja tykkään selvittää, miten asioita voisi tehdä paremmin. Olen avoin erilaisille IT-alan mahdollisuuksille, joissa pääsen kasvamaan ammattilaisena ja tekemään merkityksellistä työtä.",
     "quote": "\"Parhaiten opin tekemällä ja pienellä ripauksella huumoria.\""
   },
 
@@ -22,7 +22,7 @@
       {
         "title": "Junior Software Developer",
         "company": "AIneo Agency",
-        "Timeline": "09/2026 - nykyhetki",
+        "Timeline": "09/2026 - 11/2026",
         "location": "Hämeenlinna, Suomi - Etätyö",
         "logo": "/Media/AIneo.png",
         "description": "Agenttipohjaiset sovellukset ja järjestelmät teollisuuden, toimitusketjujen ja projektipohjaisen toiminnan tarpeisiin.",
@@ -100,7 +100,7 @@
           { "icon": "/Media/Java.png", "alt": "Java icon" },
           { "icon": "/Media/Spring.png", "alt": "Spring icon" },
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Junit.png", "alt": "Junit icon" },
           { "icon": "/Media/TDD.png", "alt": "TDD icon" },
           { "icon": "/Media/Jira.png", "alt": "Jira icon" },
@@ -128,7 +128,7 @@
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/Claude.png", "alt": "Claude icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Next.png", "alt": "Next.js icon" },
           { "icon": "/Media/Vercel.png", "alt": "Vercel icon" }
         ]
@@ -151,7 +151,7 @@
           { "icon": "/Media/JS.png", "alt": "JS icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/EXPO.png", "alt": "Expo icon" },
           { "icon": "/Media/androidstudio.png", "alt": "Android Studio icon" }
@@ -175,7 +175,7 @@
           { "icon": "/Media/HBS.png", "alt": "HBS icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/node.png", "alt": "Node.js icon" },
           { "icon": "/Media/expressjs.png", "alt": "Express.js icon" },
@@ -210,7 +210,7 @@
         ],
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Astro.png", "alt": "Astro icon" },
           { "icon": "/Media/HF.png", "alt": "Hugging Face icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
@@ -228,7 +228,7 @@
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
           { "icon": "/Media/uipath.png", "alt": "UiPath icon" }
         ]
@@ -245,7 +245,7 @@
         ],
         "Tech": [
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" }
         ]
       },
 
@@ -276,13 +276,15 @@
   { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "Olen käyttänyt Pythonia muutamissa eri projekteissa ja osaan perusteet.", "slot": "Ohjelmointi" },
   { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum on ollut käytössä viimeisen parin vuoden aikana jokaisella projektissa.", "slot": "Projektinhallinta" },
   { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon",  "desc": "Jira on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan", "slot": "Projektinhallinta" },
+  { "name": "GitHub Projects", "icon": "/Media/GitHub.png", "alt": "GitHub Projects -kuvake", "desc": "Käytin GitHub Projectsia Kanban-tyyppisenä tauluna GitHub Issues -tehtävien järjestämiseen ja seurantaan.", "slot": "Projektinhallinta" },
   { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon", "desc": "Confluence on ollut keskeinen työkalu projektinhallinnassa ja tehtävien seurannassa viimeisen parin vuoden ajan.", "slot": "Projektinhallinta" },
   { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon","desc": "Robot frameworkkia olen käyttänyt front-end testaukseen muutaman kerran.", "slot": "Ohjelmointi" },
   { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon",  "desc": "Olen käyttänyt javaa useissa projekteissa ja osaan käyttää sitä kattavasti.", "slot": "Ohjelmointi" },
   { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon",  "desc": "MySQL käyttö on tuttua, mutta sen käyttö on vähäistä.", "slot": "Tietokannat" },
   { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon", "desc": "Osaan wordpressin peruskäytön ja hallinnan.", "slot": "Kehittäjän työkalut" },
   { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "desc": "Osaan luoda ja käyttää REST API -rajapintoja tehokkaasti.", "slot": "Ohjelmointi" },
-  { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon",  "desc": "Github ja versionhallinta on ollut olennainen osa projekteja jo usean vuoden.", "slot": "Kehittäjän työkalut" },
+  { "name": "GitHub", "icon": "/Media/GitHub.png", "alt": "GitHub-kuvake",  "desc": "GitHub ja versionhallinta ovat olleet olennainen osa projektejani jo usean vuoden ajan.", "slot": "Kehittäjän työkalut" },
+  { "name": "Git", "icon": "/Media/Git.png", "alt": "Git-kuvake", "desc": "Git on ollut olennainen osa projektieni versionhallintaa jo usean vuoden ajan.", "slot": "Kehittäjän työkalut" },
   { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon",  "desc": "Viimeisen vuoden aikana olen käyttänyt JavaScriptiä useissa projekteissa ja hallitsen sen erittäin hyvin.", "slot": "Ohjelmointi" },
   { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Käytän TypeScriptiä Next.js ja React Native projekteissa.", "slot": "Ohjelmointi" },
   { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon",  "desc": "HTML koodi on ollut osa useissa web-projekteissa.", "slot": "Ohjelmointi" },
@@ -293,6 +295,7 @@
   { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon",  "desc": "Node.js on tuttu muutamasta projektista ja ollut aktiivisessa käytössä viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
   { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "desc": "Express.js on tuttu muutamasta projektista ja ollut aktiivisessa käytössä viimeisen vuoden ajan.", "slot": "Ohjelmointi" },
   { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon",  "desc": "Käytimme UIPathia automaatiotestaus projektissa", "slot": "Kehittäjän työkalut" },
+  { "name": "Jiran automaatiot", "icon": "/Media/Jira.png", "alt": "Jira-automaation kuvake", "desc": "Käytin Jira-automaatiota työnkulkujen sujuvoittamiseen ja toistuvien projektitehtävien automatisointiin.", "slot": "Kehittäjän työkalut" },
   { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "desc": "Android studio oli käytössä react native projektissa.", "slot": "Kehittäjän työkalut" },
   { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "desc": "Julkaisin Node.js Backend sivuston Google Cloudiin.", "slot": "Pilvipalvelut" },
   { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon",  "desc": "Postman on ollut usein käytössä API rajapintojen testauksessa.", "slot": "Kehittäjän työkalut" },
@@ -321,7 +324,8 @@
   { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "Olen käyttänyt LinearAppia projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
   { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "Olen käyttänyt Miroa projektinhallintaan ja tehtävien seurantaan useissa projekteissa.", "slot": "Projektinhallinta" },
   { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "Olen käyttänyt CosmoDB:ää projekteissa tietokannan hallintaan.", "slot": "Tietokannat" },
-  { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "Olen käyttänyt Azuren alustaa eri työpaikoissa.", "slot": "Pilvipalvelut" }
+  { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "Olen käyttänyt Azuren alustaa eri työpaikoissa.", "slot": "Pilvipalvelut" },
+  { "name": "Azure AI Foundry", "icon": "/Media/AzureAIFoundry.svg", "alt": "Azure AI Foundry -kuvake", "desc": "Käytin Azure AI Foundrya Azure-pohjaisten tekoälyratkaisujen rakentamiseen ja hallintaan.", "slot": "Pilvipalvelut" }
 
 ]
   },
@@ -388,16 +392,10 @@
 "footer": {
         "email": "teemu.tupola@gmail.com",
         "Links": [
-            {
-        "href": "https://aineoagency.com/",
-        "label": "Aineo Agency",
-        "img": "/Media/AIneo.png",
-        "alt": "Aineo Agency"
-      },
       {
         "href": "https://github.com/Tupolaa",
         "label": "Github",
-        "img": "/Media/GIT.png",
+        "img": "/Media/GitHub.png",
         "alt": "GitHub"
       },
       {

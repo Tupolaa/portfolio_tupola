@@ -11,8 +11,8 @@
 
   "Profile": {
     "name": "Teemu Tupola",
-    "title": "Junior Software Developer At AIneo Agency",
-    "description": "I am a software engineer from Hämeenlinna, Finland, always curious and not afraid to ask questions! Currently working as a Junior Developer at AIneo Agency and with solid programming skills and a strong focus on developing reliable and functional software solutions. I am especially interested in backend and web development, bug-fixing and debugging, as they allow me to use my problem-solving skills and curiosity in the best possible way.",
+    "title": "Software Engineer",
+    "description": "I'm a software Engineer from Finland who never runs out of questions or a sense of humor! I'm looking for new opportunities where I can put my skills to use, further develop my abilities, and continuously learn new things. I have experience in software development, API integrations, and building AI-powered and automation solutions. I'm particularly interested in problem-solving, developing software, troubleshooting, and debugging. I enjoy taking on new challenges, asking questions, and figuring out how things can be done better. I'm open to a wide range of opportunities in the IT field where I can grow as a professional and contribute to meaningful work.",
     "quote": "\"I learn best by doing – with a little touch of humour.\""
   },
 
@@ -22,7 +22,7 @@
       {
         "title": "Junior Software Developer",
         "company": "AIneo Agency",
-        "Timeline": "09/2026 - Present",
+        "Timeline": "09/2026 - 11/2026",
         "location": "Hämeenlinna, Finland - Remote",
         "logo": "/Media/AIneo.png",
         "description": "Agentic applications and systems for industrial, supply chain and project-based operations.",
@@ -101,7 +101,7 @@
           { "icon": "/Media/Java.png", "alt": "Java icon" },
           { "icon": "/Media/Spring.png", "alt": "Spring icon" },
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Junit.png", "alt": "Junit icon" },
           { "icon": "/Media/TDD.png", "alt": "TDD icon" },
           { "icon": "/Media/Jira.png", "alt": "Jira icon" },
@@ -132,7 +132,7 @@
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/Claude.png", "alt": "Claude icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Next.png", "alt": "Next.js icon" },
           { "icon": "/Media/Vercel.png", "alt": "Vercel icon" }
         ]
@@ -154,7 +154,7 @@
           { "icon": "/Media/JS.png", "alt": "JS icon" },
           { "icon": "/Media/REACT.png", "alt": "REACT icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/EXPO.png", "alt": "Expo icon" },
           { "icon": "/Media/androidstudio.png", "alt": "Android Studio icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" }
@@ -179,7 +179,7 @@
           { "icon": "/Media/HBS.png", "alt": "HBS icon" },
           { "icon": "/Media/CSS.png", "alt": "CSS icon" },
           { "icon": "/Media/REST.png", "alt": "REST API icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
           { "icon": "/Media/node.png", "alt": "Node.js icon" },
           { "icon": "/Media/expressjs.png", "alt": "Express.js icon" },
@@ -214,7 +214,7 @@
         ],
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/Astro.png", "alt": "Astro icon" },
           { "icon": "/Media/HF.png", "alt": "Hugging Face icon" },
           { "icon": "/Media/Scrum.png", "alt": "Scrum icon" },
@@ -233,7 +233,7 @@
         "Tech": [
           { "icon": "/Media/Python.png", "alt": "Python icon" },
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" },
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" },
           { "icon": "/Media/MySQL.png", "alt": "SQL icon" },
           { "icon": "/Media/uipath.png", "alt": "UiPath icon" }
         ]
@@ -249,7 +249,7 @@
         ],
         "Tech": [
           { "icon": "/Media/RF.png", "alt": "Robot Framework icon" },
-          { "icon": "/Media/GIT.png", "alt": "GIT icon" }
+          { "icon": "/Media/GitHub.png", "alt": "GIT icon" }
         ]
       },
 
@@ -280,13 +280,15 @@
       { "name": "Python", "icon": "/Media/Python.png", "alt": "Python icon", "desc": "I have used Python in several projects and I know basics.", "slot": "Programming" },
       { "name": "Scrum", "icon": "/Media/Scrum.png", "alt": "Scrum icon", "desc": "Scrum has been used in every project for the past couple of years.", "slot": "Project Management" },
       { "name": "Jira", "icon": "/Media/Jira.png", "alt": "Jira icon",  "desc": "Jira has been a key tool in project management and task tracking.", "slot": "Project Management" },
+      { "name": "GitHub Projects", "icon": "/Media/GitHub.png", "alt": "GitHub Projects icon", "desc": "Used GitHub Projects as a Kanban-style board to organize and track GitHub Issues.", "slot": "Project Management" },
       { "name": "Confluence", "icon": "/Media/Confluence.png", "alt": "Confluence icon",  "desc": "Confluence has been a key tool in documentation and project collaboration.", "slot": "Project Management" },
       { "name": "Robot Framework", "icon": "/Media/RF.png", "alt": "Robot Framework icon",  "desc": "I have used Robot Framework a few times for front-end testing.", "slot": "Programming" },
       { "name": "Java", "icon": "/Media/Java.png", "alt": "Java icon",  "desc": "I have used Java in multiple projects.", "slot": "Programming" },
       { "name": "MySQL", "icon": "/Media/MySQL.png", "alt": "MySQL icon",  "desc": "Familiar with MySQL, but have used it less frequently.", "slot": "Databases" },
       { "name": "WordPress", "icon": "/Media/WP.png", "alt": "WordPress icon",  "desc": "I know the basics of WordPress usage and management.", "slot": "Developer Tools" },
       { "name": "REST API", "icon": "/Media/REST.png", "alt": "REST API icon", "desc": "I can build and utilize REST APIs effectively.", "slot": "Programming"},
-      { "name": "GIT", "icon": "/Media/GIT.png", "alt": "GIT icon",  "desc": "Version control has been an important part of my projects for years.", "slot": "Developer Tools" },
+      { "name": "GitHub", "icon": "/Media/GitHub.png", "alt": "Git icon",  "desc": "Version control has been an important part of my projects for years.", "slot": "Developer Tools" },
+      { "name": "Git", "icon": "/Media/Git.png", "alt": "Git icon", "desc": "Git has been an essential part of version control in my projects for several years.", "slot": "Developer Tools" },
       { "name": "JavaScript", "icon": "/Media/JS.png", "alt": "JS icon", "desc": "Used actively in several projects, strong knowledge.", "slot": "Programming" },
       { "name": "TypeScript", "icon": "/Media/TS.png", "alt": "TypeScript icon", "desc": "Used in React Native and Next.js projects.", "slot": "Programming" },
       { "name": "HTML", "icon": "/Media/HTML.png", "alt": "HTML icon",  "desc": "Used in several web projects.", "slot": "Programming" },
@@ -297,6 +299,7 @@
       { "name": "Node.js", "icon": "/Media/node.png", "alt": "Node.js icon", "desc": "Used actively in a backend project.", "slot": "Programming" },
       { "name": "Express.js", "icon": "/Media/expressjs.png", "alt": "Express.js icon", "desc": "Used actively in a backend project.", "slot": "Programming" },
       { "name": "UiPath", "icon": "/Media/uipath.png", "alt": "UiPath icon", "desc": "Used in an automation testing project.", "slot": "Developer Tools" },
+      { "name": "Jira Automation", "icon": "/Media/Jira.png", "alt": "Jira Automation icon", "desc": "Used Jira Automation to streamline workflows and automate repetitive project tasks.", "slot": "Developer Tools" },
       { "name": "Android Studio", "icon": "/Media/androidstudio.png", "alt": "Android Studio icon", "desc": "Used in React Native project.", "slot": "Developer Tools" },
       { "name": "Google Cloud", "icon": "/Media/googlecloud.png", "alt": "Google Cloud icon", "desc": "Published Node.js backend to Google Cloud.", "slot": "Cloud Services" },
       { "name": "Postman", "icon": "/Media/postman.png", "alt": "Postman icon", "desc": "Used frequently for API testing.", "slot": "Developer Tools" },
@@ -325,7 +328,8 @@
       { "name": "LinearApp", "icon": "/Media/Linear.png", "alt": "LinearApp icon", "desc": "I have used LinearApp for project management and task tracking in several projects.", "slot": "Project Management" },
       { "name": "Miro", "icon": "/Media/Miro.png", "alt": "Miro icon", "desc": "I have used Miro for project management and task tracking in several projects.", "slot": "Project Management" },
       { "name": "CosmoDB", "icon": "/Media/CosmosDB.png", "alt": "CosmoDB icon", "desc": "I have used CosmoDB in several projects for database management.", "slot": "Databases" }, 
-      { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "I have used Azure for cloud services in several projects.", "slot": "Cloud Services" }
+      { "name": "Azure", "icon": "/Media/Azure.png", "alt": "Azure icon", "desc": "I have used Azure for cloud services in several projects.", "slot": "Cloud Services" },
+      { "name": "Azure AI Foundry", "icon": "/Media/AzureAIFoundry.svg", "alt": "Azure AI Foundry icon", "desc": "Used Azure AI Foundry to build and manage AI solutions on Azure.", "slot": "Cloud Services" }
 
 
 
@@ -397,15 +401,9 @@
     "email": "teemu.tupola@gmail.com",
     "Links": [
       {
-        "href": "https://aineoagency.com/",
-        "label": "Aineo Agency",
-        "img": "/Media/AIneo.png",
-        "alt": "Aineo Agency"
-      },
-      {
         "href": "https://github.com/Tupolaa",
         "label": "Github",
-        "img": "/Media/GIT.png",
+        "img": "/Media/GitHub.png",
         "alt": "GitHub"
       },
       {
